@@ -1,76 +1,57 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Brain, Coffee, FileCode, Gift, Lightbulb, Sparkles, Zap } from "lucide-react";
-
-const features = [
-  {
-    icon: <Lightbulb className="h-10 w-10 text-blue-500" />,
-    title: "Tips Menjadi Programmer Tanpa Ngoding",
-    description:
-      "Pelajari rahasia menjadi programmer handal tanpa perlu menulis satu baris kode pun. Cukup pakai ChatGPT dan Stack Overflow!",
-  },
-  {
-    icon: <FileCode className="h-10 w-10 text-blue-500" />,
-    title: "Tutorial Ngoding dengan ChatGPT",
-    description:
-      "Biarkan AI yang menulis kode untuk Anda. Kami ajarkan cara meminta ChatGPT menulis kode tanpa perlu buka VS Code sama sekali.",
-  },
-  {
-    icon: <Brain className="h-10 w-10 text-blue-500" />,
-    title: "Teknik Presentasi Proyek Palsu",
-    description:
-      "Pelajari cara mempresentasikan proyek yang sebenarnya dibuat oleh orang lain seolah-olah Anda yang membuatnya.",
-  },
-  {
-    icon: <Coffee className="h-10 w-10 text-blue-500" />,
-    title: "Jargon Programmer untuk Pemula",
-    description:
-      "Hafalkan istilah-istilah teknis untuk terdengar seperti programmer sungguhan dalam interview atau meeting.",
-  },
-  {
-    icon: <Zap className="h-10 w-10 text-blue-500" />,
-    title: "Cara Menjawab Pertanyaan Teknis",
-    description:
-      "Teknik menjawab pertanyaan teknis dengan jawaban ambigu yang terdengar pintar tanpa harus mengerti apa-apa.",
-  },
-  {
-    icon: <Gift className="h-10 w-10 text-blue-500" />,
-    title: "Template Portfolio Keren",
-    description:
-      "Dapatkan template portfolio developer keren yang bisa Anda klaim sebagai karya sendiri. Siap pakai tanpa perlu coding!",
-  },
-];
+import { Shield, Scale, Clock, Users } from "lucide-react";
+import Image from "next/image";
 
 export default function FeaturesSection() {
+  const features = [
+    {
+      icon: <Shield className="h-8 w-8 text-[#2CBCC4]" />,
+      title: "Perlindungan Hukum Terpercaya",
+      description: "Tim ahli hukum kami siap memberikan perlindungan legal yang komprehensif untuk bisnis Anda"
+    },
+    {
+      icon: <Scale className="h-8 w-8 text-[#2CBCC4]" />,
+      title: "Layanan Legal Berkualitas",
+      description: "Solusi legal yang profesional dan sesuai dengan regulasi terkini di Indonesia"
+    },
+    {
+      icon: <Clock className="h-8 w-8 text-[#2CBCC4]" />,
+      title: "Proses Cepat & Efisien",
+      description: "Pengurusan dokumen legal yang cepat dan efisien dengan sistem yang terdigitalisasi"
+    },
+    {
+      icon: <Users className="h-8 w-8 text-[#2CBCC4]" />,
+      title: "Tim Profesional",
+      description: "Didukung oleh tim legal yang berpengalaman dan profesional di bidangnya"
+    }
+  ];
+
   return (
-    <section className="py-16 md:py-24" id="tips">
+    <section className="w-full bg-white py-16 md:py-24" id="features">
       <div className="container">
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-          <div className="inline-flex items-center gap-2 bg-blue-100 px-3 py-1 rounded-full text-blue-500 font-medium text-sm">
-            <Sparkles className="h-4 w-4 text-blue-500" />
-            <span>Fitur Unggulan</span>
+          <div className="inline-flex items-center gap-2 bg-[#2CBCC4]/20 px-3 py-1 rounded-full text-[#2CBCC4] font-medium text-sm">
+            <Shield className="h-4 w-4 fill-[#2CBCC4] text-[#2CBCC4]" />
+            <span>Mengapa Memilih Kami</span>
           </div>
+
           <h2 className="text-3xl md:text-4xl font-bold">
-            Cara Instan Menjadi <span className="gradient-text">Programmer Handal</span>
+            Solusi <span className="gradient-text">Legal Terbaik</span> untuk <span className="gradient-text">Bisnis Anda</span>
           </h2>
-          <p className="text-lg text-blue-900/70">
-            Lupakan bootcamp yang melelahkan dan jam-jam belajar coding yang membosankan. Kami punya jalan pintas!
+          
+          <p className="text-lg text-[#2CBCC4]/70">
+            Kami menyediakan layanan legal terpercaya dengan tim profesional yang siap membantu mengembangkan bisnis Anda
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature, index) => (
-            <Card
-              key={index}
-              className="border-blue-100 hover:shadow-md transition-all duration-300 hover:-translate-y-1"
-            >
-              <CardHeader>
-                <div className="mb-4">{feature.icon}</div>
-                <CardTitle className="text-xl font-bold">{feature.title}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <CardDescription className="text-blue-900/70 text-base">{feature.description}</CardDescription>
-              </CardContent>
-            </Card>
+            <div key={index} className="p-6 rounded-2xl border border-[#2CBCC4]/20 hover:shadow-lg transition-all duration-300 bg-white">
+              <div className="h-12 w-12 rounded-full bg-[#2CBCC4]/10 flex items-center justify-center mb-4">
+                {feature.icon}
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">{feature.title}</h3>
+              <p className="text-[#2CBCC4]/70">{feature.description}</p>
+            </div>
           ))}
         </div>
       </div>

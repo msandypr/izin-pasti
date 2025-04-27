@@ -41,9 +41,9 @@ html {
 }
 
 .gradient-text {
-  @apply bg-gradient-to-r from-blue-500 to-blue-400 bg-clip-text text-transparent;
+  @apply bg-gradient-to-r from-[#2CBCC4] to-[#2CBCC4]/80 bg-clip-text text-transparent;
 }
 
 .blue-gradient {
-  @apply bg-gradient-to-r from-blue-500 to-blue-400;
+  @apply bg-gradient-to-r from-[#2CBCC4] to-[#2CBCC4]/80;
 }

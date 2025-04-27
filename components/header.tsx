@@ -15,24 +15,21 @@ export default function Header() {
         </div>
 
         <nav className="hidden md:flex items-center gap-6">
-          <Link href="/" className="text-blue-900 hover:text-blue-500 font-medium">
+          <Link href="/" className="text-[#2CBCC4]/90 hover:text-[#2CBCC4] font-medium">
             Beranda
           </Link>
-          <Link href="/layanan" className="text-blue-900 hover:text-blue-500 font-medium">
+          <Link href="/layanan" className="text-[#2CBCC4]/90 hover:text-[#2CBCC4] font-medium">
             Layanan
           </Link>
-          <Link href="/tentang-kami" className="text-blue-900 hover:text-blue-500 font-medium">
+          <Link href="/tentang-kami" className="text-[#2CBCC4]/90 hover:text-[#2CBCC4] font-medium">
             Tentang Kami
           </Link>
-          <Link href="/hubungi-kami" className="text-blue-900 hover:text-blue-500 font-medium">
+          <Link href="/hubungi-kami" className="text-[#2CBCC4]/90 hover:text-[#2CBCC4] font-medium">
             Hubungi Kami
           </Link>
         </nav>
 
         <div className="hidden md:flex items-center gap-4">
-          {/* <Button variant="outline" className="rounded-full">
-            Masuk
-          </Button> */}
           <Button className="rounded-full blue-gradient"><Phone></Phone>WhatsApp</Button>
         </div>
 
@@ -51,22 +48,22 @@ export default function Header() {
                 </div>
               </SheetHeader>
               <SheetClose asChild>
-                <Link href="/" className="text-blue-900 hover:text-blue-500 font-medium text-lg">
+                <Link href="/" className="text-[#2CBCC4]/90 hover:text-[#2CBCC4] font-medium text-lg">
                   Beranda
                 </Link>
               </SheetClose>
               <SheetClose asChild>
-                <Link href="/layanan" className="text-blue-900 hover:text-blue-500 font-medium text-lg">
+                <Link href="/layanan" className="text-[#2CBCC4]/90 hover:text-[#2CBCC4] font-medium text-lg">
                   Layanan
                 </Link>
               </SheetClose>
               <SheetClose asChild>
-                <Link href="/tentang-kami" className="text-blue-900 hover:text-blue-500 font-medium text-lg">
+                <Link href="/tentang-kami" className="text-[#2CBCC4]/90 hover:text-[#2CBCC4] font-medium text-lg">
                   Tentang Kami
                 </Link>
               </SheetClose>
               <SheetClose asChild>
-                <Link href="/hubungi-kami" className="text-blue-900 hover:text-blue-500 font-medium text-lg">
+                <Link href="/hubungi-kami" className="text-[#2CBCC4]/90 hover:text-[#2CBCC4] font-medium text-lg">
                   Hubungi Kami
                 </Link>
               </SheetClose>
