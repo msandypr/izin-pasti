@@ -25,7 +25,7 @@ export default function FeaturesSection() {
   ];
 
   return (
-    <section className="w-full py-16 md:py-24" id="features">
+    <section className="w-full bg-gradient-to-t from-[#2CBCC4]/10 to-white py-16 md:py-24" id="features">
       <div className="container">
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
           <div className="inline-flex items-center gap-2 bg-[#2CBCC4]/20 px-3 py-1 rounded-full text-[#2CBCC4] font-medium text-sm">

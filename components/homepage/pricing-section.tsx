@@ -82,7 +82,7 @@ export default function PricingSection() {
     ];
 
     return (
-        <section className="w-full bg-gradient-to-b from-white to-[#2CBCC4]/10 py-16 md:py-24" id="pricing">
+        <section className="w-full bg-gradient-to-t from-white to-[#2CBCC4]/10 py-16 md:py-24" id="pricing">
             <div className="container">
                 <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
                     <h2 className="text-3xl md:text-4xl font-bold">

@@ -6,7 +6,7 @@ import { CalendarDays } from "lucide-react";
 
 export default function ContactSection() {
     return (
-        <div className="w-full bg-gradient-to-b from-[#2CBCC4]/10 to-white py-16 md:py-24 flex justify-center" id="contact">
+        <div className="w-full bg-gradient-to-t from-[#2CBCC4]/10 to-white md:py-24 flex justify-center" id="contact">
             <div className="container flex justify-center">
                 <div className="w-full max-w-5xl bg-white/90 rounded-2xl shadow-lg overflow-hidden flex flex-col lg:flex-row items-stretch">
                     {/* Kiri - Gambar Full Height */}
