@@ -1,13 +1,20 @@
+"use client";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Scale, Phone } from "lucide-react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function HeroSection() {
   return (
     <div className="w-full bg-gradient-to-b from-[#2CBCC4]/10 to-white py-16 md:py-24" id="home">
       <div className="container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6 text-center lg:text-left">
+          <motion.div
+            className="space-y-6 text-center lg:text-left"
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
             <div className="inline-flex items-center gap-2 bg-[#2CBCC4]/20 px-3 py-1 rounded-full text-[#2CBCC4] font-medium text-sm">
               <Scale className="h-4 w-4 fill-[#2CBCC4] text-[#2CBCC4]" />
               <span>Layanan Legalitas Bisnis Terkemuka di Indonesia</span>
@@ -30,9 +37,14 @@ export default function HeroSection() {
                 <Phone></Phone>Tanya Kami
               </Button>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="relative flex justify-center items-center self-center">
+          <motion.div
+            className="relative flex justify-center lg:justify-end items-center self-center lg:pl-12"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
+          >
             <div className="absolute -z-10 inset-0 bg-[#2CBCC4]/20 rounded-full blur-3xl opacity-30"></div>
             <Image
               src="/images/hero-section-image-law.png"
@@ -42,7 +54,7 @@ export default function HeroSection() {
               className="w-full max-w-md rounded-2xl border-[#2CBCC4]/20 relative"
               priority
             />
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>
