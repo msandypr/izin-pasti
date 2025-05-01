@@ -68,10 +68,7 @@ export default function Header() {
                 </Link>
               </SheetClose>
               <div className="flex flex-col gap-2 mt-4">
-                <Button variant="outline" className="rounded-full">
-                  Masuk
-                </Button>
-                <Button className="rounded-full blue-gradient">Gabung Sekarang</Button>
+                <Button className="rounded-full blue-gradient"><Phone></Phone>WhatsApp</Button>
               </div>
             </div>
           </SheetContent>
