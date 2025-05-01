@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, ArrowLeft, ArrowRight as ArrowRightIcon } from "lucide-react";
 import useEmblaCarousel from 'embla-carousel-react';
 import { useCallback, useEffect, useState } from "react";
+import { WalletMinimal } from "lucide-react";
 
 export default function PricingSection() {
     const [emblaRef, emblaApi] = useEmblaCarousel({
@@ -85,11 +86,15 @@ export default function PricingSection() {
         <section className="w-full bg-gradient-to-t from-white to-[#2CBCC4]/10 py-16 md:py-24" id="pricing">
             <div className="container">
                 <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                    <div className="inline-flex items-center gap-2 bg-[#2CBCC4]/20 px-3 py-1 rounded-full text-[#2CBCC4] font-medium text-sm">
+                        <WalletMinimal className="h-4 w-4 fill-[#2CBCC4] text-[#2CBCC4]" />
+                        <span>Layanan Legalitas Kami</span>
+                    </div>
                     <h2 className="text-3xl md:text-4xl font-bold">
-                        Pilih Paket Yang <span className="gradient-text">Anda Butuhkan</span>
+                        Pilih Layanan yang <span className="gradient-text">Anda Butuhkan</span>
                     </h2>
-                    <p className="text-lg text-[#2CBCC4]/70">
-                        Pilih paket yang cocok dengan kebutuhan anda, dan silakan hubungi kami
+                    <p className="text-md text-black">
+                    Temukan layanan yang paling sesuai untuk kebutuhan bisnis Anda dan hubungi kami untuk konsultasi lebih lanjut.
                     </p>
                 </div>
 
@@ -102,11 +107,10 @@ export default function PricingSection() {
                                     className="flex-[0_0_100%] min-w-0 sm:flex-[0_0_50%] lg:flex-[0_0_33.333%]"
                                 >
                                     <div
-                                        className={`h-full p-8 rounded-3xl border transition-all duration-300 ${
-                                            selectedIndex === index
-                                                ? 'bg-[#2CBCC4] text-white shadow-lg'
-                                                : 'bg-white hover:shadow-lg'
-                                        }`}
+                                        className={`h-full p-8 rounded-3xl border transition-all duration-300 ${selectedIndex === index
+                                            ? 'bg-[#2CBCC4] text-white shadow-lg'
+                                            : 'bg-white hover:shadow-lg'
+                                            }`}
                                     >
                                         <div className="space-y-6">
                                             <h3 className="text-2xl font-bold">{pkg.title}</h3>
@@ -122,11 +126,10 @@ export default function PricingSection() {
                                                 {pkg.description}
                                             </p>
                                             <Button
-                                                className={`w-full rounded-full ${
-                                                    selectedIndex === index
-                                                        ? 'bg-white text-[#2CBCC4] hover:bg-white/90'
-                                                        : 'bg-[#2CBCC4]/10 hover:bg-[#2CBCC4]/20 text-[#2CBCC4]'
-                                                }`}
+                                                className={`w-full rounded-full ${selectedIndex === index
+                                                    ? 'bg-white text-[#2CBCC4] hover:bg-white/90'
+                                                    : 'bg-[#2CBCC4]/10 hover:bg-[#2CBCC4]/20 text-[#2CBCC4]'
+                                                    }`}
                                             >
                                                 {pkg.buttonText}
                                                 <ArrowRightIcon className="ml-2 h-5 w-5" />
