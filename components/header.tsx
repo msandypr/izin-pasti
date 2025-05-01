@@ -3,6 +3,7 @@ import { Menu, Phone } from "lucide-react";
 import Link from "next/link";
 import { Sheet, SheetClose, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import Image from "next/image";
+import WhatsappLogo from "@/components/etc/WhatsappLogo";
 
 export default function Header() {
   return (
@@ -25,12 +26,17 @@ export default function Header() {
             Tentang Kami
           </Link>
           <Link href="/hubungi-kami" className="text-[#2CBCC4]/90 hover:text-[#2CBCC4] font-medium">
-            Hubungi Kami
+            Kontak
           </Link>
         </nav>
 
         <div className="hidden md:flex items-center gap-4">
-          <Button className="rounded-full blue-gradient"><Phone></Phone>WhatsApp</Button>
+          <Button className="rounded-full blue-gradient">
+            <span className="flex items-center">
+              <WhatsappLogo className="h-5 w-5" />
+            </span>
+            WhatsApp
+          </Button>
         </div>
 
         <Sheet>
