@@ -35,7 +35,7 @@ export default function HeroSection() {
           <div className="relative flex justify-center items-center self-center">
             <div className="absolute -z-10 inset-0 bg-[#2CBCC4]/20 rounded-full blur-3xl opacity-30"></div>
             <Image
-              src="/images/hero-lawyer-1.png"
+              src="/images/hero-section-image-law.png"
               alt="Hero Lawyer"
               width={400}
               height={500}
