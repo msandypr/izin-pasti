@@ -40,6 +40,10 @@ html {
   }
 }
 
+.font-urbanist {
+  font-family: var(--font-urbanist), sans-serif;
+}
+
 .gradient-text {
   @apply bg-gradient-to-r from-[#2CBCC4] to-[#2CBCC4]/80 bg-clip-text text-transparent;
 }
