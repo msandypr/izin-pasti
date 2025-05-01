@@ -28,7 +28,11 @@ export default function ContactSection() {
                             Tim kami siap membantu segala kebutuhan legalitas bisnis Anda. Jadwalkan konsultasi online dengan mudah dan cepat.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 pt-2 justify-center">
-                            <Link href="/contact">
+                            <Link
+                                href="https://wa.me/6285299084723?text=Halo!%20ingin%20berkonsultasi%20blabla"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
                                 <Button size="lg" className="rounded-full blue-gradient">
                                     <CalendarDays className="h-5 w-5" />
                                     Jadwalkan Konsultasi Online
