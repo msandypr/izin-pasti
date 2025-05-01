@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Menu, Phone } from "lucide-react";
+import { Menu } from "lucide-react";
 import Link from "next/link";
 import { Sheet, SheetClose, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import Image from "next/image";
@@ -16,27 +16,31 @@ export default function Header() {
         </div>
 
         <nav className="hidden md:flex items-center gap-6">
-          <Link href="/" className="text-[#2CBCC4]/90 hover:text-[#2CBCC4] font-medium">
+          <Link href="/" className="text-[#2CBCC4]/90 hover:text-[#2CBCC4] font-bold">
             Beranda
           </Link>
-          <Link href="/layanan" className="text-[#2CBCC4]/90 hover:text-[#2CBCC4] font-medium">
+          <Link href="/layanan" className="text-[#2CBCC4]/90 hover:text-[#2CBCC4] font-bold">
             Layanan
           </Link>
-          <Link href="/tentang-kami" className="text-[#2CBCC4]/90 hover:text-[#2CBCC4] font-medium">
+          <Link href="/tentang-kami" className="text-[#2CBCC4]/90 hover:text-[#2CBCC4] font-bold">
             Tentang Kami
           </Link>
-          <Link href="/hubungi-kami" className="text-[#2CBCC4]/90 hover:text-[#2CBCC4] font-medium">
+          <Link href="/hubungi-kami" className="text-[#2CBCC4]/90 hover:text-[#2CBCC4] font-bold">
             Kontak
           </Link>
         </nav>
 
         <div className="hidden md:flex items-center gap-4">
-          <Button className="rounded-full blue-gradient">
-            <span className="flex items-center">
+          <Link
+            href="https://wa.me/6285299084723?text=Halo!%20Saya%20ingin%20berkonsultasi%20terkait%20Layanan%20yang%20ada%20di%20Nusantara%20Legalitasku"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button className="rounded-full blue-gradient">
               <WhatsappLogo className="h-5 w-5" />
-            </span>
-            WhatsApp
-          </Button>
+              WhatsApp
+            </Button>
+          </Link>
         </div>
 
         <Sheet>
@@ -53,28 +57,42 @@ export default function Header() {
                   <Image src="/images/nusantara_legalitasku_logo.png" alt="Nusantara Legalitasku Logo" width={150} height={50} className="h-auto" />
                 </div>
               </SheetHeader>
+              <div className="border-t border-[#2CBCC4]/20"></div>
               <SheetClose asChild>
-                <Link href="/" className="text-[#2CBCC4]/90 hover:text-[#2CBCC4] font-medium text-lg">
+                <Link href="/" className="text-[#2CBCC4]/90 hover:text-[#2CBCC4] font-semibold text-lg">
                   Beranda
                 </Link>
               </SheetClose>
+              <div className="border-t border-[#2CBCC4]/20"></div>
               <SheetClose asChild>
-                <Link href="/layanan" className="text-[#2CBCC4]/90 hover:text-[#2CBCC4] font-medium text-lg">
+                <Link href="/layanan" className="text-[#2CBCC4]/90 hover:text-[#2CBCC4] font-semibold text-lg">
                   Layanan
                 </Link>
               </SheetClose>
+              <div className="border-t border-[#2CBCC4]/20"></div>
               <SheetClose asChild>
-                <Link href="/tentang-kami" className="text-[#2CBCC4]/90 hover:text-[#2CBCC4] font-medium text-lg">
+                <Link href="/tentang-kami" className="text-[#2CBCC4]/90 hover:text-[#2CBCC4] font-semibold text-lg">
                   Tentang Kami
                 </Link>
               </SheetClose>
+              <div className="border-t border-[#2CBCC4]/20"></div>
               <SheetClose asChild>
-                <Link href="/hubungi-kami" className="text-[#2CBCC4]/90 hover:text-[#2CBCC4] font-medium text-lg">
+                <Link href="/hubungi-kami" className="text-[#2CBCC4]/90 hover:text-[#2CBCC4] font-semibold text-lg">
                   Hubungi Kami
                 </Link>
               </SheetClose>
-              <div className="flex flex-col gap-2 mt-4">
-                <Button className="rounded-full blue-gradient"><Phone></Phone>WhatsApp</Button>
+              <div className="border-t border-[#2CBCC4]/20"></div>
+              <div className="flex flex-col gap-2">
+                <Link
+                  href="https://wa.me/6285299084723?text=Halo!%20Saya%20ingin%20berkonsultasi%20terkait%20Layanan%20yang%20ada%20di%20Nusantara%20Legalitasku"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button className="rounded-full blue-gradient w-full flex items-center justify-center">
+                    <WhatsappLogo className="h-5 w-5" />
+                    WhatsApp
+                  </Button>
+                </Link>
               </div>
             </div>
           </SheetContent>
