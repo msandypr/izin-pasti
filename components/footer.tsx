@@ -12,7 +12,7 @@ export default function Footer() {
             <div className="flex items-center gap-2">
               <Image src="/images/nusantara_legalitasku_logo.png" alt="Nusantara Legalitasku Logo" width={150} height={50} className="h-auto" />
             </div>
-            <p className="text-[#2CBCC4]/70">
+            <p className="text-[#2CBCC4]">
               Nusantara Legalitasku, solusi lengkap untuk legalitas dan perlindungan bisnis Anda. Profesional, cepat, dan terpercaya.
             </p>
             <div className="flex gap-4">
@@ -35,22 +35,22 @@ export default function Footer() {
             <h3 className="font-bold text-lg text-[#2CBCC4]">Navigasi</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="text-[#2CBCC4]/70 hover:text-[#2CBCC4]">
+                <Link href="#" className="text-[#2CBCC4] hover:text-[#2CBCC4]/70">
                   Beranda
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-[#2CBCC4]/70 hover:text-[#2CBCC4]">
+                <Link href="#" className="text-[#2CBCC4] hover:text-[#2CBCC4]/70">
                   Layanan
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-[#2CBCC4]/70 hover:text-[#2CBCC4]">
+                <Link href="#" className="text-[#2CBCC4] hover:text-[#2CBCC4]/70">
                   Tentang Kami
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-[#2CBCC4]/70 hover:text-[#2CBCC4]">
+                <Link href="#" className="text-[#2CBCC4] hover:text-[#2CBCC4]/70">
                   Hubungi Kami
                 </Link>
               </li>
@@ -61,22 +61,17 @@ export default function Footer() {
             <h3 className="font-bold text-lg text-[#2CBCC4]">Layanan</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="text-[#2CBCC4]/70 hover:text-[#2CBCC4]">
-                  Perizinan Usaha
+                <Link href="#" className="text-[#2CBCC4] hover:text-[#2CBCC4]/70">
+                  Jasa Legalitas
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-[#2CBCC4]/70 hover:text-[#2CBCC4]">
-                  Pembuatan Dokumen dan Surat
+                <Link href="#" className="text-[#2CBCC4] hover:text-[#2CBCC4]/70">
+                  Jasa Pengacara
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-[#2CBCC4]/70 hover:text-[#2CBCC4]">
-                  Pendaftaran Hak Kekayaan Intelektual
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="text-[#2CBCC4]/70 hover:text-[#2CBCC4]">
+                <Link href="#" className="text-[#2CBCC4] hover:text-[#2CBCC4]/70">
                   Virtual Office
                 </Link>
               </li>
@@ -85,15 +80,17 @@ export default function Footer() {
 
           <div className="space-y-4">
             <h3 className="font-bold text-lg text-[#2CBCC4]">Kontak</h3>
-            <p className="text-[#2CBCC4]/70">
-              Jl. Ngoding Mulu No. 404
+            <p className="text-[#2CBCC4]">
+              Kota Semarang, Kecamatan Pedurungan
               <br />
-              Kota Maya, Indonesia
+              Kelurahan Palebon, Jl. Kalicari Timur I
+              <br />
+              No.5, RT 005, RW 009, Jawa Tengah
             </p>
-            <p className="text-[#2CBCC4]/70">
+            <p className="text-[#2CBCC4]">
               Email: info@nusantaralegalitasku.com
               <br />
-              Telp: +62 813 6969 6969
+              Telp: +62 859 3500 0364
             </p>
           </div>
         </div>
