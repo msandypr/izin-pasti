@@ -8,14 +8,14 @@ export default function ContactSection() {
     return (
         <div className="w-full bg-gradient-to-t from-[#2CBCC4]/10 to-white md:py-24 flex justify-center pb-8" id="contact">
             <div className="container flex justify-center">
-                <div className="w-full max-w-5xl bg-white/90 rounded-2xl shadow-lg overflow-hidden flex flex-col lg:flex-row items-stretch">
+                <div className="w-full max-w-7xl bg-white/90 rounded-2xl shadow-2xl overflow-hidden flex flex-col lg:flex-row items-stretch">
                     {/* Kiri - Gambar Full Height */}
-                    <div className="relative w-full lg:w-1/2 min-h-[220px] md:min-h-[300px] lg:min-h-[340px]">
+                    <div className="relative w-full lg:w-1/2 min-h-[220px] md:min-h-[320px] lg:min-h-[480px]">
                         <Image
-                            src="/images/contact-section-image-law.jpg"
+                            src="/images/contact-section-image-cartoon.png"
                             alt="Customer Support Team"
                             fill
-                            className="object-cover w-full h-full"
+                            className="object-contain w-full h-full"
                             priority
                         />
                     </div>
@@ -29,11 +29,11 @@ export default function ContactSection() {
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 pt-2 justify-center">
                             <Link
-                                href="https://wa.me/6285299084723?text=Halo!%20ingin%20berkonsultasi%20blabla"
+                                href="https://wa.me/6285935000364?text=Halo!%20Saya%20ingin%20Berkonsultasi%20dengan%20Nusantara%20Legalitasku."
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                <Button size="lg" className="rounded-full blue-gradient">
+                                <Button size="lg" className="rounded-full blue-gradient">   
                                     <CalendarDays className="h-5 w-5" />
                                     Jadwalkan Konsultasi Online
                                 </Button>
