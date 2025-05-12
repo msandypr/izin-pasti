@@ -59,7 +59,7 @@ export default function PricingSection() {
         {
             title: "Penanaman Modal Asing (PMA)",
             price: "4.500.000",
-            image: "/images/jasa-legalitas/pendirian-perusahaan.png",
+            image: "/images/jasa-legalitas/pendirian-perusahaan/penanaman-modal-asing.png",
             description: "Layanan profesional untuk mendirikan perusahaan PMA yang sesuai dengan regulasi terbaru.",
             buttonText: "Pesan Sekarang",
             featured: true
