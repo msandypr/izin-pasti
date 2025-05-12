@@ -6,7 +6,7 @@ import ContactSection from "@/components/homepage/contact-section";
 const pendirianPT = [
     {
         title: "PT Perorangan",
-        image: "/images/jasa-legalitas/pendirian-perusahaan/pendirian-pt.png",
+        image: "/images/jasa-legalitas/pendirian-perusahaan/pendirian-pt-2.png",
         price: "Rp. 1.500.000",
         features: [
             "Verifikasi Nama Perusahaan",
@@ -16,7 +16,7 @@ const pendirianPT = [
     },
     {
         title: "PT Persekutuan Modal",
-        image: "/images/jasa-legalitas/pendirian-perusahaan/pendirian-cv.png",
+        image: "/images/jasa-legalitas/pendirian-perusahaan/pendirian-pt.png",
         price: "Rp. 4.500.000",
         features: [
             "Verifikasi Nama Perusahaan",
@@ -65,7 +65,7 @@ export default function PendirianPtPage() {
                                 </ul>
                                 <div className="flex flex-col gap-2 w-full mt-auto">
                                     <a
-                                        href={`https://wa.me/6285299084723?text=Halo!%2C%20Saya%20ingin%20konsultasi%20tentang%20Pendirian%20Perusahaan%20-%20${encodeURIComponent(item.title)}`}
+                                        href={`https://wa.me/6285299084723?text=Halo!%2C%20Saya%20ingin%20konsultasi%20terkait%20Pendirian%20Perusahaan%20-%20${encodeURIComponent(item.title)}`}
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="inline-block px-6 py-2 rounded-full bg-[#2CBCC4] text-white font-semibold hover:bg-[#239ba0] transition text-center flex items-center justify-center gap-2"
