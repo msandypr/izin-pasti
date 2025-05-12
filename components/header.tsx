@@ -1,11 +1,21 @@
+"use client"
 import { Button } from "@/components/ui/button";
-import { Menu } from "lucide-react";
+import { Menu, ChevronDown } from "lucide-react";
 import Link from "next/link";
+import React from "react";
 import { Sheet, SheetClose, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
+import {
+  DropdownMenu,
+  DropdownMenuTrigger,
+  DropdownMenuContent,
+  DropdownMenuItem,
+} from "@/components/ui/dropdown-menu";
 import Image from "next/image";
 import WhatsappLogo from "@/components/etc/WhatsappLogo";
 
 export default function Header() {
+  const [layananOpen, setLayananOpen] = React.useState(false);
+
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-gradient-to-b from-[#2CBCC4]/10 to-white backdrop-blur">
       <div className="container flex h-16 items-center justify-between">
@@ -19,9 +29,33 @@ export default function Header() {
           <Link href="/" className="text-[#2CBCC4]/90 hover:text-[#2CBCC4] font-bold">
             Beranda
           </Link>
-          <Link href="/layanan" className="text-[#2CBCC4]/90 hover:text-[#2CBCC4] font-bold">
-            Layanan
-          </Link>
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <button className="text-[#2CBCC4]/90 hover:text-[#2CBCC4] font-bold flex items-center gap-1 focus:outline-none">
+                Layanan
+                <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align="start" className="bg-white rounded-xl shadow-lg border border-[#2CBCC4]/10 mt-2 min-w-[200px] z-50">
+              <DropdownMenuItem asChild>
+                <Link href="/layanan/jasa-legalitas" className="block px-6 py-3 text-[#2CBCC4]/90 hover:bg-[#2CBCC4]/10 hover:text-[#2CBCC4] font-semibold rounded-t-xl transition">
+                  Jasa Legalitas
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link href="/layanan/jasa-pengacara" className="block px-6 py-3 text-[#2CBCC4]/90 hover:bg-[#2CBCC4]/10 hover:text-[#2CBCC4] font-semibold transition">
+                  Jasa Pengacara
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link href="/layanan/virtual-office" className="block px-6 py-3 text-[#2CBCC4]/90 hover:bg-[#2CBCC4]/10 hover:text-[#2CBCC4] font-semibold rounded-b-xl transition">
+                  Virtual Office
+                </Link>
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
           <Link href="/tentang-kami" className="text-[#2CBCC4]/90 hover:text-[#2CBCC4] font-bold">
             Tentang Kami
           </Link>
@@ -64,11 +98,38 @@ export default function Header() {
                 </Link>
               </SheetClose>
               <div className="border-t border-[#2CBCC4]/20"></div>
-              <SheetClose asChild>
-                <Link href="/layanan" className="text-[#2CBCC4]/90 hover:text-[#2CBCC4] font-semibold text-lg">
+              <div>
+                <span
+                  className="flex items-center text-[#2CBCC4]/90 hover:text-[#2CBCC4] font-semibold text-lg cursor-pointer select-none py-2"
+                  onClick={() => setLayananOpen((prev) => !prev)}
+                  tabIndex={0}
+                  onKeyDown={e => { if (e.key === "Enter" || e.key === " ") setLayananOpen(prev => !prev); }}
+                  role="button"
+                  aria-expanded={layananOpen}
+                >
                   Layanan
-                </Link>
-              </SheetClose>
+                  <ChevronDown className={`ml-2 transition-transform ${layananOpen ? "rotate-180" : ""}`} size={18} />
+                </span>
+                {layananOpen && (
+                  <div className="ml-4 flex flex-col gap-2 mt-2">
+                    <SheetClose asChild>
+                      <Link href="/layanan/jasa-legalitas" className="text-[#2CBCC4]/90 hover:text-[#2CBCC4] font-semibold py-1">
+                        Jasa Legalitas
+                      </Link>
+                    </SheetClose>
+                    <SheetClose asChild>
+                      <Link href="/layanan/jasa-pengacara" className="text-[#2CBCC4]/90 hover:text-[#2CBCC4] font-semibold py-1">
+                        Jasa Pengacara
+                      </Link>
+                    </SheetClose>
+                    <SheetClose asChild>
+                      <Link href="/layanan/virtual-office" className="text-[#2CBCC4]/90 hover:text-[#2CBCC4] font-semibold py-1">
+                        Virtual Office
+                      </Link>
+                    </SheetClose>
+                  </div>
+                )}
+              </div>
               <div className="border-t border-[#2CBCC4]/20"></div>
               <SheetClose asChild>
                 <Link href="/tentang-kami" className="text-[#2CBCC4]/90 hover:text-[#2CBCC4] font-semibold text-lg">

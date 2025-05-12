@@ -10,10 +10,10 @@ export default function ContactSection() {
             <div className="container flex justify-center">
                 <div className="w-full max-w-7xl bg-white/90 rounded-2xl shadow-2xl overflow-hidden flex flex-col lg:flex-row items-stretch">
                     {/* Kiri - Gambar Full Height */}
-                    <div className="relative w-full lg:w-1/2 min-h-[220px] md:min-h-[320px] lg:min-h-[480px]">
+                    <div className="relative w-full lg:w-1/2 min-h-[220px] md:min-h-[280px] lg:min-h-[420px]">
                         <Image
-                            src="/images/contact-section-image-cartoon.png"
-                            alt="Customer Support Team"
+                            src="/images/contact-section.png"
+                            alt="Contact Nusantara Legalitasku"
                             fill
                             className="object-contain w-full h-full"
                             priority

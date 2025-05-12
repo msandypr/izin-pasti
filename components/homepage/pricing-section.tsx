@@ -52,12 +52,14 @@ export default function PricingSection() {
         {
             title: "Pendirian Perusahaan",
             price: "4.000.000",
+            image: "/images/jasa-legalitas/pendirian-perusahaan.png",
             description: "Membantu Anda mendirikan perusahaan dengan proses cepat, transparan, dan bebas repot.",
             buttonText: "Pesan Sekarang"
         },
         {
             title: "Penanaman Modal Asing (PMA)",
             price: "4.500.000",
+            image: "/images/jasa-legalitas/pendirian-perusahaan.png",
             description: "Layanan profesional untuk mendirikan perusahaan PMA yang sesuai dengan regulasi terbaru.",
             buttonText: "Pesan Sekarang",
             featured: true
@@ -65,18 +67,21 @@ export default function PricingSection() {
         {
             title: "Pembuatan Perjanjian",
             price: "500.000",
+            image: "/images/jasa-legalitas/pendirian-perusahaan.png",
             description: "Perjanjian Anda akan dirancang untuk melindungi hak dan kewajiban secara maksimal.",
             buttonText: "Pesan Sekarang"
         },
         {
             title: "Perizinan Usaha",
             price: "3.000.000",
+            image: "/images/jasa-legalitas/pendirian-perusahaan.png",
             description: "Pengurusan berbagai izin usaha sesuai dengan regulasi yang berlaku.",
             buttonText: "Pesan Sekarang"
         },
         {
             title: "Konsultasi Hukum",
             price: "750.000",
+            image: "/images/jasa-legalitas/pendirian-perusahaan.png",
             description: "Konsultasi dengan tim ahli hukum kami untuk berbagai masalah legal bisnis.",
             buttonText: "Pesan Sekarang"
         }
@@ -94,7 +99,7 @@ export default function PricingSection() {
                         Pilih Layanan yang <span className="gradient-text">Anda Butuhkan</span>
                     </h2>
                     <p className="text-md text-black">
-                    Temukan layanan yang paling sesuai untuk kebutuhan bisnis Anda dan hubungi kami untuk konsultasi lebih lanjut.
+                        Temukan layanan yang paling sesuai untuk kebutuhan bisnis Anda dan hubungi kami untuk konsultasi lebih lanjut.
                     </p>
                 </div>
 
@@ -104,48 +109,44 @@ export default function PricingSection() {
                             {packages.map((pkg, index) => (
                                 <div
                                     key={index}
-                                    className="flex-[0_0_100%] min-w-0 sm:flex-[0_0_50%] lg:flex-[0_0_33.333%]"
-                                >
+                                    className="flex-[0_0_100%] min-w-0 sm:flex-[0_0_50%] lg:flex-[0_0_33.333%]">
                                     <div
-                                        className={`h-full p-8 rounded-3xl border transition-all duration-300 ${selectedIndex === index
-                                            ? 'bg-[#2CBCC4] text-white shadow-lg'
-                                            : 'bg-white hover:shadow-lg'
-                                            }`}
-                                    >
-                                        <div className="space-y-6">
-                                            <h3 className="text-2xl font-bold">{pkg.title}</h3>
-                                            <div className="space-y-2">
-                                                <p className={`text-sm ${selectedIndex === index ? 'text-white/70' : 'text-[#2CBCC4]'}`}>
-                                                    Mulai Dari
-                                                </p>
-                                                <div className="flex items-baseline">
-                                                    <span className="text-4xl font-bold">Rp. {pkg.price}</span>
-                                                </div>
-                                            </div>
-                                            <p className={selectedIndex === index ? 'text-white/90' : 'text-gray-600'}>
-                                                {pkg.description}
-                                            </p>
-                                            <Button
-                                                className={`w-full rounded-full ${selectedIndex === index
-                                                    ? 'bg-white text-[#2CBCC4] hover:bg-white/90'
-                                                    : 'bg-[#2CBCC4]/10 hover:bg-[#2CBCC4]/20 text-[#2CBCC4]'
-                                                    }`}
-                                            >
-                                                {pkg.buttonText}
-                                                <ArrowRightIcon className="ml-2 h-5 w-5" />
-                                            </Button>
-                                        </div>
+                                        className={
+                                            `rounded-2xl p-6 flex flex-col items-center h-full transition-all duration-300
+                                            ${selectedIndex === index
+                                                ? "scale-100 z-10 bg-[#2CBCC4] border-4 border-[#2CBCC4] shadow-2xl"
+                                                : "scale-75 bg-white border-2 border-[#2CBCC4]/50 shadow-lg"
+                                            }`
+                                        }>
+                                        <h2 className={`text-2xl font-bold mb-2 text-center ${selectedIndex === index ? "text-white" : "text-[#2CBCC4]"}`}>{pkg.title}</h2>
+                                        {pkg.image && (
+                                            <img
+                                                src={pkg.image}
+                                                alt={pkg.title}
+                                                className="w-full aspect-square object-cover rounded-xl mb-4"
+                                            />
+                                        )}
+                                        <span className={`text-4xl font-bold mb-2 ${selectedIndex === index ? "text-white" : "text-[#2CBCC4]"}`}>Rp. {pkg.price}</span>
+                                        <p className={`text-sm text-center mb-4 ${selectedIndex === index ? "text-white/90" : "text-black"}`}>{pkg.description}</p>
+                                        <Button
+                                            className={`mt-auto w-full rounded-full font-semibold transition
+                                                 ${selectedIndex === index
+                                                    ? "bg-white text-[#2CBCC4] hover:bg-white/90"
+                                                    : "bg-[#2CBCC4] text-white hover:bg-[#239ba0]"
+                                                }`}>
+                                            {pkg.buttonText}
+                                            <ArrowRightIcon className="ml-2 h-5 w-5" />
+                                        </Button>
                                     </div>
                                 </div>
                             ))}
                         </div>
                     </div>
-
                     <Button
                         onClick={scrollPrev}
                         variant="outline"
                         size="icon"
-                        className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 rounded-full hidden md:flex">
+                        className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 rounded-full">
                         <ArrowLeft className="h-4 w-4" />
                     </Button>
 
@@ -153,7 +154,7 @@ export default function PricingSection() {
                         onClick={scrollNext}
                         variant="outline"
                         size="icon"
-                        className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 rounded-full hidden md:flex">
+                        className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 rounded-full">
                         <ArrowRight className="h-4 w-4" />
                     </Button>
                 </div>
