@@ -68,7 +68,7 @@ export default function PendirianPtPage() {
                                         href={`https://wa.me/6285299084723?text=Halo!%2C%20Saya%20ingin%20konsultasi%20terkait%20Pendirian%20Perusahaan%20-%20${encodeURIComponent(item.title)}`}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="inline-block px-6 py-2 rounded-full bg-[#2CBCC4] text-white font-semibold hover:bg-[#239ba0] transition text-center flex items-center justify-center gap-2"
+                                        className="flex px-6 py-2 rounded-full bg-[#2CBCC4] text-white font-semibold hover:bg-[#239ba0] transition text-center items-center justify-center gap-2"
                                     >
                                         <WhatsappLogo className="h-5 w-5" style={{ fill: "white" }} />
                                         Konsultasikan Sekarang
