@@ -19,7 +19,7 @@ const subLayananPendirian = [
         title: "Paket Pendirian Firma",
         image: "/images/jasa-legalitas/pendirian-perusahaan/pendirian-firma.png",
         subtitle: "Bantuan legal untuk pendirian Firma secara mudah dan cepat.",
-        link: "/layanan/jasa-legalitas/paket-pendirian-firma"
+        link: "/layanan/jasa-legalitas/pendirian-perusahaan/pendirian-firma"
     },
     {
         title: "Persekutuan Perdata",

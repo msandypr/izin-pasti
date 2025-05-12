@@ -4,7 +4,7 @@ import Link from "next/link";
 import ContactSection from "@/components/homepage/contact-section";
 import CardPendirian from "@/components/layanan/card-pendirian";
 
-export default function PendirianCvPage() {
+export default function PendirianFirmaPage() {
     return (
         <>
             <section className="w-full pt-4 pb-8 md:pt-8 md:pb-16 lg:pb-24 bg-gradient-to-t from-[#2CBCC4]/10 to-white">
@@ -17,25 +17,23 @@ export default function PendirianCvPage() {
                             </Link>
                         </div>
                         <h1 className="text-3xl md:text-4xl font-bold py-4 text-center">
-                            Paket Pendirian <span className="gradient-text">Commanditaire Vennootschap (CV)</span>
+                            Paket Pendirian <span className="gradient-text">Firma</span>
                         </h1>
                         <p className="text-md text-black text-center">
-                            Kami siap membantu segala kebutuhan Pendirian CV Anda dengan layanan profesional dan terpercaya.
+                            Kami siap membantu segala kebutuhan Pendirian Firma Anda dengan layanan profesional dan terpercaya.
                         </p>
                     </div>
                     <CardPendirian
-                        title="Pendirian CV"
-                        price="Rp. 2.500.000"
-                        image="/images/jasa-legalitas/pendirian-perusahaan/pendirian-cv.png"
+                        title="Pendirian Firma"
+                        price="Rp. 3.500.000"
+                        image="/images/jasa-legalitas/pendirian-perusahaan/pendirian-firma.png"
                         features={[
-                            "Verifikasi Nama Perusahaan",
-                            "Konsultasi Proses Pendirian Perusahaan",
-                            "Penyusunan Akta Perusahaan",
-                            "Akta dan Surat Keputusan Kemenkumham",
-                            "Pembuatan NPWP dan Surat Keterangan Terdaftar (SKT)",
-                            "Nomor Induk Berusaha (NIB), Sertifikat Standar, dan PKKPR**",
+                            "Akta Pendirian dan Surat Keputusan Kemenkumham",
+                            "NPWP dan Surat Keterangan Terdaftar (SKT)",
+                            "Nomor Induk Berusaha (NIB) atau Izin Usaha",
+                            "SK Pendirian",
                         ]}
-                        note="(*Keterangan: Sertifikat Standar dan PKKPR berlaku sesuai ketentuan yang dibutuhkan.)"
+                        note=""
                         ctaText="Konsultasikan Sekarang"
                         onCtaClick={() => window.open("https://wa.me/6285299084723?text=Halo! Saya ingin konsultasi terkait Pendirian CV", "_blank")}
                     />
@@ -44,12 +42,13 @@ export default function PendirianCvPage() {
             <section className="w-full pt-4 pb-8 md:pt-8 md:pb-16 lg:pb-24 bg-gradient-to-b from-[#2CBCC4]/10 to-white">
                 <div className="container mx-auto px-4 flex justify-center">
                     <div className="w-full max-w-2xl">
-                        <h2 className="text-3xl font-bold text-center text-[#2CBCC4] mb-8">Persyaratan Pendirian CV</h2>
+                        <h2 className="text-3xl font-bold text-center text-[#2CBCC4] mb-8">Persyaratan Pendirian Firma</h2>
                         <div className="flex flex-col gap-6">
                             {[
-                                "Fotocopy Identitas Diri (KTP) untuk Persero Aktif dan Pasif",
-                                "Fotocopy Nomor Pokok Wajib Pajak (NPWP) untuk Persero Aktif dan Pasif",
-                                "Stempel Perusahaan"
+                                "KTP dan NPWP Sekutu Firma",
+                                "Informasi Kontak Perusahaan (Nomor Telepon dan Email)",
+                                "Formulir Pendaftaran Pendirian Firma",
+                                "Pengesahan dengan Tanda Tangan Notaris"
                             ].map((requirement, index) => (
                                 <div key={index} className="flex items-center gap-4 p-4 bg-white rounded-xl shadow-md">
                                     <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 bg-[#2CBCC4] text-white font-bold rounded-full">
