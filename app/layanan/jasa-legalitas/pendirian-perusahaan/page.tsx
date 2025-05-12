@@ -88,22 +88,14 @@ export default function PendirianPerusahaanPage() {
                                     className="w-full aspect-square object-cover rounded-xl mb-4"
                                 />
                                 <p className="text-black text-sm text-center mb-4">{item.subtitle}</p>
-                                <div className="flex flex-col gap-2 w-full">
+                                <div className="flex flex-col gap-2 w-full mt-auto">
                                     <a
                                         href={item.link}
                                         className="inline-block px-6 py-2 rounded-full bg-[#2CBCC4] text-white font-semibold hover:bg-[#239ba0] transition text-center"
                                     >
                                         Lihat Layanan
                                     </a>
-                                    <a
-                                        href="https://wa.me/6285299084723?text=Halo%20saya%20ingin%20konsultasi%20legalitas"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="w-full sm:w-auto"
-                                    >
-
-                                    </a>
-                                    <a
+                                    {/* <a
                                         href={`https://wa.me/6285299084723?text=Halo%2C%20saya%20ingin%20konsultasi%20tentang%20Pendirian%20Perusahaan%20-%20${encodeURIComponent(item.title)}`}
                                         target="_blank"
                                         rel="noopener noreferrer"
@@ -111,7 +103,7 @@ export default function PendirianPerusahaanPage() {
                                     >
                                         <WhatsappLogo className="h-5 w-5" style={{ fill: "#2CBCC4" }} />
                                         Konsultasikan Sekarang
-                                    </a>
+                                    </a> */}
                                 </div>
                             </div>
                         ))}
