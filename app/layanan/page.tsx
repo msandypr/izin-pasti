@@ -1,6 +1,5 @@
 import React from "react";
 import Breadcrumb from "@/components/breadcrumb";
-import ContactSection from "@/components/homepage/contact-section";
 
 const layanan = [
   {
@@ -64,7 +63,6 @@ export default function LayananPage() {
           </div>
         </div>
       </section >
-      <ContactSection />
     </>
   );
 }
