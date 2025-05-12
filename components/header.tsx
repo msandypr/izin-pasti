@@ -38,7 +38,7 @@ export default function Header() {
           >
             <Button className="rounded-full blue-gradient">
               <WhatsappLogo className="h-5 w-5" />
-              WhatsApp
+              Konsultasi Sekarang!
             </Button>
           </Link>
         </div>
