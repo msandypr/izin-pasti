@@ -90,7 +90,7 @@ export default function PendirianPtPage() {
                                 "Stempel Perusahaan"
                             ].map((requirement, index) => (
                                 <div key={index} className="flex items-center gap-4 p-4 bg-white rounded-xl shadow-md">
-                                    <div className="flex items-center justify-center w-12 h-12 bg-[#2CBCC4] text-white font-bold rounded-full">
+                                    <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 bg-[#2CBCC4] text-white font-bold rounded-full">
                                         {index + 1}
                                     </div>
                                     <p className="text-black text-lg">{requirement}</p>

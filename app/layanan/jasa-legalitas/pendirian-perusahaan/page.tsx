@@ -13,7 +13,7 @@ const subLayananPendirian = [
         title: "Paket Pendirian CV",
         image: "/images/jasa-legalitas/pendirian-perusahaan/pendirian-cv.png",
         subtitle: "Layanan profesional untuk pendirian Commanditaire Vennootschap (CV).",
-        link: "/layanan/jasa-legalitas/pendirian-perusahaan/paket-pendirian-cv"
+        link: "/layanan/jasa-legalitas/pendirian-perusahaan/pendirian-cv"
     },
     {
         title: "Paket Pendirian Firma",
