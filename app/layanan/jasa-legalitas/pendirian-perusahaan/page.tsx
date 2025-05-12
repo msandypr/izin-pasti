@@ -1,5 +1,5 @@
 import WhatsappLogo from "@/components/etc/WhatsappLogo";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, Eye } from "lucide-react";
 import Link from "next/link";
 
 const subLayananPendirian = [
@@ -91,8 +91,9 @@ export default function PendirianPerusahaanPage() {
                                 <div className="flex flex-col gap-2 w-full mt-auto">
                                     <a
                                         href={item.link}
-                                        className="inline-block px-6 py-2 rounded-full bg-[#2CBCC4] text-white font-semibold hover:bg-[#239ba0] transition text-center"
+                                        className="flex px-6 py-2 rounded-full bg-[#2CBCC4] text-white font-semibold hover:bg-[#239ba0] transition text-center items-center justify-center gap-2"
                                     >
+                                        <Eye className="h-5 w-5" />
                                         Lihat Layanan
                                     </a>
                                     {/* <a

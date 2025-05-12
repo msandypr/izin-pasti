@@ -1,3 +1,5 @@
+import { Eye } from "lucide-react";
+
 const jasaLegalitas = [
   {
     title: "Pendirian Perusahaan",
@@ -50,7 +52,7 @@ export default function JasaLegalitasPage() {
         <div className="container mx-auto px-4">
           <div className="flex flex-col items-center justify-center py-10 md:py-16">
             <h1 className="text-3xl md:text-4xl font-bold py-4 text-center">
-              Pilihan <span className="gradient-text">Jasa Legalitas</span> untuk <span className="gradient-text">Bisnis Anda</span>
+              Melayani <span className="gradient-text">Jasa Legalitas</span> untuk <span className="gradient-text">Bisnis Anda</span>
             </h1>
             <p className="text-md text-black text-center">
               Kami siap membantu segala kebutuhan legalitas perusahaan Anda dengan layanan profesional dan terpercaya.
@@ -66,12 +68,15 @@ export default function JasaLegalitasPage() {
                   className="w-full aspect-square object-cover rounded-xl mb-4"
                 />
                 <p className="text-black text-sm text-center mb-4">{item.subtitle}</p>
-                <a
-                  href={item.link}
-                  className="mt-auto inline-block px-6 py-2 rounded-full bg-[#2CBCC4] text-white font-semibold hover:bg-[#239ba0] transition"
-                >
-                  Lihat Layanan
-                </a>
+                <div className="mt-auto w-full">
+                  <a
+                    href={item.link}
+                    className="flex px-6 py-2 rounded-full bg-[#2CBCC4] text-white font-semibold hover:bg-[#239ba0] transition text-center items-center justify-center gap-2"
+                  >
+                    <Eye className="h-5 w-5" />
+                    Lihat Layanan
+                  </a>
+                </div>
               </div>
             ))}
           </div>
