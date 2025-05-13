@@ -37,7 +37,7 @@ export default function PendirianCvPage() {
                         ]}
                         note="(*Keterangan: Sertifikat Standar dan PKKPR berlaku sesuai ketentuan yang dibutuhkan.)"
                         ctaText="Konsultasikan Sekarang"
-                        onCtaClick={() => window.open("https://wa.me/6285299084723?text=Halo! Saya ingin konsultasi terkait Pendirian CV", "_blank")}
+                        onCtaClick={() => window.open("https://wa.me/6285935000364?text=Halo! Saya ingin konsultasi terkait Pendirian CV", "_blank")}
                     />
                 </div>
             </section>

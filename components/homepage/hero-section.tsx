@@ -38,7 +38,7 @@ export default function HeroSection() {
                 </Button>
               </Link>
               <a
-                href="https://wa.me/6285299084723?text=Halo%20saya%20ingin%20konsultasi%20legalitas"
+                href="https://wa.me/6285935000364?text=Halo!%20Saya%20ingin%20Berkonsultasi%20dengan%20Nusantara%20Legalitasku."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto"
