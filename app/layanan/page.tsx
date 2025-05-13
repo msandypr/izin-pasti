@@ -3,19 +3,19 @@ import React from "react";
 const layanan = [
   {
     title: "Jasa Legalitas",
-    image: "/images/layanan-jasa-legalitas.png",
+    image: "/images/layanan/jasa-legalitas.png",
     link: "/layanan/jasa-legalitas",
     subtitle: "Urus dokumen dan perizinan bisnis mudah dan cepat."
   },
   {
     title: "Jasa Pengacara",
-    image: "/images/layanan-jasa-pengacara.png",
+    image: "/images/layanan/jasa-pengacara.png",
     link: "/layanan/jasa-pengacara",
     subtitle: "Solusi hukum profesional untuk perlindungan hak Anda."
   },
   {
     title: "Virtual Office",
-    image: "/images/layanan-virtual-office.png",
+    image: "/images/layanan/virtual-office.png",
     link: "/layanan/virtual-office",
     subtitle: "Alamat bisnis virtual dan layanan kantor tanpa sewa mahal."
   }
@@ -38,7 +38,7 @@ export default function LayananPage() {
             <div key={idx} className="bg-white rounded-2xl shadow p-6 border border-[#2CBCC4]/10 flex flex-col items-center">
               <h2 className="text-2xl font-bold text-[#2CBCC4] mb-2 text-center">{item.title}</h2>
               <img
-                // src={item.image}
+                src={item.image}
                 alt={item.title}
                 className="w-full aspect-square object-cover rounded-xl mb-4"
               />
