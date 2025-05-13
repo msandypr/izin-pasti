@@ -37,7 +37,7 @@ const subLayananPendirian = [
         title: "Pendirian Yayasan",
         image: "/images/jasa-legalitas/pendirian-perusahaan/pendirian-yayasan.png",
         subtitle: "Proses pendirian Yayasan yang legal dan terpercaya sesuai aturan hukum.",
-        link: "#"
+        link: "/layanan/jasa-legalitas/pendirian-perusahaan/pendirian-yayasan"
     },
     {
         title: "Pendirian Koperasi",
