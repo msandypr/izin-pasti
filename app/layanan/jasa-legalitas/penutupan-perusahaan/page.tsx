@@ -25,59 +25,64 @@ const penutupanPerusahaan = [
 
 const faqs = [
     {
-      id: 'pt',
-      title: 'Syarat Penutupan PT',
-      content: (
-        <ol className="list-none list-inside space-y-2 text-sm text-justify md:text-base text-black">
-          <li><strong>Rapat Umum Pemegang Saham (RUPS)</strong>: Pemegang saham diwajibkan mengadakan RUPS untuk mengambil keputusan mengenai pembubaran perusahaan. Keputusan rapat harus dicatat dalam berita acara dan disahkan oleh notaris. Pembubaran ini biasanya dilakukan jika perusahaan berhenti beroperasi, mengalami kebangkrutan, atau karena alasan bisnis lainnya.</li>
-          <li><strong>Pembentukan Tim Likuidator</strong>:  Setelah keputusan pembubaran dibuat, perusahaan wajib menunjuk likuidator untuk menyelesaikan urusan kewajiban dan aset. Likuidator bertanggung jawab atas pelikuidasian aset, pelunasan utang, serta pemenuhan hak karyawan dan kreditur.</li>
-          <li><strong>Pengumuman Pembubaran</strong>: Likuidator harus mengumumkan pembubaran perusahaan melalui surat kabar dan Berita Negara Republik Indonesia (BNRI) dalam waktu 30 hari setelah keputusan RUPS.</li>
-          <li><strong>Pelunasan Kewajiban</strong>: Likuidator menyelesaikan seluruh kewajiban perusahaan, termasuk pembayaran utang kepada kreditur, kewajiban perpajakan, dan hak-hak karyawan. Sisa aset yang ada akan dibagikan kepada pemegang saham sesuai proporsi kepemilikan saham.</li>
-          <li><strong>Penyampaian Laporan Likuidasi</strong>: Setelah proses likuidasi selesai, likuidator harus menyusun laporan keuangan yang menjelaskan rincian pelunasan kewajiban dan pembubaran perusahaan. Laporan ini akan disampaikan kepada RUPS untuk mendapatkan persetujuan.</li>
-          <li><strong>Penghapusan dari Daftar Perseroan</strong>: Setelah laporan likuidasi disetujui, perusahaan harus mengajukan permohonan ke Kementerian Hukum dan HAM untuk menghapus status badan hukum. Kementerian akan menerbitkan keputusan resmi tentang pembubaran perusahaan dan pencabutan status badan hukum.</li>
-          <li><strong>Pelaporan ke Instansi Lain</strong>: Penutupan perusahaan juga harus dilaporkan ke instansi terkait, seperti Direktorat Jenderal Pajak (DJP), BPJS Ketenagakerjaan, dan BPJS Kesehatan, untuk menonaktifkan NPWP serta kepesertaan BPJS.</li>
-          <li><strong>Penyelesaian Pajak</strong>: Sebelum perusahaan ditutup, seluruh kewajiban pajak harus dilunasi, termasuk pengajuan laporan pajak terakhir. Pengajuan penutupan NPWP juga harus dilakukan di kantor pajak.</li>
-          <li><strong>Dokumentasi Penutupan</strong>: Semua dokumen terkait proses penutupan perusahaan, seperti berita acara RUPS, laporan likuidasi, surat dari Kementerian Hukum dan HAM, serta dokumen perpajakan, harus disimpan sebagai arsip resmi perusahaan.</li>
-        </ol>
-      ),
+        id: 'pt',
+        title: 'Syarat Penutupan PT',
+        content: (
+            <ol className="list-none list-inside space-y-2 text-sm text-justify md:text-base text-black">
+                <li><strong>Rapat Umum Pemegang Saham (RUPS)</strong>: Pemegang saham diwajibkan mengadakan RUPS untuk mengambil keputusan mengenai pembubaran perusahaan. Keputusan rapat harus dicatat dalam berita acara dan disahkan oleh notaris. Pembubaran ini biasanya dilakukan jika perusahaan berhenti beroperasi, mengalami kebangkrutan, atau karena alasan bisnis lainnya.</li>
+                <li><strong>Pembentukan Tim Likuidator</strong>:  Setelah keputusan pembubaran dibuat, perusahaan wajib menunjuk likuidator untuk menyelesaikan urusan kewajiban dan aset. Likuidator bertanggung jawab atas pelikuidasian aset, pelunasan utang, serta pemenuhan hak karyawan dan kreditur.</li>
+                <li><strong>Pengumuman Pembubaran</strong>: Likuidator harus mengumumkan pembubaran perusahaan melalui surat kabar dan Berita Negara Republik Indonesia (BNRI) dalam waktu 30 hari setelah keputusan RUPS.</li>
+                <li><strong>Pelunasan Kewajiban</strong>: Likuidator menyelesaikan seluruh kewajiban perusahaan, termasuk pembayaran utang kepada kreditur, kewajiban perpajakan, dan hak-hak karyawan. Sisa aset yang ada akan dibagikan kepada pemegang saham sesuai proporsi kepemilikan saham.</li>
+                <li><strong>Penyampaian Laporan Likuidasi</strong>: Setelah proses likuidasi selesai, likuidator harus menyusun laporan keuangan yang menjelaskan rincian pelunasan kewajiban dan pembubaran perusahaan. Laporan ini akan disampaikan kepada RUPS untuk mendapatkan persetujuan.</li>
+                <li><strong>Penghapusan dari Daftar Perseroan</strong>: Setelah laporan likuidasi disetujui, perusahaan harus mengajukan permohonan ke Kementerian Hukum dan HAM untuk menghapus status badan hukum. Kementerian akan menerbitkan keputusan resmi tentang pembubaran perusahaan dan pencabutan status badan hukum.</li>
+                <li><strong>Pelaporan ke Instansi Lain</strong>: Penutupan perusahaan juga harus dilaporkan ke instansi terkait, seperti Direktorat Jenderal Pajak (DJP), BPJS Ketenagakerjaan, dan BPJS Kesehatan, untuk menonaktifkan NPWP serta kepesertaan BPJS.</li>
+                <li><strong>Penyelesaian Pajak</strong>: Sebelum perusahaan ditutup, seluruh kewajiban pajak harus dilunasi, termasuk pengajuan laporan pajak terakhir. Pengajuan penutupan NPWP juga harus dilakukan di kantor pajak.</li>
+                <li><strong>Dokumentasi Penutupan</strong>: Semua dokumen terkait proses penutupan perusahaan, seperti berita acara RUPS, laporan likuidasi, surat dari Kementerian Hukum dan HAM, serta dokumen perpajakan, harus disimpan sebagai arsip resmi perusahaan.</li>
+            </ol>
+        ),
     },
     {
-      id: 'cv',
-      title: 'Syarat Penutupan CV',
-      content: (
-        <ol className="list-none list-inside space-y-2 text-sm text-justify md:text-base text-black">
-          <li><strong>Kesepakatan di Antara Para Sekutu</strong>: Penutupan CV harus didasarkan pada persetujuan bersama dari seluruh sekutu aktif dan pasif melalui rapat internal. Keputusan ini biasanya diambil karena berbagai alasan, seperti berakhirnya masa perjanjian, kondisi ekonomi yang sulit, atau kendala operasional lainnya.</li>
-          <li><strong>Penyelesaian Kewajiban kepada Kreditur</strong>: CV wajib menyelesaikan semua kewajiban finansialnya, termasuk pelunasan utang kepada kreditur. Proses penutupan tidak dapat dilanjutkan jika masih ada utang atau tanggungan yang belum diselesaikan.</li>
-          <li><strong>Pemenuhan Hak Karyawan</strong>: Hak-hak karyawan, seperti gaji tertunda, pesangon, atau kompensasi lain yang diatur dalam perjanjian kerja, harus dilunasi sepenuhnya sebelum proses penutupan selesai.</li>
-          <li><strong>Pengumuman Pembubaran</strong>: Meskipun tidak diwajibkan secara hukum, disarankan untuk mengumumkan pembubaran CV melalui media atau surat kabar. Hal ini bertujuan agar pihak ketiga, termasuk kreditur, mengetahui bahwa CV sedang menjalani proses pembubaran.</li>
-          <li><strong>Pengurusan Kewajiban Perpajakan</strong>: Semua kewajiban pajak CV harus diselesaikan, termasuk pengajuan laporan pajak terakhir. Setelahnya, CV perlu mengajukan permohonan penutupan NPWP ke kantor pajak sebagai bagian dari proses administrasi.</li>
-          <li><strong>Penghapusan dari Daftar Badan Usaha</strong>: Jika CV terdaftar dalam Sistem Administrasi Badan Usaha (SABU), penghapusan dari daftar perusahaan harus diajukan ke instansi terkait, seperti Kantor Perdagangan atau Kantor Wilayah Hukum dan HAM, untuk memastikan CV secara resmi tidak lagi aktif sebagai badan usaha.</li>
-          <li><strong>Pembagian Sisa Aset</strong>: Apabila masih terdapat sisa aset setelah semua kewajiban terpenuhi, aset tersebut harus dibagi di antara sekutu berdasarkan kesepakatan yang telah ditetapkan dalam perjanjian pendirian CV.</li>
-          <li><strong>Penyimpanan Dokumentasi Penutupan</strong>: Semua dokumen terkait penutupan, seperti laporan pelunasan utang, pengumuman pembubaran, dan surat resmi dari kantor pajak, harus disimpan sebagai arsip untuk keperluan di masa mendatang.</li>
-          <li><strong>Pemberitahuan kepada Instansi Terkait</strong>: Instansi yang terkait dengan operasional CV, seperti BPJS, perlu diberi notifikasi mengenai penutupan untuk menonaktifkan keanggotaan dan menghentikan kewajiban administrasi atau pembayaran bulanan.</li>
-        </ol>
-      ),
+        id: 'cv',
+        title: 'Syarat Penutupan CV',
+        content: (
+            <ol className="list-none list-inside space-y-2 text-sm text-justify md:text-base text-black">
+                <li><strong>Kesepakatan di Antara Para Sekutu</strong>: Penutupan CV harus didasarkan pada persetujuan bersama dari seluruh sekutu aktif dan pasif melalui rapat internal. Keputusan ini biasanya diambil karena berbagai alasan, seperti berakhirnya masa perjanjian, kondisi ekonomi yang sulit, atau kendala operasional lainnya.</li>
+                <li><strong>Penyelesaian Kewajiban kepada Kreditur</strong>: CV wajib menyelesaikan semua kewajiban finansialnya, termasuk pelunasan utang kepada kreditur. Proses penutupan tidak dapat dilanjutkan jika masih ada utang atau tanggungan yang belum diselesaikan.</li>
+                <li><strong>Pemenuhan Hak Karyawan</strong>: Hak-hak karyawan, seperti gaji tertunda, pesangon, atau kompensasi lain yang diatur dalam perjanjian kerja, harus dilunasi sepenuhnya sebelum proses penutupan selesai.</li>
+                <li><strong>Pengumuman Pembubaran</strong>: Meskipun tidak diwajibkan secara hukum, disarankan untuk mengumumkan pembubaran CV melalui media atau surat kabar. Hal ini bertujuan agar pihak ketiga, termasuk kreditur, mengetahui bahwa CV sedang menjalani proses pembubaran.</li>
+                <li><strong>Pengurusan Kewajiban Perpajakan</strong>: Semua kewajiban pajak CV harus diselesaikan, termasuk pengajuan laporan pajak terakhir. Setelahnya, CV perlu mengajukan permohonan penutupan NPWP ke kantor pajak sebagai bagian dari proses administrasi.</li>
+                <li><strong>Penghapusan dari Daftar Badan Usaha</strong>: Jika CV terdaftar dalam Sistem Administrasi Badan Usaha (SABU), penghapusan dari daftar perusahaan harus diajukan ke instansi terkait, seperti Kantor Perdagangan atau Kantor Wilayah Hukum dan HAM, untuk memastikan CV secara resmi tidak lagi aktif sebagai badan usaha.</li>
+                <li><strong>Pembagian Sisa Aset</strong>: Apabila masih terdapat sisa aset setelah semua kewajiban terpenuhi, aset tersebut harus dibagi di antara sekutu berdasarkan kesepakatan yang telah ditetapkan dalam perjanjian pendirian CV.</li>
+                <li><strong>Penyimpanan Dokumentasi Penutupan</strong>: Semua dokumen terkait penutupan, seperti laporan pelunasan utang, pengumuman pembubaran, dan surat resmi dari kantor pajak, harus disimpan sebagai arsip untuk keperluan di masa mendatang.</li>
+                <li><strong>Pemberitahuan kepada Instansi Terkait</strong>: Instansi yang terkait dengan operasional CV, seperti BPJS, perlu diberi notifikasi mengenai penutupan untuk menonaktifkan keanggotaan dan menghentikan kewajiban administrasi atau pembayaran bulanan.</li>
+            </ol>
+        ),
     },
     {
-      id: 'pma',
-      title: 'Syarat Penutupan PMA',
-      content: (
-        <ol className="list-none list-inside space-y-2 text-sm text-justify md:text-base text-black">
-            <li><strong>Rapat Umum Pemegang Saham (RUPS)</strong>: Langkah awal pembubaran PT PMA adalah mengadakan RUPS untuk menetapkan keputusan pembubaran. Keputusan ini harus disetujui oleh mayoritas suara sesuai dengan ketentuan Anggaran Dasar perusahaan dan disahkan dalam bentuk Akta Pembubaran oleh notaris.</li>
-            <li><strong>Penunjukkan Likuidator</strong>: Setelah keputusan pembubaran disahkan, perusahaan wajib menunjuk likuidator yang bertugas menyelesaikan seluruh kewajiban perusahaan. Likuidator akan melaksanakan likuidasi aset, melunasi utang kepada kreditur, menyelesaikan hak-hak karyawan, dan memenuhi kewajiban perpajakan.</li>
-            <li><strong>Pengumuman Pembubaran</strong>: Likuidator wajib mengumumkan pembubaran perusahaan melalui surat kabar nasional dan Berita Negara Republik Indonesia (BNRI). Pengumuman ini harus dilakukan dalam kurun waktu 30 hari sejak keputusan pembubaran RUPS.</li>
-            <li><strong>Penyelesaian Kewajiban</strong>: Perusahaan harus menyelesaikan seluruh kewajiban berikut: <br /><li> - Kewajiban perpajakan, termasuk pelaporan pajak terakhir dan pembayaran tunggakan.</li><li> - Kewajiban kreditur, baik lokal maupun internasional.</li><li> - Hak-hak karyawan, termasuk gaji yang belum dibayar dan pesangon sesuai undang-undang.</li></li>
-            <li><strong>Pelaporan kepada Badan Koordinasi Penanaman Modal (BKPM)</strong>: Keputusan pembubaran wajib dilaporkan kepada BKPM untuk mencabut izin usaha, izin prinsip, dan izin operasional yang telah diterbitkan sebelumnya.</li>
-            <li><strong>Penghapusan dari Sistem OSS</strong>: PT PMA perlu melaporkan penutupan melalui Sistem OSS agar perusahaan resmi dicabut dari sistem dan tidak lagi terdaftar sebagai entitas aktif.</li>
-            <li><strong>Laporan Likuidasi</strong>: Setelah proses likuidasi selesai, likuidator menyusun laporan yang merinci penyelesaian utang, kewajiban pajak, dan pembagian aset kepada pemegang saham. Laporan ini harus disetujui dalam RUPS.</li>
-            <li><strong>Pencabutan Izin Badan Hukum dari Kementerian Hukum dan HAM</strong>: Setelah laporan likuidasi disetujui, perusahaan harus mengajukan pencabutan status badan hukum ke Kementerian Hukum dan HAM. Keputusan resmi dari Kemenkumham akan menghapus PT PMA dari daftar badan hukum.</li>
-            <li><strong>Penutupan NPWP</strong>: Setelah semua kewajiban perpajakan terpenuhi, perusahaan perlu mengajukan permohonan penutupan NPWP ke kantor pajak.</li>
-            <li><strong>Pemenuhan Hak Karyawan</strong>: Karyawan yang terdampak pembubaran harus menerima hak mereka sesuai dengan peraturan ketenagakerjaan, seperti pembayaran gaji yang belum dibayarkan dan pesangon.</li>
-            <li><strong>Dokumentasi Penutupan</strong>: Semua dokumen terkait proses penutupan, seperti akta pembubaran, laporan likuidasi, dokumen pencabutan izin, dan dokumen perpajakan, harus disimpan dengan baik sebagai arsip perusahaan.</li>
-        </ol>
-      ),
+        id: 'pma',
+        title: 'Syarat Penutupan PMA',
+        content: (
+            <ol className="list-none list-inside space-y-2 text-sm text-justify md:text-base text-black">
+                <li><strong>Rapat Umum Pemegang Saham (RUPS)</strong>: Langkah awal pembubaran PT PMA adalah mengadakan RUPS untuk menetapkan keputusan pembubaran. Keputusan ini harus disetujui oleh mayoritas suara sesuai dengan ketentuan Anggaran Dasar perusahaan dan disahkan dalam bentuk Akta Pembubaran oleh notaris.</li>
+                <li><strong>Penunjukkan Likuidator</strong>: Setelah keputusan pembubaran disahkan, perusahaan wajib menunjuk likuidator yang bertugas menyelesaikan seluruh kewajiban perusahaan. Likuidator akan melaksanakan likuidasi aset, melunasi utang kepada kreditur, menyelesaikan hak-hak karyawan, dan memenuhi kewajiban perpajakan.</li>
+                <li><strong>Pengumuman Pembubaran</strong>: Likuidator wajib mengumumkan pembubaran perusahaan melalui surat kabar nasional dan Berita Negara Republik Indonesia (BNRI). Pengumuman ini harus dilakukan dalam kurun waktu 30 hari sejak keputusan pembubaran RUPS.</li>
+                <li><strong>Penyelesaian Kewajiban</strong>: Perusahaan harus menyelesaikan seluruh kewajiban berikut:</li>
+                <ul>
+                    <li> - Kewajiban perpajakan, termasuk pelaporan pajak terakhir dan pembayaran tunggakan.</li>
+                    <li> - Kewajiban kreditur, baik lokal maupun internasional.</li>
+                    <li> - Hak-hak karyawan, termasuk gaji yang belum dibayar dan pesangon sesuai undang-undang.</li>
+                </ul>
+                <li><strong>Pelaporan kepada Badan Koordinasi Penanaman Modal (BKPM)</strong>: Keputusan pembubaran wajib dilaporkan kepada BKPM untuk mencabut izin usaha, izin prinsip, dan izin operasional yang telah diterbitkan sebelumnya.</li>
+                <li><strong>Penghapusan dari Sistem OSS</strong>: PT PMA perlu melaporkan penutupan melalui Sistem OSS agar perusahaan resmi dicabut dari sistem dan tidak lagi terdaftar sebagai entitas aktif.</li>
+                <li><strong>Laporan Likuidasi</strong>: Setelah proses likuidasi selesai, likuidator menyusun laporan yang merinci penyelesaian utang, kewajiban pajak, dan pembagian aset kepada pemegang saham. Laporan ini harus disetujui dalam RUPS.</li>
+                <li><strong>Pencabutan Izin Badan Hukum dari Kementerian Hukum dan HAM</strong>: Setelah laporan likuidasi disetujui, perusahaan harus mengajukan pencabutan status badan hukum ke Kementerian Hukum dan HAM. Keputusan resmi dari Kemenkumham akan menghapus PT PMA dari daftar badan hukum.</li>
+                <li><strong>Penutupan NPWP</strong>: Setelah semua kewajiban perpajakan terpenuhi, perusahaan perlu mengajukan permohonan penutupan NPWP ke kantor pajak.</li>
+                <li><strong>Pemenuhan Hak Karyawan</strong>: Karyawan yang terdampak pembubaran harus menerima hak mereka sesuai dengan peraturan ketenagakerjaan, seperti pembayaran gaji yang belum dibayarkan dan pesangon.</li>
+                <li><strong>Dokumentasi Penutupan</strong>: Semua dokumen terkait proses penutupan, seperti akta pembubaran, laporan likuidasi, dokumen pencabutan izin, dan dokumen perpajakan, harus disimpan dengan baik sebagai arsip perusahaan.</li>
+            </ol>
+        ),
     },
-  ]
+]
 
 export default function PenutupanPerusahaanPage() {
     const [activeId, setActiveId] = useState<string | null>(null)
