@@ -25,7 +25,7 @@ const subLayananPendirian = [
         title: "Persekutuan Perdata",
         image: "/images/jasa-legalitas/pendirian-perusahaan/persekutuan-perdata.png",
         subtitle: "Pendampingan pendirian Persekutuan Perdata sesuai regulasi.",
-        link: "#"
+        link: "/layanan/jasa-legalitas/pendirian-perusahaan/persekutuan-perdata"
     },
     {
         title: "Penanaman Modal Asing (PMA)",
