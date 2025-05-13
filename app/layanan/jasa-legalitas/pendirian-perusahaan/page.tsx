@@ -31,7 +31,7 @@ const subLayananPendirian = [
         title: "Penanaman Modal Asing (PMA)",
         image: "/images/jasa-legalitas/pendirian-perusahaan/penanaman-modal-asing.png",
         subtitle: "Layanan pendirian perusahaan PMA untuk investor asing.",
-        link: "#"
+        link: "/layanan/jasa-legalitas/pendirian-perusahaan/penanaman-modal-asing"
     },
     {
         title: "Pendirian Yayasan",
