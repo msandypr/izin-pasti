@@ -17,7 +17,7 @@ const jasaLegalitas = [
     title: "Pembuatan Dokumen dan Akta Perusahaan",
     image: "/images/jasa-legalitas/dokumen-akta-perusahaan.png",
     subtitle: "Pembuatan dokumen dan akta penting untuk kebutuhan perusahaan Anda.",
-    link: "/layanan/jasa-legalitas/dokumen-akta-perusahaan",
+    link: "/layanan/jasa-legalitas/pembuatan-dokumen-dan-akta-perusahaan",
   },
   {
     title: "Perizinan",
