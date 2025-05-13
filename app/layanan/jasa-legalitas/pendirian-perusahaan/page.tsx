@@ -43,7 +43,7 @@ const subLayananPendirian = [
         title: "Pendirian Koperasi",
         image: "/images/jasa-legalitas/pendirian-perusahaan/pendirian-koperasi.png",
         subtitle: "Layanan lengkap untuk pendirian Koperasi, legal dan terpercaya.",
-        link: "#"
+        link: "/layanan/jasa-legalitas/pendirian-perusahaan/pendirian-koperasi"
     },
     {
         title: "Pendirian Perkumpulan",
