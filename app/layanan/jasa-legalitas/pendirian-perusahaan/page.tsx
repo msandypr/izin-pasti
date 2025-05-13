@@ -1,4 +1,5 @@
-import WhatsappLogo from "@/components/etc/WhatsappLogo";
+"use client"
+import { useState } from "react";
 import { ArrowLeft, Eye } from "lucide-react";
 import Link from "next/link";
 
@@ -49,7 +50,7 @@ const subLayananPendirian = [
         title: "Pendirian Perkumpulan",
         image: "/images/jasa-legalitas/pendirian-perusahaan/pendirian-perkumpulan.png",
         subtitle: "Bantuan legal untuk pendirian Perkumpulan secara hukum.",
-        link: "#"
+        link: "/layanan/jasa-legalitas/pendirian-perusahaan/pendirian-perkumpulan"
     },
     {
         title: "Properti Pertahanan Bangunan",
@@ -60,6 +61,16 @@ const subLayananPendirian = [
 ];
 
 export default function PendirianPerusahaanPage() {
+    const [showPopup, setShowPopup] = useState(false);
+
+    const handlePopup = () => {
+        setShowPopup(true);
+    };
+
+    const closePopup = () => {
+        setShowPopup(false);
+    };
+
     return (
         <>
             <section className="w-full pt-4 pb-8 md:pt-8 md:pb-16 lg:pb-24 bg-gradient-to-b from-[#2CBCC4]/10 to-white">
@@ -89,29 +100,39 @@ export default function PendirianPerusahaanPage() {
                                 />
                                 <p className="text-black text-sm text-center mb-4">{item.subtitle}</p>
                                 <div className="flex flex-col gap-2 w-full mt-auto">
-                                    <a
-                                        href={item.link}
-                                        className="flex px-6 py-2 rounded-full bg-[#2CBCC4] text-white font-semibold hover:bg-[#239ba0] transition text-center items-center justify-center gap-2"
-                                    >
-                                        <Eye className="h-5 w-5" />
-                                        Lihat Layanan
-                                    </a>
-                                    {/* <a
-                                        href={`https://wa.me/6285299084723?text=Halo%2C%20saya%20ingin%20konsultasi%20tentang%20Pendirian%20Perusahaan%20-%20${encodeURIComponent(item.title)}`}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="inline-block px-6 py-2 rounded-full border-2 border-[#2CBCC4] text-[#2CBCC4] font-semibold hover:bg-[#2CBCC4]/10 transition text-center flex items-center justify-center gap-2"
-                                    >
-                                        <WhatsappLogo className="h-5 w-5" style={{ fill: "#2CBCC4" }} />
-                                        Konsultasikan Sekarang
-                                    </a> */}
+                                    {item.title === "Properti Pertahanan Bangunan" ? (
+                                        <button
+                                            onClick={handlePopup}
+                                            className="flex px-6 py-2 rounded-full bg-[#2CBCC4] text-white font-semibold hover:bg-[#239ba0] transition text-center items-center justify-center gap-2"
+                                        >
+                                            <Eye className="h-5 w-5" />
+                                            Lihat Layanan
+                                        </button>
+                                    ) : (
+                                        <a
+                                            href={item.link}
+                                            className="flex px-6 py-2 rounded-full bg-[#2CBCC4] text-white font-semibold hover:bg-[#239ba0] transition text-center items-center justify-center gap-2"
+                                        >
+                                            <Eye className="h-5 w-5" />
+                                            Lihat Layanan
+                                        </a>
+                                    )}
                                 </div>
                             </div>
                         ))}
                     </div>
                 </div>
             </section>
+            {showPopup && (
+                <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                    <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center">
+                        <p>Layanan ini akan segera tersedia</p>
+                        <button onClick={closePopup} className="mt-4 px-4 py-2 bg-[#2CBCC4] text-white rounded-full">
+                            Tutup
+                        </button>
+                    </div>
+                </div>
+            )}
         </>
     );
 }
-// ... existing code ...
