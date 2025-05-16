@@ -1,29 +1,6 @@
 "use client";
 import ContactSection from "@/components/homepage/contact-section";
-import { Shield, Scale, Clock, Users, User } from "lucide-react";
-
-const features = [
-  {
-    icon: <Shield className="h-8 w-8 text-[#2CBCC4]" />,
-    title: "Perlindungan Hukum",
-    description: "Tim ahli hukum kami siap memberikan perlindungan legal yang komprehensif untuk bisnis Anda"
-  },
-  {
-    icon: <Scale className="h-8 w-8 text-[#2CBCC4]" />,
-    title: "Layanan Legal Berkualitas",
-    description: "Solusi legal yang profesional dan sesuai dengan regulasi terkini di Indonesia"
-  },
-  {
-    icon: <Clock className="h-8 w-8 text-[#2CBCC4]" />,
-    title: "Proses Cepat & Efisien",
-    description: "Pengurusan dokumen legal yang cepat dan efisien dengan sistem yang terdigitalisasi"
-  },
-  {
-    icon: <Users className="h-8 w-8 text-[#2CBCC4]" />,
-    title: "Tim Profesional",
-    description: "Didukung oleh tim legal yang berpengalaman dan profesional di bidangnya"
-  }
-];
+import { Shield, Scale, Users, User } from "lucide-react";
 
 export default function TentangKamiPage() {
   return (
