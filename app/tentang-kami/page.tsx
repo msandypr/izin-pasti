@@ -1,26 +1,7 @@
 "use client";
 import ContactSection from "@/components/homepage/contact-section";
-import { Scale, Users, User, Award } from "lucide-react";
+import { Scale, Users, User, Award, Clock, CheckCircle, Star } from "lucide-react";
 import Image from "next/image";
-
-const kenapaHarusKami = {
-  title: "Kenapa Harus Kami?",
-  description:
-    "Kami berkomitmen memberikan layanan hukum terbaik dengan integritas, profesionalisme, dan pengalaman yang telah terbukti. Kepercayaan klien adalah prioritas utama kami.",
-  stats: [
-    { icon: "user", label: "Partner Bisnis", value: "30+" },
-    { icon: "scale", label: "Kasus Berhasil", value: "500+" },
-    { icon: "users", label: "Klien", value: "500+" },
-    { icon: "award", label: "Penghargaan", value: "10+" },
-  ],
-};
-
-const iconKenapaHarusKami = {
-  user: <User className="w-6 h-6 text-white" />,
-  users: <Users className="w-6 h-6 text-white" />,
-  award: <Award className="w-6 h-6 text-white" />,
-  scale: <Scale className="w-6 h-6 text-white" />,
-};
 
 const testimonials = [
   {
@@ -46,7 +27,7 @@ const testimonials = [
 export default function TentangKamiPage() {
   return (
     <>
-      <section className="w-full bg-gradient-to-b from-[#2CBCC4]/10 to-white">
+      <section className="w-full bg-gradient-to-b from-[#2CBCC4]/20 to-white">
         <div className="container mx-auto px-4">
           <div className="flex flex-col items-center justify-center py-10 md:py-16">
             <div className="inline-flex items-center gap-2 bg-[#2CBCC4]/20 px-3 py-1 rounded-full text-[#2CBCC4] font-medium text-sm">
@@ -54,48 +35,81 @@ export default function TentangKamiPage() {
               <span>Tentang Kami</span>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold py-4 text-center">
-              Nusantara <span className="gradient-text">Maju Luhur</span>
+              Nusantara <span className="gradient-text">Legalitasku</span>
             </h1>
-            <p className="text-md text-black text-center max-w-2xl">
-              Nusantara Maju Luhur adalah firma hukum yang berkomitmen memberikan layanan hukum profesional, terpercaya, dan solutif untuk kebutuhan bisnis maupun personal Anda. Dengan pengalaman dan integritas tinggi, kami siap menjadi mitra strategis dalam setiap permasalahan hukum yang Anda hadapi.
+            <p className="text-md text-black text-center max-w-4xl mb-4">
+              Kami adalah mitra terpercaya dalam menyediakan layanan legalitas bisnis yang dirancang untuk membantu pengusaha dan perusahaan menjalankan operasionalnya sesuai dengan ketentuan hukum. Dengan pengalaman luas di bidang legalitas, kami memahami pentingnya mendukung kelancaran dan keamanan bisnis Anda.
+            </p>
+            <p className="text-md text-black text-center max-w-4xl mb-4">
+            Kami menawarkan berbagai layanan, mulai dari pendirian perusahaan, pengurusan izin usaha, pembuatan dan pengesahan kontrak hukum, hingga konsultasi legal. Didukung oleh tim profesional yang berkompeten, kami berkomitmen memberikan solusi yang cepat, akurat, dan transparan.
+            </p>
+            <p className="text-md text-black text-center max-w-4xl">
+            Kepercayaan Anda adalah prioritas utama kami. Oleh karena itu, kami memastikan setiap proses berjalan dengan mudah, efisien, dan bebas hambatan. Percayakan kebutuhan legalitas bisnis Anda kepada kami, sehingga Anda dapat fokus sepenuhnya pada pengembangan usaha Anda.
             </p>
           </div>
         </div>
       </section>
 
-      <section className="w-full flex flex-col lg:flex-row mb-8">
-        <div className="bg-[#2CBCC4] text-white py-20 lg:py-32 px-10 lg:px-16 w-full lg:w-1/2 flex flex-col justify-center pl-8 md:pl-12">
-          <h2 className="text-3xl font-bold mb-4">
-            {kenapaHarusKami.title}
-          </h2>
-          <div className="w-16 h-1 bg-white mb-6" />
-          <p className="text-lg mb-10">{kenapaHarusKami.description}</p>
-          <div className="grid grid-cols-2 gap-x-8 gap-y-6">
-            {kenapaHarusKami.stats.map((item, idx) => (
-              <div key={idx} className="flex items-center gap-x-4">
-                <div className="bg-white/10 rounded-full p-4 flex-shrink-0 flex items-center justify-center">
-                  {iconKenapaHarusKami[item.icon as keyof typeof iconKenapaHarusKami]}
-                </div>
-                <div className="flex flex-col">
-                  <span className="text-xl font-semibold leading-tight">{item.value}</span>
-                  <span className="text-sm leading-tight">{item.label}</span>
+      <section className="w-full bg-gradient-to-t from-[#2CBCC4]/10 to-white">
+        <div className="container mx-auto px-4 py-12">
+          <h2 className="text-3xl font-bold text-center mb-2 text-black">Kenapa <span className="gradient-text">Harus</span> Memilih <span className="gradient-text">Kami ?</span></h2>
+          <p className="text-md text-black text-center mb-12">
+            Karena kami menyediakan layanan legalitas bisnis yang beberapa keunggulan.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            {/* Terunggul */}
+            <div className="bg-white border border-[#2CBCC4] rounded-xl p-6 flex items-start gap-4 shadow">
+              <div className="flex-shrink-0 mt-1">
+                <Award className="w-9 h-9 text-[#2CBCC4]" strokeWidth={2} />
+              </div>
+              <div>
+                <div className="font-bold text-lg text-black mb-1">Terunggul</div>
+                <div className="text-gray-700 text-sm">
+                  Kami didukung oleh tim profesional berpengalaman di bidang legalitas dan hukum bisnis. Kami berkomitmen untuk menyediakan layanan yang tepat, dapat diandalkan, dan sepenuhnya sesuai dengan ketentuan hukum yang berlaku.
                 </div>
               </div>
-            ))}
+            </div>
+            {/* Tepat Waktu */}
+            <div className="bg-white border border-[#2CBCC4] rounded-xl p-6 flex items-start gap-4 shadow">
+              <div className="flex-shrink-0 mt-1">
+                <Clock className="w-9 h-9 text-[#2CBCC4]" strokeWidth={2} />
+              </div>
+              <div>
+                <div className="font-bold text-lg text-black mb-1">Tepat Waktu</div>
+                <div className="text-gray-700 text-sm">
+                  Kecepatan adalah salah satu keunggulan kami. Kami memastikan pengurusan dokumen legalitas Anda selesai tepat waktu tanpa mengorbankan kualitas.
+                </div>
+              </div>
+            </div>
+            {/* Teraman */}
+            <div className="bg-white border border-[#2CBCC4] rounded-xl p-6 flex items-start gap-4 shadow">
+              <div className="flex-shrink-0 mt-1">
+                <CheckCircle className="w-9 h-9 text-[#2CBCC4]" strokeWidth={2} />
+              </div>
+              <div>
+                <div className="font-bold text-lg text-black mb-1">Teraman</div>
+                <div className="text-gray-700 text-sm">
+                  Keamanan data klien adalah prioritas utama kami. Seluruh informasi yang Anda berikan akan dijaga kerahasiaannya dengan standar keamanan terbaik.
+                </div>
+              </div>
+            </div>
+            {/* Mudah & Lengkap */}
+            <div className="bg-white border border-[#2CBCC4] rounded-xl p-6 flex items-start gap-4 shadow">
+              <div className="flex-shrink-0 mt-1">
+                <Star className="w-9 h-9 text-[#2CBCC4]" strokeWidth={2} />
+              </div>
+              <div>
+                <div className="font-bold text-lg text-black mb-1">Mudah & Lengkap</div>
+                <div className="text-gray-700 text-sm">
+                  Kami menyediakan berbagai layanan legalitas bisnis, mulai dari pendirian perusahaan, pengurusan izin usaha, pembuatan kontrak, hingga konsultasi hukum. Semua kebutuhan Anda dapat kami tangani dengan mudah dan efisien.
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div className="w-full lg:w-1/2 h-96 lg:h-auto relative">
-          <Image
-            src="/images/tentang-kami.jpg"
-            alt="Why choose us"
-            layout="fill"
-            objectFit="cover"
-            className="brightness-100"
-          />
         </div>
       </section>
 
-      <section className="w-full bg-white py-16">
+      <section className="w-full bg-gradient-to-b from-[#2CBCC4]/10 to-white pb-12">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-2 text-black">Testimoni <span className="gradient-text">Klien</span></h2>
           <p className="text-md text-black text-center mb-12">
