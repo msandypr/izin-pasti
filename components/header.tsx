@@ -70,8 +70,8 @@ export default function Header() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button className="rounded-full blue-gradient">
-              <WhatsappLogo className="h-5 w-5" />
+            <Button className="group rounded-full bg-white text-[#25D267] border border-[#25D267] hover:bg-[#25D267] hover:text-white flex items-center gap-2">
+              <WhatsappLogo className="h-5 w-5 transition-colors duration-200 group-hover:fill-white fill-[#25D267]" />
               Konsultasi Sekarang!
             </Button>
           </Link>
