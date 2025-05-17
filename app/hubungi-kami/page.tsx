@@ -1,22 +1,35 @@
+"use client";
 import WhatsappLogo from "@/components/etc/WhatsappLogo";
-import { Phone, Instagram, Facebook, ThumbsUp, Shield, BadgeCheck } from "lucide-react";
+import { Instagram, ThumbsUp, Shield, BadgeCheck } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function HubungiKamiPage() {
   return (
     <>
       <section className="min-h-screen bg-gradient-to-br from-[#e0f7fa] via-white to-[#b2ebf2] flex flex-col justify-center py-10">
         <div className="container mx-auto px-4">
-        <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-          <h2 className="text-3xl md:text-4xl font-bold">
-            Perlu Bantuan <span className="gradient-text">Jasa Legalitas ?</span>
-          </h2>
-          <p className="text-md text-black">
-            Silahkan hubungi kami melalui Nomor Telepon atau Email untuk mendapatkan bantuan jasa legalitas yang sesuai dengan kebutuhan Anda.
-          </p>
-        </div>
+          <motion.div
+            className="text-center max-w-3xl mx-auto mb-16 space-y-4"
+            initial={{ opacity: 0, y: -40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7 }}
+          >
+            <h2 className="text-3xl md:text-4xl font-bold">
+              Perlu Bantuan <span className="gradient-text">Jasa Legalitas ?</span>
+            </h2>
+            <p className="text-md text-black">
+              Silahkan hubungi kami melalui Nomor Telepon atau Email untuk mendapatkan bantuan jasa legalitas yang sesuai dengan kebutuhan Anda.
+            </p>
+          </motion.div>
           <div className="flex flex-col md:flex-row gap-8 items-stretch justify-center min-h-[480px]">
             {/* Form */}
-            <div className="w-full md:w-1/2 flex-1 bg-white rounded-2xl shadow-lg p-8">
+            <motion.div
+              className="w-full md:w-1/2 flex-1 bg-white rounded-2xl shadow-lg p-8"
+              initial={{ opacity: 0, x: -60 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.7, delay: 0.2 }}
+            >
               <form className="flex flex-col gap-4">
                 <div className="flex flex-col md:flex-row gap-4">
                   <div className="flex-1">
@@ -42,9 +55,15 @@ export default function HubungiKamiPage() {
                 </div>
                 <button type="submit" className="mt-2 bg-[#2CBCC4] text-white rounded-lg px-6 py-2 font-semibold hover:bg-[#229ca1] transition">Kirim Pesan</button>
               </form>
-            </div>
+            </motion.div>
             {/* Info Card */}
-            <div className="w-full md:w-1/2 flex-1 bg-[#2CBCC4] rounded-2xl shadow-lg p-8 text-white flex flex-col justify-between min-h-[420px]">
+            <motion.div
+              className="w-full md:w-1/2 flex-1 bg-[#2CBCC4] rounded-2xl shadow-lg p-8 text-white flex flex-col justify-between min-h-[420px]"
+              initial={{ opacity: 0, x: 60 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.7, delay: 0.4 }}
+            >
               <div>
                 <div className="text-2xl font-bold mb-2">Alamat</div>
                 <div className="mb-4 leading-relaxed">
@@ -71,10 +90,16 @@ export default function HubungiKamiPage() {
                   referrerPolicy="no-referrer-when-downgrade"
                 ></iframe>
               </div>
-            </div>
+            </motion.div>
           </div>
           {/* Bottom Feature */}
-          <div className="flex flex-row justify-center items-center gap-8 mt-16">
+          <motion.div
+            className="flex flex-row justify-center items-center gap-8 mt-16"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7, delay: 0.6 }}
+          >
             <div className="flex flex-col items-center">
               <ThumbsUp className="w-8 h-8 text-black mb-1" />
               <span className="font-semibold text-black text-lg text-center">Terpercaya</span>
@@ -87,7 +112,7 @@ export default function HubungiKamiPage() {
               <BadgeCheck className="w-8 h-8 text-black mb-1" />
               <span className="font-semibold text-black text-lg text-center">Profesional</span>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
     </>
