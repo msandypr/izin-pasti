@@ -47,7 +47,7 @@ const jasaLegalitas = [
     title: "Properti Pertanahan Bangunan",
     image: "/images/jasa-legalitas/pendirian-perusahaan/properti-pertahanan-bangunan.png",
     subtitle: "Konsultasi dan pengurusan legalitas properti dan bangunan.",
-    link: "/layanan/jasa-legalitas/properti-pertanahan-bangunann",
+    link: "/layanan/jasa-legalitas/properti-pertanahan-bangunan",
   },
 ];
 
