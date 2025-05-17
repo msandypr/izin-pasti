@@ -1,3 +1,5 @@
+import ContactSection from "@/components/homepage/contact-section";
+import { Eye } from "lucide-react";
 import React from "react";
 
 const layanan = [
@@ -23,37 +25,42 @@ const layanan = [
 
 export default function LayananPage() {
   return (
-    <section className="w-full pt-4 pb-8 md:pt-8 md:pb-16 lg:pb-24  bg-gradient-to-b from-[#2CBCC4]/10 to-white">
-      <div className="container mx-auto px-4">
-        <div className="flex flex-col items-center justify-center py-10 md:py-16">
-          <h1 className="text-3xl md:text-4xl font-bold py-4 text-center">
-            Temukan Solusi <span className="gradient-text">Legal Terbaik</span> untuk <span className="gradient-text">Bisnis Anda</span>
-          </h1>
-          <p className="text-md text-black text-center">
-            Kami menyediakan layanan legal terpercaya dengan tim profesional yang siap membantu mengembangkan bisnis Anda
-          </p>
+    <>
+      <section className="w-full pt-4 pb-16 md:pt-8 md:pb-4  bg-gradient-to-b from-[#2CBCC4]/10 to-white">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col items-center justify-center py-10 md:py-16">
+            <h1 className="text-3xl md:text-4xl font-bold py-4 text-center">
+              Temukan Solusi <span className="gradient-text">Legal Terbaik</span> untuk <span className="gradient-text">Bisnis Anda</span>
+            </h1>
+            <p className="text-md text-black text-center">
+              Kami menyediakan layanan legal terpercaya dengan tim profesional yang siap membantu mengembangkan bisnis Anda
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:flex lg:flex-wrap lg:justify-center">
+            {layanan.map((item, idx) => (
+              <div key={idx} className="bg-white rounded-2xl shadow p-6 border border-[#2CBCC4]/10 flex flex-col items-center lg:w-[30%]">
+                <h2 className="text-2xl font-bold text-[#2CBCC4] mb-2 text-center">{item.title}</h2>
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="w-full aspect-square object-cover rounded-xl mb-4"
+                />
+                <p className="text-black text-sm text-center mb-4">{item.subtitle}</p>
+                <div className="mt-auto w-full">
+                  <a
+                    href={item.link}
+                    className="flex px-6 py-2 rounded-full bg-[#2CBCC4] text-white font-semibold hover:bg-[#239ba0] transition text-center items-center justify-center gap-2"
+                  >
+                    <Eye className="h-5 w-5" />
+                    Lihat Layanan
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {layanan.map((item, idx) => (
-            <div key={idx} className="bg-white rounded-2xl shadow p-6 border border-[#2CBCC4]/10 flex flex-col items-center">
-              <h2 className="text-2xl font-bold text-[#2CBCC4] mb-2 text-center">{item.title}</h2>
-              <img
-                src={item.image}
-                alt={item.title}
-                className="w-full aspect-square object-cover rounded-xl mb-4"
-              />
-
-              <p className="text-black text-sm text-center mb-4">{item.subtitle}</p>
-              <a
-                href={item.link}
-                className="mt-auto inline-block px-6 py-2 rounded-full bg-[#2CBCC4] text-white font-semibold hover:bg-[#239ba0] transition"
-              >
-                Lihat Layanan
-              </a>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section >
+      </section >
+      <ContactSection />
+    </>
   );
 }
