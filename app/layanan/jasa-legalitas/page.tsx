@@ -43,6 +43,12 @@ const jasaLegalitas = [
     subtitle: "Pembuatan serta review perjanjian bisnis dan kontrak hukum.",
     link: "/layanan/jasa-legalitas/perjanjian",
   },
+  {
+    title: "Properti Pertanahan Bangunan",
+    image: "/images/jasa-legalitas/pendirian-perusahaan/properti-pertahanan-bangunan.png",
+    subtitle: "Konsultasi dan pengurusan legalitas properti dan bangunan.",
+    link: "/layanan/jasa-legalitas/properti-pertanahan-bangunann",
+  },
 ];
 
 export default function JasaLegalitasPage() {
