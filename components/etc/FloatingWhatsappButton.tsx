@@ -11,11 +11,11 @@ export default function FloatingWhatsappButton() {
       aria-label="Butuh Konsultasi WhatsApp"
     >
       <div className="flex items-center">
-        <span className="opacity-0 group-hover:opacity-100 transition-all duration-200 bg-white text-[#25D267] border border-[#25D267] px-4 py-2 rounded-full shadow-lg text-sm font-medium whitespace-nowrap absolute right-16">
+        {/* <span className="opacity-0 group-hover:opacity-100 transition-all duration-200 bg-[#25D267] text-white border border-[#25D267] px-4 py-2 rounded-full shadow-lg text-sm font-medium whitespace-nowrap absolute right-16">
           Konsultasi Sekarang!
-        </span>
-        <div className="bg-white hover:bg-[#229fa7] border border-[#25D267] text-white rounded-full shadow-lg w-14 h-14 flex items-center justify-center transition-all duration-200 relative z-10">
-          <WhatsappLogo width={28} height={28} style={{ fill: "#25D267" }} />
+        </span> */}
+        <div className="bg-white hover:bg-[#25D267] border border-[#25D267] rounded-full shadow-lg w-14 h-14 flex items-center justify-center transition-all duration-200 relative z-10">
+          <WhatsappLogo width={28} height={28} className="fill-[#25D267] group-hover:fill-white transition-colors duration-200" />
         </div>
       </div>
     </Link>
