@@ -1,3 +1,4 @@
+import ContactSection from "@/components/homepage/contact-section";
 import { Users } from "lucide-react";
 
 export default function JasaPengacaraPage() {
@@ -28,17 +29,17 @@ export default function JasaPengacaraPage() {
               {
                 name: "AGUNG HERMANSYAH, S.H.",
                 image: "/images/jasa-pengacara/lawyer-1.jpg",
-                whatsapp: "6281234567890",
+                whatsapp: "6285935000364",
               },
               {
                 name: "FAKHRI ROZI, S.H.",
                 image: "/images/jasa-pengacara/lawyer-2.jpg",
-                whatsapp: "6281234567891",
+                whatsapp: "6285935000364",
               },
               {
                 name: "MUSTAQIM ALMOND, S.H., M.H.",
                 image: "/images/jasa-pengacara/lawyer-3.jpg",
-                whatsapp: "6281234567892",
+                whatsapp: "6285935000364",
               },
             ].map((lawyer) => (
               <div
@@ -98,7 +99,7 @@ export default function JasaPengacaraPage() {
                 ))}
               </div>
             </div>
-            <div className="w-full pt-16 pb-16">
+            <div className="w-full pt-16">
               <h2 className="text-2xl md:text-3xl font-bold text-center grad mb-8">
                 Non-<span className="gradient-text">Litigasi</span>
               </h2>
@@ -122,7 +123,7 @@ export default function JasaPengacaraPage() {
           </div>
         </div>
       </section>
-
+      <ContactSection />
     </>
   );
 }
