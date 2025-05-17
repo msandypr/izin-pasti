@@ -14,18 +14,6 @@ const perizinanMikro = [
         ]
     },
     {
-        title: "Izin Usaha Mikro Menengah (IUMK)",
-        image: "/images/jasa-legalitas/pengurusan-perizinan-usaha.png",
-        price: "Rp. 1.000.000",
-        features: [
-            "IUMK Perorangan",
-            "NIB Perorangan",
-        ]
-    },
-];
-
-const perizinanMakro = [
-    {
         title: "OSS (Online Single Submission)",
         image: "/images/jasa-legalitas/pengurusan-perizinan-usaha.png",
         price: "Rp. 2.700.000",
@@ -33,6 +21,18 @@ const perizinanMakro = [
             "NIB (Nomor Induk Berusaha)",
             "IUP (Izin Usaha Perdagangan)",
             "Izin Lokasi",
+        ]
+    },
+];
+
+const perizinanMakro = [
+    {
+        title: "Izin Usaha Mikro Menengah (IUMK)",
+        image: "/images/jasa-legalitas/pengurusan-perizinan-usaha.png",
+        price: "Rp. 1.000.000",
+        features: [
+            "IUMK Perorangan",
+            "NIB Perorangan",
         ]
     },
     {
