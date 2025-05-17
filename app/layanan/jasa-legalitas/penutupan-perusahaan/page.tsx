@@ -163,9 +163,7 @@ export default function PenutupanPerusahaanPage() {
                     </div>
                 </div>
             </section>
-
             <ContactSection />
         </>
     );
 }
-// ... existing code ...
