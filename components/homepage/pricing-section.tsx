@@ -1,6 +1,6 @@
 "use client"
 import { Button } from "@/components/ui/button";
-import { ArrowRight, ArrowLeft, ArrowRight as ArrowRightIcon } from "lucide-react";
+import { ArrowRight, ArrowLeft, Mail } from "lucide-react";
 import useEmblaCarousel from 'embla-carousel-react';
 import { useCallback, useEffect, useState } from "react";
 import { WalletMinimal } from "lucide-react";
@@ -51,39 +51,44 @@ export default function PricingSection() {
     const packages = [
         {
             title: "Pendirian Perusahaan",
-            price: "4.000.000",
+            price: "1.500.000",
             image: "/images/jasa-legalitas/pendirian-perusahaan.png",
             description: "Membantu Anda mendirikan perusahaan dengan proses cepat, transparan, dan bebas repot.",
-            buttonText: "Pesan Sekarang"
+            buttonText: "Pesan Sekarang",
+            href: "/layanan/jasa-legalitas/pendirian-perusahaan"
         },
         {
             title: "Penanaman Modal Asing (PMA)",
-            price: "4.500.000",
+            price: "15.000.000",
             image: "/images/jasa-legalitas/pendirian-perusahaan/penanaman-modal-asing.png",
             description: "Layanan profesional untuk mendirikan perusahaan PMA yang sesuai dengan regulasi terbaru.",
             buttonText: "Pesan Sekarang",
-            featured: true
+            featured: true,
+            href: "/layanan/jasa-legalitas/pendirian-perusahaan/penanaman-modal-asing"
         },
         {
             title: "Pembuatan Perjanjian",
             price: "500.000",
-            image: "/images/jasa-legalitas/pendirian-perusahaan.png",
+            image: "/images/jasa-legalitas/perjanjian.png",
             description: "Perjanjian Anda akan dirancang untuk melindungi hak dan kewajiban secara maksimal.",
-            buttonText: "Pesan Sekarang"
+            buttonText: "Pesan Sekarang",
+            href: "/layanan/jasa-legalitas/perjanjian"
         },
         {
             title: "Perizinan Usaha",
-            price: "3.000.000",
-            image: "/images/jasa-legalitas/pendirian-perusahaan.png",
+            price: "500.000",
+            image: "/images/jasa-legalitas/pengurusan-perizinan-usaha.png",
             description: "Pengurusan berbagai izin usaha sesuai dengan regulasi yang berlaku.",
-            buttonText: "Pesan Sekarang"
+            buttonText: "Pesan Sekarang",
+            href: "/layanan/jasa-legalitas/pengurusan-perizinan-usaha"
         },
         {
             title: "Konsultasi Hukum",
-            price: "750.000",
-            image: "/images/jasa-legalitas/pendirian-perusahaan.png",
+            price: "1.000.000",
+            image: "/images/layanan/jasa-legalitas.png",
             description: "Konsultasi dengan tim ahli hukum kami untuk berbagai masalah legal bisnis.",
-            buttonText: "Pesan Sekarang"
+            buttonText: "Pesan Sekarang",
+            href: "/layanan/jasa-pengacara"
         }
     ];
 
@@ -126,16 +131,20 @@ export default function PricingSection() {
                                                 className="w-full aspect-square object-cover rounded-xl mb-4"
                                             />
                                         )}
-                                        <span className={`text-4xl font-bold mb-2 ${selectedIndex === index ? "text-white" : "text-[#2CBCC4]"}`}>Rp. {pkg.price}</span>
+                                        <p className={`text-sm text-center mt-4 ${selectedIndex === index ? "text-white/90" : "text-black"}`}>Mulai Dari</p>
+                                        <span className={`text-center text-3xl md:text-4xl font-bold mb-2 ${selectedIndex === index ? "text-white" : "text-[#2CBCC4]"}`}>Rp. {pkg.price}</span>
                                         <p className={`text-sm text-center mb-4 ${selectedIndex === index ? "text-white/90" : "text-black"}`}>{pkg.description}</p>
                                         <Button
-                                            className={`mt-auto w-full rounded-full font-semibold transition
-                                                 ${selectedIndex === index
+                                            asChild
+                                            className={`mt-2 w-full rounded-full font-semibold transition flex items-center justify-center gap-2
+                                                ${selectedIndex === index
                                                     ? "bg-white text-[#2CBCC4] hover:bg-white/90"
                                                     : "bg-[#2CBCC4] text-white hover:bg-[#239ba0]"
                                                 }`}>
-                                            {pkg.buttonText}
-                                            <ArrowRightIcon className="ml-2 h-5 w-5" />
+                                            <a href={pkg.href}>
+                                                {pkg.buttonText}
+                                                <ArrowRight className="h-5 w-5" />
+                                            </a>
                                         </Button>
                                     </div>
                                 </div>
