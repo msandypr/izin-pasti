@@ -22,7 +22,7 @@ export default function ContactSection() {
                     {/* Kanan - Konten */}
                     <div className="w-full lg:w-1/2 flex flex-col justify-center items-center text-center px-6 md:px-12 py-8 md:py-12 space-y-5">
                         <h2 className="text-2xl md:text-3xl font-bold leading-snug">
-                            Konsultasikan kebutuhan <span className="text-[#2CBCC4]">Hukum</span> anda dengan <span className="text-[#2CBCC4]">Kami</span>
+                            Konsultasikan kebutuhan <span className="text-[#2CBCC4]">Legalitas</span> anda dengan <span className="text-[#2CBCC4]">Kami</span>
                         </h2>
                         <p className="text-base md:text-sm text-black">
                             Tim kami siap membantu segala kebutuhan legalitas bisnis Anda. Jadwalkan konsultasi online dengan mudah dan cepat.
