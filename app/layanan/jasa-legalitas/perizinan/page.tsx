@@ -6,42 +6,42 @@ import ContactSection from "@/components/homepage/contact-section";
 const pembuatanDokumen = [
     {
         title: "Izin Usaha Jasa Pertambangan",
-        image: "/images/jasa-legalitas/pembuatan-dokumen/perubahan-data-perseroan.png",
+        image: "/images/jasa-legalitas/izin/mine.png",
         price: "Harga Spesial",
     },
     {
         title: "Sertifikasi Badan Usaha Jasa Konstruksi",
-        image: "/images/jasa-legalitas/pembuatan-dokumen/perubahan-data-perseroan.png",
+        image: "/images/jasa-legalitas/izin/construct.png",
         price: "Rp. 5.000.000",
     },
     {
         title: "Izin Penyalur Alat Kesehatan",
-        image: "/images/jasa-legalitas/pembuatan-dokumen/perubahan-data-perseroan.png",
+        image: "/images/jasa-legalitas/izin/medical-kit.png",
         price: "Rp. 9.000.000",
     },
     {
         title: "Industri Makanan Rumah Tangga",
-        image: "/images/jasa-legalitas/pembuatan-dokumen/perubahan-data-perseroan.png",
+        image: "/images/jasa-legalitas/izin/home-cook.png",
         price: "Rp. 5.000.000",
     },
     {
         title: "Izin Halal",
-        image: "/images/jasa-legalitas/pembuatan-dokumen/perubahan-data-perseroan.png",
+        image: "/images/jasa-legalitas/izin/halal.png",
         price: "Rp. 4.000.000",
     },
     {
         title: "Izin Reklame dan Pemasan",
-        image: "/images/jasa-legalitas/pembuatan-dokumen/perubahan-data-perseroan.png",
+        image: "/images/jasa-legalitas/izin/ads.png",
         price: "Rp. 5.000.000",
     },
     {
         title: "Izin Ekspor, Impor dan Logistik",
-        image: "/images/jasa-legalitas/pembuatan-dokumen/perubahan-data-perseroan.png",
+        image: "/images/jasa-legalitas/izin/logistic.png",
         price: "Rp. 9.000.000",
     },
     {
         title: "Izin Klinik",
-        image: "/images/jasa-legalitas/pembuatan-dokumen/perubahan-data-perseroan.png",
+        image: "/images/jasa-legalitas/izin/hospital.png",
         price: "Rp. 5.000.000",
     },
 ];
