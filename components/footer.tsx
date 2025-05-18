@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button"
-import { Facebook, Instagram, Twitter, Youtube } from "lucide-react"
+import { Facebook, Instagram, Mail, Phone } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
+import WhatsappLogo from "./etc/WhatsappLogo"
 
 export default function Footer() {
   return (
@@ -16,17 +17,25 @@ export default function Footer() {
               Nusantara Legalitasku, solusi lengkap untuk legalitas dan perlindungan bisnis Anda. Profesional, cepat, dan terpercaya.
             </p>
             <div className="flex gap-4">
-              <Button variant="ghost" size="icon" className="rounded-full">
-                <Facebook className="h-5 w-5 text-[#2CBCC4]" />
+              <Button asChild variant="ghost" size="icon" className="rounded-full">
+                <a href="https://facebook.com/NusantaraLegalitasku" target="_blank" rel="noopener noreferrer">
+                  <Facebook className="h-5 w-5 text-[#2CBCC4]" />
+                </a>
               </Button>
-              <Button variant="ghost" size="icon" className="rounded-full">
-                <Twitter className="h-5 w-5 text-[#2CBCC4]" />
+              <Button asChild variant="ghost" size="icon" className="rounded-full">
+                <a href="https://instagram.com/nusantaralegalitasku" target="_blank" rel="noopener noreferrer">
+                  <Instagram className="h-5 w-5 text-[#2CBCC4]" />
+                </a>
               </Button>
-              <Button variant="ghost" size="icon" className="rounded-full">
-                <Instagram className="h-5 w-5 text-[#2CBCC4]" />
+              <Button asChild variant="ghost" size="icon" className="rounded-full">
+                <a href="https://wa.me/6285935000364" target="_blank" rel="noopener noreferrer">
+                  <Phone className="h-5 w-5 text-[#2CBCC4]" />
+                </a>
               </Button>
-              <Button variant="ghost" size="icon" className="rounded-full">
-                <Youtube className="h-5 w-5 text-[#2CBCC4]" />
+              <Button asChild variant="ghost" size="icon" className="rounded-full">
+                <a href="mailto:info@nusantaralegalitasku.com">
+                  <Mail className="h-5 w-5 text-[#2CBCC4]" />
+                </a>
               </Button>
             </div>
           </div>

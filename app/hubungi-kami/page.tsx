@@ -1,6 +1,6 @@
 "use client";
 import WhatsappLogo from "@/components/etc/WhatsappLogo";
-import { Instagram, ThumbsUp, Shield, BadgeCheck } from "lucide-react";
+import { Instagram, ThumbsUp, Shield, BadgeCheck, Facebook } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function HubungiKamiPage() {
@@ -51,7 +51,7 @@ export default function HubungiKamiPage() {
                 </div>
                 <div>
                   <label className="block text-sm font-medium mb-1">Pesan Anda <span className="text-red-600">*</span></label>
-                  <textarea placeholder="Tulis Pesan Anda..." className="w-full border border-gray-300 rounded-lg px-3 py-2 h-32 resize-none focus:outline-none focus:ring-2 focus:ring-[#2CBCC4] transition" required />
+                  <textarea placeholder="Tulis Pesan Anda..." className="w-full border border-gray-300 rounded-lg px-3 py-2 h-48 resize-none focus:outline-none focus:ring-2 focus:ring-[#2CBCC4] transition" required />
                 </div>
                 <button type="submit" className="mt-2 bg-[#2CBCC4] text-white rounded-lg px-6 py-2 font-semibold hover:bg-[#229ca1] transition">Kirim Pesan</button>
               </form>
@@ -72,12 +72,16 @@ export default function HubungiKamiPage() {
                 </div>
                 <div className="text-2xl font-bold mb-2">Kontak</div>
                 <div className="flex items-center gap-2 mb-2">
-                  <WhatsappLogo className="w-5 h-5" />
-                  <a href="https://api.whatsapp.com/send?phone=6285935000364&text=Halo!%20Saya%20ingin%20Berkonsultasi%20dengan%20Nusantara%20Legalitasku." target="_blank"><span className="text-base">+62 859-3500-0364</span></a>
+                  <Facebook className="w-5 h-5" />
+                  <a href="https://www.facebook.com/NusantaraLegalitasku" target="_blank"><span className="text-base">Nusantara Legalitasku</span></a>
                 </div>
-                <div className="flex items-center gap-2 mb-6">
+                <div className="flex items-center gap-2 mb-2">
                   <Instagram className="w-5 h-5" />
                   <a href="https://instagram.com/nusantaralegalitasku" target="_blank"><span className="text-base">@nusantaralegalitasku</span></a>
+                </div>
+                <div className="flex items-center gap-2 mb-6">
+                  <WhatsappLogo className="w-5 h-5" />
+                  <a href="https://api.whatsapp.com/send?phone=6285935000364&text=Halo!%20Saya%20ingin%20Berkonsultasi%20dengan%20Nusantara%20Legalitasku." target="_blank"><span className="text-base">+62 859-3500-0364</span></a>
                 </div>
                 <iframe
                   title="Lokasi Kantor"
