@@ -1,53 +1,61 @@
 "use client"
-import { ArrowLeft, Eye } from "lucide-react";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 import Link from "next/link";
 
 const subLayananPendirian = [
     {
         title: "Paket Pendirian PT",
         image: "/images/jasa-legalitas/pendirian-perusahaan/pendirian-pt.png",
+        price: "Rp 4.500.000",
         subtitle: "Solusi lengkap pendirian Perseroan Terbatas (PT) untuk bisnis Anda.",
         link: "/layanan/jasa-legalitas/pendirian-perusahaan/pendirian-pt"
     },
     {
         title: "Paket Pendirian CV",
         image: "/images/jasa-legalitas/pendirian-perusahaan/pendirian-cv.png",
+        price: "Rp 2.500.000",
         subtitle: "Layanan profesional untuk pendirian Commanditaire Vennootschap (CV).",
         link: "/layanan/jasa-legalitas/pendirian-perusahaan/pendirian-cv"
     },
     {
         title: "Paket Pendirian Firma",
         image: "/images/jasa-legalitas/pendirian-perusahaan/pendirian-firma.png",
+        price: "Rp 3.000.000",
         subtitle: "Bantuan legal untuk pendirian Firma secara mudah dan cepat.",
         link: "/layanan/jasa-legalitas/pendirian-perusahaan/pendirian-firma"
     },
     {
         title: "Persekutuan Perdata",
         image: "/images/jasa-legalitas/pendirian-perusahaan/persekutuan-perdata.png",
+        price: "Rp 3.000.000",
         subtitle: "Pendampingan pendirian Persekutuan Perdata sesuai regulasi.",
         link: "/layanan/jasa-legalitas/pendirian-perusahaan/persekutuan-perdata"
     },
     {
         title: "Penanaman Modal Asing (PMA)",
         image: "/images/jasa-legalitas/pendirian-perusahaan/penanaman-modal-asing.png",
+        price: "Rp 15.000.000",
         subtitle: "Layanan pendirian perusahaan PMA untuk investor asing.",
         link: "/layanan/jasa-legalitas/pendirian-perusahaan/penanaman-modal-asing"
     },
     {
         title: "Pendirian Yayasan",
         image: "/images/jasa-legalitas/pendirian-perusahaan/pendirian-yayasan.png",
+        price: "Rp 5.500.000",
         subtitle: "Proses pendirian Yayasan yang legal dan terpercaya sesuai aturan hukum.",
         link: "/layanan/jasa-legalitas/pendirian-perusahaan/pendirian-yayasan"
     },
     {
         title: "Pendirian Koperasi",
         image: "/images/jasa-legalitas/pendirian-perusahaan/pendirian-koperasi.png",
+        price: "Rp 7.500.000",
         subtitle: "Layanan lengkap untuk pendirian Koperasi, legal dan terpercaya.",
         link: "/layanan/jasa-legalitas/pendirian-perusahaan/pendirian-koperasi"
     },
     {
         title: "Pendirian Perkumpulan",
         image: "/images/jasa-legalitas/pendirian-perusahaan/pendirian-perkumpulan.png",
+        price: "Rp 11.500.000",
         subtitle: "Bantuan legal untuk pendirian Perkumpulan secara hukum.",
         link: "/layanan/jasa-legalitas/pendirian-perusahaan/pendirian-perkumpulan"
     }
@@ -82,13 +90,15 @@ export default function PendirianPerusahaanPage() {
                                     className="w-full aspect-square object-cover rounded-xl mb-4"
                                 />
                                 <p className="text-black text-sm text-center mb-4">{item.subtitle}</p>
+                                <p className="text-sm font-light text-black">Mulai dari</p>
+                                <p className="text-2xl font-bold text-[#2CBCC4] mb-4">{item.price}</p>
                                 <div className="flex flex-col gap-2 w-full mt-auto">
                                     <a
                                         href={item.link}
                                         className="flex px-6 py-2 rounded-full bg-[#2CBCC4] text-white font-semibold hover:bg-[#239ba0] transition text-center items-center justify-center gap-2"
                                     >
-                                        <Eye className="h-5 w-5" />
-                                        Lihat Layanan
+                                        Pesan Sekarang
+                                        <ArrowRight className="h-5 w-5" /> 
                                     </a>
                                 </div>
                             </div>
