@@ -33,25 +33,25 @@ export default function HubungiKamiPage() {
               <form className="flex flex-col gap-4">
                 <div className="flex flex-col md:flex-row gap-4">
                   <div className="flex-1">
-                    <label className="block text-sm font-medium mb-1">Nama Lengkap *</label>
-                    <input type="text" placeholder="Ex. Firmansyah" className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#2CBCC4] transition" required />
+                    <label className="block text-sm font-medium mb-1">Nama Lengkap <span className="text-red-600">*</span></label>
+                    <input type="text" placeholder="Contoh: Ahmad" className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#2CBCC4] transition" required />
                   </div>
                   <div className="flex-1">
-                    <label className="block text-sm font-medium mb-1">Email*</label>
-                    <input type="email" placeholder="example@gmail.com" className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#2CBCC4] transition" required />
+                    <label className="block text-sm font-medium mb-1">Email <span className="text-red-600">*</span></label>
+                    <input type="email" placeholder="Contoh: example@gmail.com" className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#2CBCC4] transition" required />
                   </div>
                 </div>
                 <div>
-                  <label className="block text-sm font-medium mb-1">Nomor Whatsapp*</label>
-                  <input type="text" placeholder="Ex. 0821xxxxxxx" className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#2CBCC4] transition" required />
+                  <label className="block text-sm font-medium mb-1">Nomor Whatsapp <span className="text-red-600">*</span></label>
+                  <input type="text" placeholder="Contoh: 0812xxxxxxx" className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#2CBCC4] transition" required />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium mb-1">Subject*</label>
-                  <input type="text" placeholder="Enter Subject" className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#2CBCC4] transition" required />
+                  <label className="block text-sm font-medium mb-1">Perihal <span className="text-red-600">*</span></label>
+                  <input type="text" placeholder="Tulis Perihal Pesan..." className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#2CBCC4] transition" required />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium mb-1">Pesan Anda*</label>
-                  <textarea placeholder="Tulis disini" className="w-full border border-gray-300 rounded-lg px-3 py-2 h-32 resize-none focus:outline-none focus:ring-2 focus:ring-[#2CBCC4] transition" required />
+                  <label className="block text-sm font-medium mb-1">Pesan Anda <span className="text-red-600">*</span></label>
+                  <textarea placeholder="Tulis Pesan Anda..." className="w-full border border-gray-300 rounded-lg px-3 py-2 h-32 resize-none focus:outline-none focus:ring-2 focus:ring-[#2CBCC4] transition" required />
                 </div>
                 <button type="submit" className="mt-2 bg-[#2CBCC4] text-white rounded-lg px-6 py-2 font-semibold hover:bg-[#229ca1] transition">Kirim Pesan</button>
               </form>
@@ -73,15 +73,15 @@ export default function HubungiKamiPage() {
                 <div className="text-2xl font-bold mb-2">Kontak</div>
                 <div className="flex items-center gap-2 mb-2">
                   <WhatsappLogo className="w-5 h-5" />
-                  <span className="text-base">082229415818 / 082220008954</span>
+                  <a href="https://api.whatsapp.com/send?phone=6285935000364&text=Halo!%20Saya%20ingin%20Berkonsultasi%20dengan%20Nusantara%20Legalitasku." target="_blank"><span className="text-base">+62 859-3500-0364</span></a>
                 </div>
                 <div className="flex items-center gap-2 mb-6">
                   <Instagram className="w-5 h-5" />
-                  <a href="https://instagram.com/nusantaralegalitasku"><span className="text-base">@nusantaralegalitasku</span></a>
+                  <a href="https://instagram.com/nusantaralegalitasku" target="_blank"><span className="text-base">@nusantaralegalitasku</span></a>
                 </div>
                 <iframe
                   title="Lokasi Kantor"
-                  src="https://www.google.com/maps?q=-6.971547,110.474678&hl=id&z=16&output=embed"
+                  src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3960.10239030777!2d110.46003607499716!3d-6.997221993003952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwNTknNTAuMCJTIDExMMKwMjcnNDUuNCJF!5e0!3m2!1sid!2sid!4v1747555187031!5m2!1sid!2sid"
                   width="100%"
                   height="280"
                   className="rounded-xl border-0 w-full"
