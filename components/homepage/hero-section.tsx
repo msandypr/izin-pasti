@@ -16,7 +16,7 @@ export default function HeroSection() {
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight">
-              Semua Kebutuhan <span className="gradient-text">Jasa Legalitas </span><br></br>Untuk <span className="gradient-text">Bisnis Anda</span>
+              Semua Kebutuhan <span className="gradient-text">Jasa Legalitas </span><br></br>Untuk <span className="gradient-text">Bisnis Anda</span> Se-<span className="gradient-text">Indonesia</span>
             </h1>
 
             <p className="text-md md:text-md text-black">
