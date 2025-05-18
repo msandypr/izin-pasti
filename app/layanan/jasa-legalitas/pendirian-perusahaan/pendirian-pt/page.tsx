@@ -87,7 +87,7 @@ export default function PendirianPtPage() {
                             {[
                                 "Scan Dokumen KTP Pengurus Perusahaan dan Pemegang Saham",
                                 "Scan Dokumen NPWP untuk Pengurus dan Pemegang Saham",
-                                "Stempel Perusahaan"
+                                "Alamat Perusahaan"
                             ].map((requirement, index) => (
                                 <div key={index} className="flex items-center gap-4 p-4 bg-white rounded-xl shadow-md">
                                     <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 bg-[#2CBCC4] text-white font-bold rounded-full">

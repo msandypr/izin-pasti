@@ -49,7 +49,7 @@ export default function PendirianCvPage() {
                             {[
                                 "Fotocopy Identitas Diri (KTP) untuk Persero Aktif dan Pasif",
                                 "Fotocopy Nomor Pokok Wajib Pajak (NPWP) untuk Persero Aktif dan Pasif",
-                                "Stempel Perusahaan"
+                                "Alamat Perusahaan"
                             ].map((requirement, index) => (
                                 <div key={index} className="flex items-center gap-4 p-4 bg-white rounded-xl shadow-md">
                                     <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 bg-[#2CBCC4] text-white font-bold rounded-full">
