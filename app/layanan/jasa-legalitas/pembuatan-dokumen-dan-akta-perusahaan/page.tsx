@@ -12,61 +12,61 @@ const pembuatanDokumen = [
     },
     {
         title: "Perubahan Anggaran Dasar (Pasal 1 - 4)",
-        image: "/images/jasa-legalitas/pembuatan-dokumen/perubahan-data-perseroan.png",
+        image: "/images/jasa-legalitas/pembuatan-dokumen/anggaran-dasar-1.png",
         price: "Rp. 4.000.000",
         description: "Untuk Anda yang berencana melakukan perubahan pada Anggaran Dasar (Pasal 1-4), seperti nama perusahaan, lokasi kedudukan, bidang usaha, atau modal."
     },
     {
         title: "Perubahan Anggaran Dasar (Selain Pasal 1 - 4)",
-        image: "/images/jasa-legalitas/pembuatan-dokumen/perubahan-data-perseroan.png",
+        image: "/images/jasa-legalitas/pembuatan-dokumen/anggaran-dasar-2.png",
         price: "Rp. 4.000.000",
         description: "Untuk Anda yang ingin melakukan perubahan pada Anggaran Dasar di luar Pasal 1-4."
     },
     {
         title: "Perubahan Anggaran Dasar Dan Data Perseroan",
-        image: "/images/jasa-legalitas/pembuatan-dokumen/perubahan-data-perseroan.png",
+        image: "/images/jasa-legalitas/pembuatan-dokumen/anggaran-dasar-3.png",
         price: "Rp. 5.000.000",
         description: "Perubahan pada Anggaran Dasar atau Data Perusahaan."
     },
     {
         title: "Pembuatan Cabang Perusahaan",
-        image: "/images/jasa-legalitas/pembuatan-dokumen/perubahan-data-perseroan.png",
+        image: "/images/jasa-legalitas/pembuatan-dokumen/cabang-usaha.png",
         price: "Rp. 3.900.000",
         description: "Jasa pembuatan akta khusus untuk pendirian cabang."
     },
     {
         title: "Perubahan Data Perusahaan Asing (PMA)",
-        image: "/images/jasa-legalitas/pembuatan-dokumen/perubahan-data-perseroan.png",
+        image: "/images/jasa-legalitas/pembuatan-dokumen/data-usaha-asing.png",
         price: "Rp. 7.000.000",
         description: "Perubahan Data khusus Perusahaan Modal Asing (PMA)"
     },
     {
         title: "Akta Jual Beli",
-        image: "/images/jasa-legalitas/pembuatan-dokumen/perubahan-data-perseroan.png",
+        image: "/images/jasa-legalitas/pembuatan-dokumen/akta-jual-beli.png",
         price: "Rp. 1.000.000",
         description: "Dokumen legal yang memuat kesepakatan antara penjual dan pembeli atas suatu objek, sebagai bukti sah peralihan hak."
     },
     {
         title: "Perjanjian Pra-Nikah",
-        image: "/images/jasa-legalitas/pembuatan-dokumen/perubahan-data-perseroan.png",
+        image: "/images/jasa-legalitas/pembuatan-dokumen/wedding.png",
         price: "Rp. 4.000.000",
         description: "Kesepakatan tertulis antara calon suami dan istri yang mengatur hak dan kewajiban harta sebelum dan selama pernikahan."
     },
     {
         title: "Pengumuman Koran",
-        image: "/images/jasa-legalitas/pembuatan-dokumen/perubahan-data-perseroan.png",
+        image: "/images/jasa-legalitas/pembuatan-dokumen/news.png",
         price: "Rp. 1.000.000",
         description: "Layanan publikasi resmi di media cetak untuk keperluan hukum atau administratif."
     },
     {
         title: "Berita Negara Republik Indonesia (BNRI)",
-        image: "/images/jasa-legalitas/pembuatan-dokumen/perubahan-data-perseroan.png",
+        image: "/images/jasa-legalitas/pembuatan-dokumen/news-2.png",
         price: "Rp. 1.200.000",
         description: "Platform resmi yang dikeluarkan oleh Pemerintah Indonesia untuk mempublikasikan pengumuman resmi terkait pendirian badan hukum."
     },
     {
         title: "Perjanjian Pisah Harta",
-        image: "/images/jasa-legalitas/pembuatan-dokumen/perubahan-data-perseroan.png",
+        image: "/images/jasa-legalitas/pembuatan-dokumen/divorce.png",
         price: "Rp. 5.000.000",
         description: "Bagi Anda yang ingin menyusun Perjanjian Pra atau Pasca Nikah yang mengatur pemisahan harta dan utang antara pasangan suami istri."
     },
