@@ -33,6 +33,8 @@ export default function PerjanjianPage() {
                             <p className="mt-4 text-sm text-black max-w-4xl">
                                 Buat perjanjian tertulis yang jelas dan mengikat dalam bisnis dan kerja sama untuk memastikan hak dan kewajiban setiap pihak dapat terpenuhi dengan baik.
                             </p>
+                            <p className="text-sm font-light text-black mt-4">Mulai dari</p>
+                            <p className="text-2xl font-bold text-[#2CBCC4]">Rp. 300.000</p>
                             <button
                                 onClick={() => {
                                     window.open("https://wa.me/6285935000364", "_blank");
