@@ -1,15 +1,20 @@
-"use client"
+"use client";
+
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 import { CalendarDays } from "lucide-react";
+import ShareButtons from "../etc/ShareButtons";
 
 export default function ContactSection() {
     return (
-        <div className="w-full bg-gradient-to-t from-[#2CBCC4]/10 to-white md:py-24 flex justify-center pb-8" id="contact">
-            <div className="container flex justify-center">
+        <div
+            className="w-full bg-gradient-to-t from-[#2CBCC4]/10 to-white md:py-24 flex justify-center pb-8"
+            id="contact"
+        >
+            <div className="container flex flex-col items-center justify-center">
                 <div className="w-full max-w-7xl bg-white/90 rounded-2xl shadow-2xl overflow-hidden flex flex-col lg:flex-row items-stretch">
-                    {/* Kiri - Gambar Full Height */}
+                    {/* Gambar */}
                     <div className="relative w-full lg:w-1/2 min-h-[220px] md:min-h-[280px] lg:min-h-[420px]">
                         <Image
                             src="/images/contact-section.png"
@@ -19,7 +24,8 @@ export default function ContactSection() {
                             priority
                         />
                     </div>
-                    {/* Kanan - Konten */}
+
+                    {/* Konten */}
                     <div className="w-full lg:w-1/2 flex flex-col justify-center items-center text-center px-6 md:px-12 py-8 md:py-12 space-y-5">
                         <h2 className="text-2xl md:text-3xl font-bold leading-snug">
                             Konsultasikan kebutuhan <span className="text-[#2CBCC4]">Legalitas</span> anda dengan <span className="text-[#2CBCC4]">Kami</span>
@@ -33,13 +39,18 @@ export default function ContactSection() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                <Button size="lg" className="rounded-full blue-gradient">   
+                                <Button size="lg" className="rounded-full blue-gradient">
                                     <CalendarDays className="h-5 w-5" />
                                     Jadwalkan Konsultasi Online
                                 </Button>
                             </Link>
                         </div>
                     </div>
+                </div>
+
+                {/* Share Buttons */}
+                <div className="mt-6">
+                    <ShareButtons />
                 </div>
             </div>
         </div>
