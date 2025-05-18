@@ -4,7 +4,7 @@ import { Users } from "lucide-react";
 export default function JasaPengacaraPage() {
   return (
     <>
-      <section className="w-full bg-gradient-to-b from-[#2CBCC4]/10 to-white md:pt-24">
+      <section className="w-full bg-gradient-to-b from-[#2CBCC4]/10 to-white pt-16 md:pt-24">
         <div className="container">
           <div className="text-center max-w-4xl mx-auto mb-16 space-y-4">
             <div className="inline-flex items-center gap-2 bg-[#2CBCC4]/20 px-3 py-1 rounded-full text-[#2CBCC4] font-medium text-sm">
