@@ -6,7 +6,7 @@ import ContactSection from "@/components/homepage/contact-section";
 const perizinanMikro = [
     {
         title: "Nomor Pokok Wajib Pajak (NPWP)",
-        image: "/images/jasa-legalitas/pengurusan-perizinan-usaha.png",
+        image: "/images/jasa-legalitas/pengurusan-perizinan-usaha/tax.png",
         price: "Rp. 500.000",
         features: [
             "NPWP Perorangan",
@@ -15,7 +15,7 @@ const perizinanMikro = [
     },
     {
         title: "OSS (Online Single Submission)",
-        image: "/images/jasa-legalitas/pengurusan-perizinan-usaha.png",
+        image: "/images/jasa-legalitas/pengurusan-perizinan-usaha/oss.png",
         price: "Rp. 2.700.000",
         features: [
             "NIB (Nomor Induk Berusaha)",
@@ -28,7 +28,7 @@ const perizinanMikro = [
 const perizinanMakro = [
     {
         title: "Izin Usaha Mikro Menengah (IUMK)",
-        image: "/images/jasa-legalitas/pengurusan-perizinan-usaha.png",
+        image: "/images/jasa-legalitas/pengurusan-perizinan-usaha/iumk.png",
         price: "Rp. 1.000.000",
         features: [
             "IUMK Perorangan",
@@ -37,7 +37,7 @@ const perizinanMakro = [
     },
     {
         title: "NIB Ekspor dan Impor",
-        image: "/images/jasa-legalitas/pengurusan-perizinan-usaha.png",
+        image: "/images/jasa-legalitas/pengurusan-perizinan-usaha/nib.png",
         price: "Rp. 5.000.000",
         features: [
             "API-U",
