@@ -35,22 +35,22 @@ export default function Footer() {
             <h3 className="font-bold text-lg text-[#2CBCC4]">Navigasi</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="text-[#2CBCC4] hover:text-[#2CBCC4]/70">
+                <Link href="/" className="text-[#2CBCC4] hover:text-[#2CBCC4]/70">
                   Beranda
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-[#2CBCC4] hover:text-[#2CBCC4]/70">
+                <Link href="/layanan" className="text-[#2CBCC4] hover:text-[#2CBCC4]/70">
                   Layanan
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-[#2CBCC4] hover:text-[#2CBCC4]/70">
+                <Link href="/tentang-kami" className="text-[#2CBCC4] hover:text-[#2CBCC4]/70">
                   Tentang Kami
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-[#2CBCC4] hover:text-[#2CBCC4]/70">
+                <Link href="/hubungi-kami" className="text-[#2CBCC4] hover:text-[#2CBCC4]/70">
                   Hubungi Kami
                 </Link>
               </li>
@@ -61,17 +61,17 @@ export default function Footer() {
             <h3 className="font-bold text-lg text-[#2CBCC4]">Layanan</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="text-[#2CBCC4] hover:text-[#2CBCC4]/70">
+                <Link href="/layanan/jasa-legalitas" className="text-[#2CBCC4] hover:text-[#2CBCC4]/70">
                   Jasa Legalitas
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-[#2CBCC4] hover:text-[#2CBCC4]/70">
+                <Link href="/layanan/jasa-pengacara" className="text-[#2CBCC4] hover:text-[#2CBCC4]/70">
                   Jasa Pengacara
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-[#2CBCC4] hover:text-[#2CBCC4]/70">
+                <Link href="layanan/virtual-office" className="text-[#2CBCC4] hover:text-[#2CBCC4]/70">
                   Virtual Office
                 </Link>
               </li>
