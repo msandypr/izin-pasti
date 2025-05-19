@@ -52,19 +52,21 @@ const ShareButtons = () => {
   if (!shareUrl) return null;
 
   return (
-    <div className="flex gap-2">
-      {buttons.map((btn) => (
-        <a
-          key={btn.name}
-          href={btn.link}
-          target="_blank"
-          rel="noopener noreferrer"
-          className={`flex items-center gap-2 px-4 py-2 text-white rounded ${btn.bg} hover:opacity-90 transition`}
-        >
-          {btn.icon}
-          <span className="text-sm">{btn.name === 'X' ? 'Tweet' : 'Share'}</span>
-        </a>
-      ))}
+    <div className="flex flex-col md:flex-row items-center justify-center gap-4">
+      <span className="font-semibold text-gray-700">Share This Page On:</span>
+      <div className="flex gap-2">
+        {buttons.map((btn) => (
+          <a
+            key={btn.name}
+            href={btn.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`flex items-center justify-center gap-2 px-4 py-2 text-white rounded ${btn.bg} hover:opacity-90 transition`}
+          >
+            {btn.icon}
+          </a>
+        ))}
+      </div>
     </div>
   );
 };
