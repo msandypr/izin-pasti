@@ -145,7 +145,7 @@ export default function Header() {
               <div className="border-t border-[#2CBCC4]/20"></div>
               <div className="flex flex-col gap-2">
                 <Link
-                  href="https://wa.me/6285299084723?text=Halo!%20Saya%20ingin%20berkonsultasi%20terkait%20Layanan%20yang%20ada%20di%20Nusantara%20Legalitasku"
+                  href="https://wa.me/6285935000364?text=Halo!%20Saya%20ingin%20berkonsultasi%20terkait%20Layanan%20yang%20ada%20di%20Nusantara%20Legalitasku"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
