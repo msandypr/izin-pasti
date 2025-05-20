@@ -51,7 +51,7 @@ export default function PricingSection() {
     const packages = [
         {
             title: "Pendirian Perusahaan",
-            price: "1.500.000",
+            price: "2.500.000",
             image: "/images/jasa-legalitas/pendirian-perusahaan.png",
             description: "Membantu Anda mendirikan perusahaan dengan proses cepat, transparan, dan bebas repot.",
             buttonText: "Pesan Sekarang",
@@ -59,7 +59,7 @@ export default function PricingSection() {
         },
         {
             title: "Penanaman Modal Asing (PMA)",
-            price: "15.000.000",
+            price: "10.000.000",
             image: "/images/jasa-legalitas/pendirian-perusahaan/penanaman-modal-asing.png",
             description: "Layanan profesional untuk mendirikan perusahaan PMA yang sesuai dengan regulasi terbaru.",
             buttonText: "Pesan Sekarang",
@@ -68,7 +68,7 @@ export default function PricingSection() {
         },
         {
             title: "Pembuatan Perjanjian",
-            price: "500.000",
+            price: "300.000",
             image: "/images/jasa-legalitas/perjanjian.png",
             description: "Perjanjian Anda akan dirancang untuk melindungi hak dan kewajiban secara maksimal.",
             buttonText: "Pesan Sekarang",
