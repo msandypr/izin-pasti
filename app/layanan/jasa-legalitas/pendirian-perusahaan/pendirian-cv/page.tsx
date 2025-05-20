@@ -25,7 +25,7 @@ export default function PendirianCvPage() {
                     </div>
                     <CardPendirian
                         title="Pendirian CV"
-                        price="Rp. 2.500.000"
+                        price="Rp. 3.000.000"
                         image="/images/jasa-legalitas/pendirian-perusahaan/pendirian-cv.png"
                         features={[
                             "Verifikasi Nama Perusahaan",

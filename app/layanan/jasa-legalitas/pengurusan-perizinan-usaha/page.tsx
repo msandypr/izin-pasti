@@ -16,7 +16,7 @@ const perizinanMikro = [
     {
         title: "OSS (Online Single Submission)",
         image: "/images/jasa-legalitas/pengurusan-perizinan-usaha/oss.png",
-        price: "Rp. 2.700.000",
+        price: "Rp. 500.000",
         features: [
             "NIB (Nomor Induk Berusaha)",
             "IUP (Izin Usaha Perdagangan)",
@@ -38,7 +38,7 @@ const perizinanMakro = [
     {
         title: "NIB Ekspor dan Impor",
         image: "/images/jasa-legalitas/pengurusan-perizinan-usaha/nib.png",
-        price: "Rp. 5.000.000",
+        price: "Rp. 7.000.000",
         features: [
             "API-U",
             "Hak Akses Kepabeanan",

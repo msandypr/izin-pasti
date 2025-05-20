@@ -25,7 +25,7 @@ export default function PendirianKoperasiPage() {
                     </div>
                     <CardPendirian
                         title="Pendirian Koperasi"
-                        price="Rp. 6.000.000"
+                        price="Rp. 5.000.000"
                         image="/images/jasa-legalitas/pendirian-perusahaan/pendirian-Koperasi.png"
                         features={[
                             "Pengecekan dan Pemesanan Nama Koperasi",

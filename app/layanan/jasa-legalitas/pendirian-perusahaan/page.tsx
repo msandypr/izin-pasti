@@ -6,21 +6,21 @@ const subLayananPendirian = [
     {
         title: "Paket Pendirian PT",
         image: "/images/jasa-legalitas/pendirian-perusahaan/pendirian-pt.png",
-        price: "Rp 4.500.000",
+        price: "Rp 5.000.000",
         subtitle: "Solusi lengkap pendirian Perseroan Terbatas (PT) untuk bisnis Anda.",
         link: "/layanan/jasa-legalitas/pendirian-perusahaan/pendirian-pt"
     },
     {
         title: "Paket Pendirian CV",
         image: "/images/jasa-legalitas/pendirian-perusahaan/pendirian-cv.png",
-        price: "Rp 2.500.000",
+        price: "Rp 3.000.000",
         subtitle: "Layanan profesional untuk pendirian Commanditaire Vennootschap (CV).",
         link: "/layanan/jasa-legalitas/pendirian-perusahaan/pendirian-cv"
     },
     {
         title: "Paket Pendirian Firma",
         image: "/images/jasa-legalitas/pendirian-perusahaan/pendirian-firma.png",
-        price: "Rp 3.000.000",
+        price: "Rp 2.500.000",
         subtitle: "Bantuan legal untuk pendirian Firma secara mudah dan cepat.",
         link: "/layanan/jasa-legalitas/pendirian-perusahaan/pendirian-firma"
     },
@@ -34,7 +34,7 @@ const subLayananPendirian = [
     {
         title: "Penanaman Modal Asing (PMA)",
         image: "/images/jasa-legalitas/pendirian-perusahaan/penanaman-modal-asing.png",
-        price: "Rp 15.000.000",
+        price: "Rp 10.000.000",
         subtitle: "Layanan pendirian perusahaan PMA untuk investor asing.",
         link: "/layanan/jasa-legalitas/pendirian-perusahaan/penanaman-modal-asing"
     },
@@ -48,14 +48,14 @@ const subLayananPendirian = [
     {
         title: "Pendirian Koperasi",
         image: "/images/jasa-legalitas/pendirian-perusahaan/pendirian-koperasi.png",
-        price: "Rp 7.500.000",
+        price: "Rp 5.000.000",
         subtitle: "Layanan lengkap untuk pendirian Koperasi, legal dan terpercaya.",
         link: "/layanan/jasa-legalitas/pendirian-perusahaan/pendirian-koperasi"
     },
     {
         title: "Pendirian Perkumpulan",
         image: "/images/jasa-legalitas/pendirian-perusahaan/pendirian-perkumpulan.png",
-        price: "Rp 11.500.000",
+        price: "Rp 5.000.000",
         subtitle: "Bantuan legal untuk pendirian Perkumpulan secara hukum.",
         link: "/layanan/jasa-legalitas/pendirian-perusahaan/pendirian-perkumpulan"
     }

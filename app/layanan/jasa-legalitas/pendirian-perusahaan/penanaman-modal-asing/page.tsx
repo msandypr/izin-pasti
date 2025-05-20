@@ -55,7 +55,7 @@ export default function PersekutuanPerdataPage() {
                     </div>
                     <CardPendirian
                         title="Penanaman Modal Asing"
-                        price="Rp. 15.000.000"
+                        price="Rp. 10.000.000"
                         image="/images/jasa-legalitas/pendirian-perusahaan/penanaman-modal-asing.png"
                         features={[
 

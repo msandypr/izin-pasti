@@ -9,17 +9,17 @@ const penutupanPerusahaan = [
     {
         title: "Penutupan PT",
         image: "/images/jasa-legalitas/pendirian-perusahaan/pendirian-pt.png",
-        price: "Rp. 11.000.000",
+        price: "Rp. 10.000.000",
     },
     {
         title: "Penutupan CV",
         image: "/images/jasa-legalitas/pendirian-perusahaan/pendirian-cv.png",
-        price: "Rp. 9.000.000",
+        price: "Rp. 5.000.000",
     },
     {
         title: "Penutupan PMA",
         image: "/images/jasa-legalitas/pendirian-perusahaan/penanaman-modal-asing.png",
-        price: "Rp. 20.000.000",
+        price: "Rp. 15.000.000",
     },
 ];
 
