@@ -1,4 +1,6 @@
+"use client"
 import { Eye } from "lucide-react";
+import { motion } from "framer-motion";
 
 const jasaLegalitas = [
   {
@@ -56,17 +58,30 @@ export default function JasaLegalitasPage() {
     <>
       <section className="w-full pt-4 pb-8 md:pt-8 md:pb-16 lg:pb-24 bg-gradient-to-b from-[#2CBCC4]/10 to-white">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col items-center justify-center py-10 md:py-16">
+          <motion.div
+            className="flex flex-col items-center justify-center py-10 md:py-16"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7 }}
+            viewport={{ once: true }}
+          >
             <h1 className="text-3xl md:text-4xl font-bold py-4 text-center">
               Melayani <span className="gradient-text">Jasa Legalitas</span> untuk <span className="gradient-text">Bisnis Anda</span>
             </h1>
             <p className="text-md text-black text-center">
               Kami siap membantu segala kebutuhan legalitas perusahaan Anda dengan layanan profesional dan terpercaya.
             </p>
-          </div>
+          </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:flex lg:flex-wrap lg:justify-center">
             {jasaLegalitas.map((item, idx) => (
-              <div key={idx} className="bg-white rounded-2xl shadow p-6 border border-[#2CBCC4]/10 flex flex-col items-center lg:w-[30%]">
+              <motion.div
+                key={idx}
+                className="bg-white rounded-2xl shadow p-6 border border-[#2CBCC4]/10 flex flex-col items-center lg:w-[30%]"
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.12 * idx }}
+                viewport={{ once: true }}
+              >
                 <h2 className="text-2xl font-bold text-[#2CBCC4] mb-2 text-center min-h-[72px]">{item.title}</h2>
                 <img
                   src={item.image}
@@ -83,7 +98,7 @@ export default function JasaLegalitasPage() {
                     Lihat Layanan
                   </a>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>

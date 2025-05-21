@@ -4,6 +4,7 @@ import { ArrowRight, ArrowLeft, Mail } from "lucide-react";
 import useEmblaCarousel from 'embla-carousel-react';
 import { useCallback, useEffect, useState } from "react";
 import { WalletMinimal } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function PricingSection() {
     const [emblaRef, emblaApi] = useEmblaCarousel({
@@ -95,7 +96,13 @@ export default function PricingSection() {
     return (
         <section className="w-full bg-gradient-to-t from-white to-[#2CBCC4]/10 py-16 md:py-24" id="pricing">
             <div className="container">
-                <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <motion.div
+                    className="text-center max-w-3xl mx-auto mb-16 space-y-4"
+                    initial={{ opacity: 0, y: 40 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.7 }}
+                    viewport={{ once: true }}
+                >
                     <div className="inline-flex items-center gap-2 bg-[#2CBCC4]/20 px-3 py-1 rounded-full text-[#2CBCC4] font-medium text-sm">
                         <WalletMinimal className="h-4 w-4 fill-[#2CBCC4] text-[#2CBCC4]" />
                         <span>Layanan Legalitas Kami</span>
@@ -106,7 +113,7 @@ export default function PricingSection() {
                     <p className="text-md text-black">
                         Temukan layanan yang paling sesuai untuk kebutuhan bisnis Anda dan hubungi kami untuk konsultasi lebih lanjut.
                     </p>
-                </div>
+                </motion.div>
 
                 <div className="relative">
                     <div className="overflow-hidden" ref={emblaRef}>
@@ -114,11 +121,12 @@ export default function PricingSection() {
                             {packages.map((pkg, index) => (
                                 <div
                                     key={index}
-                                    className="flex-[0_0_100%] min-w-0 sm:flex-[0_0_50%] lg:flex-[0_0_33.333%]">
+                                    className="flex-[0_0_100%] min-w-0 sm:flex-[0_0_50%] lg:flex-[0_0_33.333%]"
+                                >
                                     <div
                                         className={
                                             `rounded-2xl p-6 flex flex-col items-center h-full transition-all duration-300
-                                            ${selectedIndex === index
+                ${selectedIndex === index
                                                 ? "scale-100 z-10 bg-[#2CBCC4] border-4 border-[#2CBCC4] shadow-2xl"
                                                 : "scale-75 bg-white border-2 border-[#2CBCC4]/50 shadow-lg"
                                             }`
@@ -137,7 +145,7 @@ export default function PricingSection() {
                                         <Button
                                             asChild
                                             className={`mt-2 w-full rounded-full font-semibold transition flex items-center justify-center gap-2
-                                                ${selectedIndex === index
+                    ${selectedIndex === index
                                                     ? "bg-white text-[#2CBCC4] hover:bg-white/90"
                                                     : "bg-[#2CBCC4] text-white hover:bg-[#239ba0]"
                                                 }`}>

@@ -1,6 +1,7 @@
 "use client"
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import Link from "next/link";
+import { motion } from "framer-motion"
 
 const subLayananPendirian = [
     {
@@ -66,7 +67,13 @@ export default function PendirianPerusahaanPage() {
         <>
             <section className="w-full pt-4 pb-8 md:pt-8 md:pb-16 lg:pb-24 bg-gradient-to-b from-[#2CBCC4]/10 to-white">
                 <div className="container mx-auto px-4">
-                    <div className="flex flex-col items-center justify-center py-10 md:py-16">
+                    <motion.div
+                        initial={{ opacity: 0, y: 40 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.7 }}
+                        className="flex flex-col items-center justify-center py-10 md:py-16"
+                    >
                         <div className="inline-flex items-center gap-2 bg-[#2CBCC4]/20 px-3 py-1 rounded-full text-[#2CBCC4] font-medium text-sm">
                             <Link href="/layanan/jasa-legalitas" className="flex items-center gap-2">
                                 <ArrowLeft className="h-4 w-4 fill-[#2CBCC4] text-[#2CBCC4]" />
@@ -79,10 +86,17 @@ export default function PendirianPerusahaanPage() {
                         <p className="text-md text-black text-center">
                             Kami siap membantu segala kebutuhan pendirian perusahaan Anda dengan layanan profesional dan terpercaya.
                         </p>
-                    </div>
+                    </motion.div>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:flex lg:flex-wrap lg:justify-center">
                         {subLayananPendirian.map((item, idx) => (
-                            <div key={idx} className="bg-white rounded-2xl shadow p-6 border border-[#2CBCC4]/10 flex flex-col items-center lg:w-[30%]">
+                            <motion.div
+                                key={idx}
+                                initial={{ opacity: 0, y: 30 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 0.6, delay: 0.12 * idx }}
+                                className="bg-white rounded-2xl shadow p-6 border border-[#2CBCC4]/10 flex flex-col items-center lg:w-[30%]"
+                            >
                                 <h2 className="text-2xl font-bold text-[#2CBCC4] mb-2 text-center">{item.title}</h2>
                                 <img
                                     src={item.image}
@@ -98,10 +112,10 @@ export default function PendirianPerusahaanPage() {
                                         className="flex px-6 py-2 rounded-full bg-[#2CBCC4] text-white font-semibold hover:bg-[#239ba0] transition text-center items-center justify-center gap-2"
                                     >
                                         Pesan Sekarang
-                                        <ArrowRight className="h-5 w-5" /> 
+                                        <ArrowRight className="h-5 w-5" />
                                     </a>
                                 </div>
-                            </div>
+                            </motion.div>
                         ))}
                     </div>
                 </div>

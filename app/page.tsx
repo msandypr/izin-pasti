@@ -1,82 +1,42 @@
-"use client";
 import HeroSection from "@/components/homepage/hero-section";
 import FeaturesSection from "@/components/homepage/features-section";
 import PricingSection from "@/components/homepage/pricing-section";
 import ContactSection from "@/components/homepage/contact-section";
-import { motion, useAnimation } from "framer-motion";
-import { useEffect, useRef } from "react";
+
+export const metadata = {
+  title: "Nusantara Legalitasku - Semua Kebutuhan Jasa Legalitas Untuk Bisnis Anda Se-Indonesia",
+  description: "Nusantara Legalitasku menawarkan berbagai layanan, mulai dari pendirian perusahaan, pengurusan izin usaha, pembuatan dan pengesahan kontrak hukum, hingga konsultasi legal. Didukung oleh tim profesional yang berkompeten, kami berkomitmen memberikan solusi yang cepat, akurat, dan transparan.",
+  openGraph: {
+    title: "Nusantara Legalitasku - Semua Kebutuhan Jasa Legalitas Untuk Bisnis Anda Se-Indonesia",
+    description: "Nusantara Legalitasku menawarkan berbagai layanan, mulai dari pendirian perusahaan, pengurusan izin usaha, pembuatan dan pengesahan kontrak hukum, hingga konsultasi legal. Didukung oleh tim profesional yang berkompeten, kami berkomitmen memberikan solusi yang cepat, akurat, dan transparan.",
+    url: "https://nusantaralegalitasku.com/",
+    images: [
+      {
+        url: "/public/images/nusantara_legalitasku_logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Nusantara Legalitasku Logo"
+      }
+    ],
+    type: "website"
+  }
+};
 
 export default function Home() {
-  const featuresControls = useAnimation();
-  const pricingControls = useAnimation();
-  const contactControls = useAnimation();
-
-  const featuresRef = useRef(null);
-  const pricingRef = useRef(null);
-  const contactRef = useRef(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            if (entry.target === featuresRef.current) {
-              featuresControls.start({ opacity: 1, y: 0 });
-            } else if (entry.target === pricingRef.current) {
-              pricingControls.start({ opacity: 1, y: 0 });
-            } else if (entry.target === contactRef.current) {
-              contactControls.start({ opacity: 1, y: 0 });
-            }
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-
-    if (featuresRef.current) observer.observe(featuresRef.current);
-    if (pricingRef.current) observer.observe(pricingRef.current);
-    if (contactRef.current) observer.observe(contactRef.current);
-
-    return () => {
-      if (featuresRef.current) observer.unobserve(featuresRef.current);
-      if (pricingRef.current) observer.unobserve(pricingRef.current);
-      if (contactRef.current) observer.unobserve(contactRef.current);
-    };
-  }, [featuresControls, pricingControls, contactControls]);
-
   return (
     <div>
-      <motion.div
-        initial={{ opacity: 0, y: -50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-      >
+      <div>
         <HeroSection />
-      </motion.div>
-      <motion.div
-        ref={featuresRef}
-        initial={{ opacity: 0, y: -30 }}
-        animate={featuresControls}
-        transition={{ duration: 1, ease: "easeInOut" }}
-      >
+      </div>
+      <div>
         <FeaturesSection />
-      </motion.div>
-      <motion.div
-        ref={pricingRef}
-        initial={{ opacity: 0, y: -50 }}
-        animate={pricingControls}
-        transition={{ duration: 1, ease: "easeIn" }}
-      >
+      </div>
+      <div>
         <PricingSection />
-      </motion.div>
-      <motion.div
-        ref={contactRef}
-        initial={{ opacity: 0, y: -70 }}
-        animate={contactControls}
-        transition={{ duration: 1.2, ease: "easeIn" }}
-      >
+      </div>
+      <div>
         <ContactSection />
-      </motion.div>
+      </div>
     </div>
   );
 }

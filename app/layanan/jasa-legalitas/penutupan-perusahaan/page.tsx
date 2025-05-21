@@ -4,6 +4,7 @@ import { ArrowLeft } from "lucide-react";
 import { useState } from "react";
 import Link from "next/link";
 import ContactSection from "@/components/homepage/contact-section";
+import { motion } from "framer-motion";
 
 const penutupanPerusahaan = [
     {
@@ -84,12 +85,17 @@ const faqs = [
     },
 ]
 
-export default function PenutupanPerusahaanPage() {
-    const [activeId, setActiveId] = useState<string | null>(null)
+const fadeInUp = {
+    initial: { opacity: 0, y: 40 },
+    whileInView: { opacity: 1, y: 0 },
+    viewport: { once: true },
+    transition: { duration: 0.6 }
+};
 
+export default function PenutupanPerusahaanPage() {
     return (
         <>
-            <section className="w-full pt-4 pb-8 md:pt-8 md:pb-16 lg:pb-24 bg-gradient-to-t from-[#2CBCC4]/10 to-white">
+            <motion.section {...fadeInUp} className="w-full pt-4 pb-8 md:pt-8 md:pb-16 lg:pb-24 bg-gradient-to-t from-[#2CBCC4]/10 to-white">
                 <div className="container mx-auto px-4">
                     <div className="flex flex-col items-center justify-center py-10 md:py-16">
                         <div className="inline-flex items-center gap-2 bg-[#2CBCC4]/20 px-3 py-1 rounded-full text-[#2CBCC4] font-medium text-sm">
@@ -99,70 +105,38 @@ export default function PenutupanPerusahaanPage() {
                             </Link>
                         </div>
                         <h1 className="text-3xl md:text-4xl font-bold py-4 text-center">
-                            Paket <span className="gradient-text">Penutupan Perusahaan</span>
+                            Penutupan Perusahaan
                         </h1>
                         <p className="text-md text-black text-center">
                             Kami siap membantu segala kebutuhan Penutupan Perusahaan Anda dengan layanan profesional dan terpercaya.
                         </p>
                     </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:flex lg:flex-wrap lg:justify-center">
-                        {penutupanPerusahaan.map((item, idx) => (
-                            <div key={idx} className="bg-gradient-to-br from-[#e0f7fa] to-[#c8e6f8] p-6 rounded-2xl shadow border border-[#2CBCC4]/10 flex flex-col items-center lg:w-[30%]">
-                                <h2 className="text-2xl font-bold text-[#2CBCC4] mb-2 text-center">{item.title}</h2>
-                                <img
-                                    src={item.image}
-                                    alt={item.title}
-                                    className="w-full aspect-square object-cover rounded-xl mb-4"
-                                />
-                                <p className="font-semibold text-md text-black text-center">Mulai dari</p>
-                                <p className="font-bold text-2xl text-[#2CBCC4] text-center mb-2">{item.price}</p>
-                                <div className="flex flex-col gap-2 w-full mt-auto">
-                                    <a
-                                        href={`https://wa.me/6285935000364?text=Halo!%2C%20Saya%20ingin%20konsultasi%20terkait%20Penutupan%20Perusahaan%20-%20${encodeURIComponent(item.title)}`}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="flex px-6 py-2 rounded-full bg-[#2CBCC4] text-white font-semibold hover:bg-[#239ba0] transition text-center items-center justify-center gap-2"
-                                    >
-                                        <WhatsappLogo className="h-5 w-5" style={{ fill: "white" }} />
-                                        Konsultasikan Sekarang
-                                    </a>
-                                </div>
-                            </div>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                        {penutupanPerusahaan.map((item, index) => (
+                            <motion.div key={index} {...fadeInUp} custom={index} className="flex flex-col items-center gap-4 p-6 bg-white rounded-xl shadow-md">
+                                <img src={item.image} alt={item.title} className="w-20 h-20 object-contain" />
+                                <h3 className="text-[#2CBCC4] font-semibold text-lg mb-1">{item.title}</h3>
+                                <p className="text-black font-bold text-xl">{item.price}</p>
+                            </motion.div>
                         ))}
                     </div>
                 </div>
-            </section>
-            <section className="w-full bg-gradient-to-b from-[#2CBCC4]/10 to-white py-10 px-4">
-                <div className="max-w-4xl mx-auto">
-                    <h2 className="text-3xl font-bold text-center text-[#2CBCC4] mb-8">
-                        Syarat Penutupan Perusahaan
+            </motion.section>
+            <motion.section {...fadeInUp} className="w-full pt-4 pb-8 md:pt-8 md:pb-16 lg:pb-24 bg-gradient-to-b from-[#2CBCC4]/10 to-white">
+                <div className="container mx-auto px-4">
+                    <h2 className="text-3xl font-bold text-center text-[#2CBCC4] mb-10">
+                        Persyaratan Penutupan Perusahaan
                     </h2>
-                    <div className="space-y-4">
-                        {faqs.map((faq) => (
-                            <div key={faq.id} className="border rounded-lg overflow-hidden shadow">
-                                <button
-                                    onClick={() => setActiveId(activeId === faq.id ? null : faq.id)}
-                                    className="w-full flex justify-between items-center p-4 text-left bg-white hover:bg-gray-50 transition"
-                                >
-                                    <span className="font-semibold text-[#2CBCC4]">{faq.title}</span>
-                                    <svg
-                                        className={`w-5 h-5 transition-transform ${activeId === faq.id ? 'rotate-180' : ''
-                                            }`}
-                                        fill="none"
-                                        stroke="currentColor"
-                                        viewBox="0 0 24 24"
-                                    >
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
-                                    </svg>
-                                </button>
-                                {activeId === faq.id && (
-                                    <div className="p-4 bg-white border-t">{faq.content}</div>
-                                )}
-                            </div>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                        {faqs.map((faq, index) => (
+                            <motion.div key={faq.id} {...fadeInUp} custom={index} className="flex flex-col items-start gap-4 p-6 bg-white rounded-xl shadow-md">
+                                <h3 className="text-[#2CBCC4] font-semibold mb-1">{faq.title}</h3>
+                                <div>{faq.content}</div>
+                            </motion.div>
                         ))}
                     </div>
                 </div>
-            </section>
+            </motion.section>
             <ContactSection />
         </>
     );
