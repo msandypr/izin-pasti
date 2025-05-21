@@ -55,7 +55,7 @@ export default function PendirianPtPage() {
                                     alt={item.title}
                                     className="w-full aspect-square object-cover rounded-xl mb-4"
                                 />
-                                <p className="font-light text-sm text-black text-center">Mulai dari</p>
+                                <p className="font-semibold text-md text-black text-center">Mulai dari</p>
                                 <p className="font-bold text-2xl text-[#2CBCC4] text-center mb-2">{item.price}</p>
                                 <ul className="text-black text-sm text-left mb-4 list-disc list-inside">
                                     <p className="font-light text-sm text-black mb-1">Benefit yang anda dapatkan:</p>

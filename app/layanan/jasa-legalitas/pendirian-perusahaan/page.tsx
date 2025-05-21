@@ -90,7 +90,7 @@ export default function PendirianPerusahaanPage() {
                                     className="w-full aspect-square object-cover rounded-xl mb-4"
                                 />
                                 <p className="text-black text-sm text-center mb-4">{item.subtitle}</p>
-                                <p className="text-sm font-light text-black">Mulai dari</p>
+                                <p className="text-md font-semibold text-black">Mulai dari</p>
                                 <p className="text-2xl font-bold text-[#2CBCC4] mb-4">{item.price}</p>
                                 <div className="flex flex-col gap-2 w-full mt-auto">
                                     <a

@@ -36,8 +36,8 @@ export default function ServiceHighlightCard({
       {/* Konten */}
       <div className="flex-1 text-[#2CBCC4]">
         <h2 className="text-3xl font-bold">{title}</h2>
-        <p className="text-sm font-light text-black mt-2">Mulai dari</p>
-        <p className="text-2xl font-bold text-[#2CBCC4]">{price}</p>
+        <p className="text-md font-semibold text-black mt-2">Mulai dari</p>
+        <p className="text-3xl font-bold text-[#2CBCC4]">{price}</p>
         <ul className="mt-4 list-disc list-inside space-y-1 text-sm text-gray-700">
           {features.map((feature, index) => (
             <li key={index}>{feature}</li>

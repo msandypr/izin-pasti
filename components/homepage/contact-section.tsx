@@ -30,7 +30,7 @@ export default function ContactSection() {
                         <h2 className="text-2xl md:text-3xl font-bold leading-snug">
                             Konsultasikan kebutuhan <span className="text-[#2CBCC4]">Legalitas</span> anda dengan <span className="text-[#2CBCC4]">Kami</span>
                         </h2>
-                        <p className="text-base md:text-sm text-black">
+                        <p className="text-base md:text-md text-black">
                             Tim kami siap membantu segala kebutuhan legalitas bisnis Anda. Jadwalkan konsultasi online dengan mudah dan cepat.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 pt-2 justify-center">

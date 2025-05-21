@@ -81,7 +81,7 @@ export default function PerizinanPage() {
                                     />
                                 </div>
                                 <div className="text-center mb-4">
-                                    <p className="font-light text-sm text-black">Mulai dari</p>
+                                    <p className="font-semibold text-md text-black">Mulai dari</p>
                                     <p className="font-bold text-2xl text-[#2CBCC4]">{item.price}</p>
                                 </div>
                                 <div className="mt-auto">

@@ -131,7 +131,7 @@ export default function PricingSection() {
                                                 className="w-full aspect-square object-cover rounded-xl mb-4"
                                             />
                                         )}
-                                        <p className={`text-sm text-center mt-4 ${selectedIndex === index ? "text-white/90" : "text-black"}`}>Mulai Dari</p>
+                                        <p className={`text-md font-bold text-center mt-4 ${selectedIndex === index ? "text-white/90" : "text-black"}`}>Mulai Dari</p>
                                         <span className={`text-center text-3xl md:text-4xl font-bold mb-2 ${selectedIndex === index ? "text-white" : "text-[#2CBCC4]"}`}>Rp. {pkg.price}</span>
                                         <p className={`text-sm text-center mb-4 ${selectedIndex === index ? "text-white/90" : "text-black"}`}>{pkg.description}</p>
                                         <Button

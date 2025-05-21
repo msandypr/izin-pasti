@@ -25,7 +25,7 @@ export default function PendirianFirmaPage() {
                     </div>
                     <CardPendirian
                         title="Pendirian Firma"
-                        price="Rp. 3.500.000"
+                        price="Rp. 2.500.000"
                         image="/images/jasa-legalitas/pendirian-perusahaan/pendirian-firma.png"
                         features={[
                             "Akta Pendirian dan Surat Keputusan Kemenkumham",

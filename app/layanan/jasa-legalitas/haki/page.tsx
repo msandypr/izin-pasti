@@ -97,7 +97,7 @@ const hakiThree = [
     {
         title: "Pendaftaran Rahasia Dagang",
         image: "/images/jasa-legalitas/haki/merek-8.png",
-        description: "",
+        description: "Rahasia dagang adalah aset berharga yang membuat bisnis Anda unik dan unggul. Jangan biarkan ide, formula, atau strategi bisnis Anda jatuh ke tangan yang salah. Daftarkan rahasia dagang Anda sekarang bersama Nusantara Legalitasku",
         price: "Rp. 4.300.000",
         features: [
             
@@ -145,7 +145,7 @@ export default function HakiPage() {
                                         <li key={i}>{feature}</li>
                                     ))}
                                 </ul>
-                                <p className="font-light text-sm text-black text-center">Mulai dari</p>
+                                <p className="font-semibold text-md text-black text-center">Mulai dari</p>
                                 <p className="font-bold text-2xl text-[#2CBCC4] text-center mb-4">{item.price}</p>
                                 <div className="flex flex-col gap-2 w-full mt-auto">
                                     <a
@@ -186,7 +186,7 @@ export default function HakiPage() {
                                         <li key={i}>{feature}</li>
                                     ))}
                                 </ul>
-                                <p className="font-light text-sm text-black text-center">Mulai dari</p>
+                                <p className="font-semibold text-md text-black text-center">Mulai dari</p>
                                 <p className="font-bold text-2xl text-[#2CBCC4] text-center mb-4">{item.price}</p>
                                 <div className="flex flex-col gap-2 w-full mt-auto">
                                     <a
@@ -220,7 +220,7 @@ export default function HakiPage() {
                                     alt={item.title}
                                     className="w-full aspect-square object-cover rounded-xl"
                                 />
-                                <p className="font-light text-sm text-black mb-1 min-h-[48px] text-center">
+                                <p className="font-light text-sm text-black mb-1 min-h-[100px] text-center">
                                     {item.description}
                                 </p>
                                 <ul className="text-black text-sm mb-4 list-disc list-inside min-h-[140px] flex flex-col justify-start">
@@ -228,7 +228,7 @@ export default function HakiPage() {
                                         <li key={i}>{feature}</li>
                                     ))}
                                 </ul>
-                                <p className="font-light text-sm text-black text-center">Mulai dari</p>
+                                <p className="font-semibold text-md text-black text-center">Mulai dari</p>
                                 <p className="font-bold text-2xl text-[#2CBCC4] text-center mb-4">{item.price}</p>
                                 <div className="flex flex-col gap-2 w-full mt-auto">
                                     <a
