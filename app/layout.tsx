@@ -33,6 +33,7 @@ export default function RootLayout({
           <div className="flex min-h-screen flex-col">
             <Header />
             <main className="flex-1">{children}</main>
+            <FloatingBackToTopButton />
             <FloatingWhatsappButton />
             <Footer />
           </div>
@@ -42,4 +43,5 @@ export default function RootLayout({
   );
 }
 
-import "./globals.css";
+import "./globals.css";import FloatingBackToTopButton from "@/components/etc/FloatingBackToTopButton";
+
