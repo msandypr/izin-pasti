@@ -97,7 +97,7 @@ export default function Footer() {
               No.5, RT 005, RW 009, Jawa Tengah
             </p>
             <p className="text-[#2CBCC4]">
-              Email: info@nusantaralegalitasku.com
+              Email: nusantaralegalitasku@gmail.com
               <br />
               Telp: +62 859 3500 0364
             </p>
