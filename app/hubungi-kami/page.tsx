@@ -2,8 +2,26 @@
 import WhatsappLogo from "@/components/etc/WhatsappLogo";
 import { Instagram, ThumbsUp, Shield, BadgeCheck, Facebook } from "lucide-react";
 import { motion } from "framer-motion";
+import { useRef } from "react";
 
 export default function HubungiKamiPage() {
+
+  const formRef = useRef<HTMLFormElement>(null);
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const formData = new FormData(e.currentTarget);
+    const nama = formData.get('nama') || '';
+    const email = formData.get('email') || '';
+    const whatsapp = formData.get('whatsapp') || '';
+    const perihal = formData.get('perihal') || '';
+    const pesan = formData.get('pesan') || '';
+    const message =
+      `Halo Nusantara Legalitasku, Ada Pesan Masuk:\nNama: ${nama}\nEmail: ${email}\nNo. Whatsapp: ${whatsapp}\nPerihal: ${perihal}\nPesan: ${pesan}`;
+    const encoded = encodeURIComponent(message);
+    window.open(`https://wa.me/6285935000364?text=${encoded}`, '_blank');
+  };
+
   return (
     <>
       <section className="min-h-screen bg-gradient-to-br from-[#e0f7fa] via-white to-[#b2ebf2] flex flex-col justify-center py-10">
@@ -30,28 +48,28 @@ export default function HubungiKamiPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.7, delay: 0.2 }}
             >
-              <form className="flex flex-col gap-4">
+              <form ref={formRef} className="flex flex-col gap-4" onSubmit={handleSubmit}>
                 <div className="flex flex-col md:flex-row gap-4">
                   <div className="flex-1">
                     <label className="block text-sm font-medium mb-1">Nama Lengkap <span className="text-red-600">*</span></label>
-                    <input type="text" placeholder="Contoh: Ahmad" className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#2CBCC4] transition" required />
+                    <input name="nama" type="text" placeholder="Contoh: Ahmad" className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#2CBCC4] transition" required />
                   </div>
                   <div className="flex-1">
                     <label className="block text-sm font-medium mb-1">Email <span className="text-red-600">*</span></label>
-                    <input type="email" placeholder="Contoh: example@gmail.com" className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#2CBCC4] transition" required />
+                    <input name="email" type="email" placeholder="Contoh: example@gmail.com" className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#2CBCC4] transition" required />
                   </div>
                 </div>
                 <div>
                   <label className="block text-sm font-medium mb-1">Nomor Whatsapp <span className="text-red-600">*</span></label>
-                  <input type="text" placeholder="Contoh: 0812xxxxxxx" className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#2CBCC4] transition" required />
+                  <input name="whatsapp" type="text" placeholder="Contoh: 0812xxxxxxx" className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#2CBCC4] transition" required />
                 </div>
                 <div>
                   <label className="block text-sm font-medium mb-1">Perihal <span className="text-red-600">*</span></label>
-                  <input type="text" placeholder="Tulis Perihal Pesan..." className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#2CBCC4] transition" required />
+                  <input name="perihal" type="text" placeholder="Tulis Perihal Pesan..." className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#2CBCC4] transition" required />
                 </div>
                 <div>
                   <label className="block text-sm font-medium mb-1">Pesan Anda <span className="text-red-600">*</span></label>
-                  <textarea placeholder="Tulis Pesan Anda..." className="w-full border border-gray-300 rounded-lg px-3 py-2 h-48 resize-none focus:outline-none focus:ring-2 focus:ring-[#2CBCC4] transition" required />
+                  <textarea name="pesan" placeholder="Tulis Pesan Anda..." className="w-full border border-gray-300 rounded-lg px-3 py-2 h-48 resize-none focus:outline-none focus:ring-2 focus:ring-[#2CBCC4] transition" required />
                 </div>
                 <button type="submit" className="mt-2 bg-[#2CBCC4] text-white rounded-lg px-6 py-2 font-semibold hover:bg-[#229ca1] transition">Kirim Pesan</button>
               </form>
