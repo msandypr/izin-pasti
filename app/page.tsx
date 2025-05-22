@@ -12,10 +12,10 @@ export const metadata = {
     url: "https://nusantaralegalitasku.com/",
     images: [
       {
-        url: "/public/images/nusantara_legalitasku_logo.png",
-        width: 1200,
-        height: 630,
-        alt: "Nusantara Legalitasku Logo"
+        url: "https://nusantaralegalitasku.com/images/graph.png",
+        width: 1280,
+        height: 720,
+        alt: "Nusantara Legalitasku Website"
       }
     ],
     type: "website"
