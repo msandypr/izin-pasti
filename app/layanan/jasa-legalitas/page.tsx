@@ -1,6 +1,7 @@
 "use client"
 import { Eye } from "lucide-react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const jasaLegalitas = [
   {
@@ -90,13 +91,13 @@ export default function JasaLegalitasPage() {
                 />
                 <p className="text-black text-sm text-center mb-4">{item.subtitle}</p>
                 <div className="mt-auto w-full">
-                  <a
+                  <Link
                     href={item.link}
                     className="flex px-6 py-2 rounded-full bg-[#2CBCC4] text-white font-semibold hover:bg-[#239ba0] transition text-center items-center justify-center gap-2"
                   >
                     <Eye className="h-5 w-5" />
                     Lihat Layanan
-                  </a>
+                  </Link>
                 </div>
               </motion.div>
             ))}

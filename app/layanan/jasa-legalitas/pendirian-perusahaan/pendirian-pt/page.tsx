@@ -79,7 +79,7 @@ export default function PendirianPtPage() {
                                     ))}
                                 </ul>
                                 <div className="flex flex-col gap-2 w-full mt-auto">
-                                    <a
+                                    <Link
                                         href={`https://wa.me/6285935000364?text=Halo!%2C%20Saya%20ingin%20konsultasi%20terkait%20Pendirian%20Perusahaan%20-%20${encodeURIComponent(item.title)}`}
                                         target="_blank"
                                         rel="noopener noreferrer"
@@ -87,7 +87,7 @@ export default function PendirianPtPage() {
                                     >
                                         <WhatsappLogo className="h-5 w-5" style={{ fill: "white" }} />
                                         Konsultasikan Sekarang
-                                    </a>
+                                    </Link>
                                 </div>
                             </motion.div>
                         ))}

@@ -4,21 +4,35 @@ import Link from "next/link";
 import ContactSection from "@/components/homepage/contact-section";
 import Image from "next/image";
 import WhatsappLogo from "@/components/etc/WhatsappLogo";
+import { motion } from "framer-motion";
 
 export default function PerjanjianPage() {
     return (
         <>
-           <section className="w-full pt-4 pb-8 md:pt-8 md:pb-16 bg-gradient-to-t from-[#2CBCC4]/10 to-white">
+            <section className="w-full pt-4 pb-8 md:pt-8 md:pb-16 bg-gradient-to-t from-[#2CBCC4]/10 to-white">
                 <div className="container mx-auto px-4">
-                    <div className="flex flex-col items-center justify-center py-10 md:py-16">
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6, ease: "easeOut" }}
+                        className="flex flex-col items-center justify-center py-10 md:py-16"
+                    >
                         <div className="inline-flex items-center gap-2 bg-[#2CBCC4]/20 px-3 py-1 rounded-full text-[#2CBCC4] font-medium text-sm">
                             <Link href="/layanan/jasa-legalitas" className="flex items-center gap-2">
                                 <ArrowLeft className="h-4 w-4 fill-[#2CBCC4] text-[#2CBCC4]" />
                                 <span>Kembali Ke Halaman Sebelumnya</span>
                             </Link>
                         </div>
-                    </div>
-                    <div className="bg-gradient-to-br from-[#e0f7fa] to-[#c8e6f8] p-6 rounded-lg shadow-lg flex flex-col md:flex-row items-center justify-between max-w-4xl mx-auto space-y-6 md:space-y-0 md:space-x-6">
+                    </motion.div>
+
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+                        className="bg-gradient-to-br from-[#e0f7fa] to-[#c8e6f8] p-6 rounded-lg shadow-lg flex flex-col md:flex-row items-center justify-between max-w-4xl mx-auto space-y-6 md:space-y-0 md:space-x-6"
+                    >
                         <div className="flex-shrink-0">
                             <Image
                                 src="/images/jasa-legalitas/perjanjian.png"
@@ -44,13 +58,23 @@ export default function PerjanjianPage() {
                                 <WhatsappLogo /> Konsultasi Sekarang!
                             </button>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
             </section>
+
             <section className="w-full pt-4 pb-16 md:pb-8 bg-gradient-to-b from-[#2CBCC4]/10 to-white">
                 <div className="container mx-auto px-4 flex justify-center">
                     <div className="w-full max-w-3xl">
-                        <h2 className="text-2xl md:text-3xl font-bold text-center text-[#2CBCC4] mb-8">Apa Saja Layanan Kami?</h2>
+                        <motion.h2
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.6, ease: "easeOut" }}
+                            className="text-2xl md:text-3xl font-bold text-center text-[#2CBCC4] mb-8"
+                        >
+                            Apa Saja Layanan Kami?
+                        </motion.h2>
+
                         <div className="flex flex-col gap-4">
                             {[
                                 "Surat Kuasa",
@@ -81,10 +105,17 @@ export default function PerjanjianPage() {
                                 "Perjanjian Jual Beli",
                                 "Terms & Conditions",
                                 "Kebijakan Privasi Penyelenggaraan Platform Digital (Privacy Policy)",
-                            ].map((requirement) => (
-                                <div key={requirement} className="flex items-center p-4 bg-white rounded-xl shadow-md border border-[#2CBCC4]">
+                            ].map((requirement, i) => (
+                                <motion.div
+                                    key={requirement}
+                                    initial={{ opacity: 0, y: 20 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    viewport={{ once: true }}
+                                    transition={{ duration: 0.5, ease: "easeOut", delay: i * 0.05 }}
+                                    className="flex items-center p-4 bg-white rounded-xl shadow-md border border-[#2CBCC4]"
+                                >
                                     <p className="text-black text-lg font-bold">{requirement}</p>
-                                </div>
+                                </motion.div>
                             ))}
                         </div>
                     </div>

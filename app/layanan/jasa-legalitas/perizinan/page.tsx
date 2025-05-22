@@ -1,7 +1,9 @@
+"use client"
 import WhatsappLogo from "@/components/etc/WhatsappLogo";
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import ContactSection from "@/components/homepage/contact-section";
+import { motion } from "framer-motion";
 
 const pembuatanDokumen = [
     {
@@ -51,7 +53,13 @@ export default function PerizinanPage() {
         <>
             <section className="w-full pt-4 pb-8 md:pt-8 md:pb-16 lg:pb-24 bg-gradient-to-b from-[#2CBCC4]/10 to-white">
                 <div className="container mx-auto px-4">
-                    <div className="flex flex-col items-center justify-center py-10 md:py-16">
+                    <motion.div
+                        initial={{ opacity: 0, y: 40 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.7 }}
+                        className="flex flex-col items-center justify-center py-10 md:py-16"
+                    >
                         <div className="inline-flex items-center gap-2 bg-[#2CBCC4]/20 px-3 py-1 rounded-full text-[#2CBCC4] font-medium text-sm">
                             <Link href="/layanan/jasa-legalitas" className="flex items-center gap-2">
                                 <ArrowLeft className="h-4 w-4 fill-[#2CBCC4] text-[#2CBCC4]" />
@@ -64,12 +72,18 @@ export default function PerizinanPage() {
                         <p className="text-md text-black text-center">
                             Kami siap membantu segala kebutuhan Perizinan yang Anda perlukan dengan layanan profesional dan terpercaya.
                         </p>
-                    </div>
+                    </motion.div>
+
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:flex lg:flex-wrap lg:justify-center">
                         {pembuatanDokumen.map((item, idx) => (
-                            <div
+                            <motion.div
                                 key={idx}
-                                className="bg-gradient-to-br from-[#e0f7fa] to-[#c8e6f8] p-6 rounded-2xl shadow border border-[#2CBCC4]/10 flex flex-col lg:w-[30%]">
+                                initial={{ opacity: 0, y: 40 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 0.6, delay: idx * 0.15 }}
+                                className="bg-gradient-to-br from-[#e0f7fa] to-[#c8e6f8] p-6 rounded-2xl shadow border border-[#2CBCC4]/10 flex flex-col lg:w-[30%]"
+                            >
                                 <h2 className="text-2xl font-bold text-[#2CBCC4] mb-2 text-center min-h-[72px]">
                                     {item.title}
                                 </h2>
@@ -85,7 +99,7 @@ export default function PerizinanPage() {
                                     <p className="font-bold text-2xl text-[#2CBCC4]">{item.price}</p>
                                 </div>
                                 <div className="mt-auto">
-                                    <a
+                                    <Link
                                         href={`https://wa.me/6285935000364?text=Halo!%2C%20Saya%20ingin%20konsultasi%20terkait%20Pembuatan%20Dokumen%20-%20${encodeURIComponent(item.title)}`}
                                         target="_blank"
                                         rel="noopener noreferrer"
@@ -93,9 +107,9 @@ export default function PerizinanPage() {
                                     >
                                         <WhatsappLogo className="h-5 w-5" style={{ fill: "white" }} />
                                         Konsultasikan Sekarang
-                                    </a>
+                                    </Link>
                                 </div>
-                            </div>
+                            </motion.div>
                         ))}
                     </div>
                 </div>

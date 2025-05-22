@@ -107,13 +107,13 @@ export default function PendirianPerusahaanPage() {
                                 <p className="text-md font-semibold text-black">Mulai dari</p>
                                 <p className="text-2xl font-bold text-[#2CBCC4] mb-4">{item.price}</p>
                                 <div className="flex flex-col gap-2 w-full mt-auto">
-                                    <a
+                                    <Link
                                         href={item.link}
                                         className="flex px-6 py-2 rounded-full bg-[#2CBCC4] text-white font-semibold hover:bg-[#239ba0] transition text-center items-center justify-center gap-2"
                                     >
                                         Pesan Sekarang
                                         <ArrowRight className="h-5 w-5" />
-                                    </a>
+                                    </Link>
                                 </div>
                             </motion.div>
                         ))}
