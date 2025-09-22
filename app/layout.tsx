@@ -14,8 +14,8 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Nusantara Legalitasku",
-  description: "Layanan Legalitas Bisnis Terkemuka di Indonesia",
+  title: "Izin Pasti - Layanan Legalitas Bisnis Terkemuka di Indonesia",
+  description: "Izin Pasti menawarkan berbagai layanan, mulai dari pendirian perusahaan, pengurusan izin usaha, pembuatan dan pengesahan kontrak hukum, hingga konsultasi legal. Didukung oleh tim profesional yang berkompeten, kami berkomitmen memberikan solusi yang cepat, akurat, dan transparan.",
   icons: {
     icon: "/favicon.ico",
   },

@@ -100,7 +100,7 @@ const hakiThree = [
     {
         title: "Pendaftaran Rahasia Dagang",
         image: "/images/jasa-legalitas/haki/merek-8.png",
-        description: "Rahasia dagang adalah aset berharga yang membuat bisnis Anda unik dan unggul. Jangan biarkan ide, formula, atau strategi bisnis Anda jatuh ke tangan yang salah. Daftarkan rahasia dagang Anda sekarang bersama Nusantara Legalitasku",
+        description: "Rahasia dagang adalah aset berharga yang membuat bisnis Anda unik dan unggul. Jangan biarkan ide, formula, atau strategi bisnis Anda jatuh ke tangan yang salah. Daftarkan rahasia dagang Anda sekarang bersama Izin Pasti",
         price: "Rp. 4.300.000",
         features: [
             

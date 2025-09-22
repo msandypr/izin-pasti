@@ -20,7 +20,7 @@ const ShareButtons = () => {
   }, [pathname]);
 
   const encodedURL = encodeURIComponent(shareUrl);
-  const text = encodeURIComponent('Halo! Cek Halaman Ini untuk Melihat Nusantara Legalitasku: ');
+  const text = encodeURIComponent('Halo! Cek Halaman Ini untuk Melihat Izin Pasti: ');
 
   const buttons = [
     {

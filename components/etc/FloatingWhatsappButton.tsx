@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function FloatingWhatsappButton() {
   return (
     <Link
-      href="https://wa.me/6285935000364?text=Halo!%20Saya%20ingin%20Berkonsultasi%20terkait%20layanan%20di%20Nusantara%20Legalitasku"
+      href="https://wa.me/6285935000364?text=Halo!%20Saya%20ingin%20Berkonsultasi%20terkait%20layanan%20di%Izin%Pasti."
       target="_blank"
       rel="noopener noreferrer"
       className="fixed z-50 right-4 bottom-4 group"

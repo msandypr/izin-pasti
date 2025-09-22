@@ -17,7 +17,7 @@ export default function HubungiKamiPage() {
     const perihal = formData.get('perihal') || '';
     const pesan = formData.get('pesan') || '';
     const message =
-      `Halo Nusantara Legalitasku, Ada Pesan Masuk:\nNama: ${nama}\nEmail: ${email}\nNo. Whatsapp: ${whatsapp}\nPerihal: ${perihal}\nPesan: ${pesan}`;
+      `Halo Izin Pasti, Ada Pesan Masuk:\nNama: ${nama}\nEmail: ${email}\nNo. Whatsapp: ${whatsapp}\nPerihal: ${perihal}\nPesan: ${pesan}`;
     const encoded = encodeURIComponent(message);
     window.open(`https://wa.me/6285935000364?text=${encoded}`, '_blank');
   };
@@ -91,15 +91,15 @@ export default function HubungiKamiPage() {
                 <div className="text-2xl font-bold mb-2">Kontak</div>
                 <div className="flex items-center gap-2 mb-2">
                   <Facebook className="w-5 h-5" />
-                  <a href="https://www.facebook.com/NusantaraLegalitasku" target="_blank"><span className="text-base">Nusantara Legalitasku</span></a>
+                  <a href="https://www.facebook.com/izinpasti" target="_blank"><span className="text-base">Izin Pasti</span></a>
                 </div>
                 <div className="flex items-center gap-2 mb-2">
                   <Instagram className="w-5 h-5" />
-                  <a href="https://instagram.com/nusantaralegalitasku" target="_blank"><span className="text-base">@nusantaralegalitasku</span></a>
+                  <a href="https://instagram.com/izinpasti" target="_blank"><span className="text-base">@izinpasti</span></a>
                 </div>
                 <div className="flex items-center gap-2 mb-6">
                   <WhatsappLogo className="w-5 h-5" />
-                  <a href="https://api.whatsapp.com/send?phone=6285935000364&text=Halo!%20Saya%20ingin%20Berkonsultasi%20dengan%20Nusantara%20Legalitasku." target="_blank"><span className="text-base">+62 859-3500-0364</span></a>
+                  <a href="https://api.whatsapp.com/send?phone=6285935000364&text=Halo!%20Saya%20ingin%20Berkonsultasi%20dengan%Izin%Pasti." target="_blank"><span className="text-base">+62 859-3500-0364</span></a>
                 </div>
                 <iframe
                   title="Lokasi Kantor"

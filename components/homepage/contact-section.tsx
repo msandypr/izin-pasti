@@ -35,7 +35,7 @@ export default function ContactSection() {
                     >
                         <Image
                             src="/images/contact-section.png"
-                            alt="Contact Nusantara Legalitasku"
+                            alt="Contact Izin Pasti"
                             fill
                             className="object-contain w-full h-full"
                             priority
@@ -58,7 +58,7 @@ export default function ContactSection() {
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 pt-2 justify-center">
                             <Link
-                                href="https://wa.me/6285935000364?text=Halo!%20Saya%20ingin%20Berkonsultasi%20dengan%20Nusantara%20Legalitasku."
+                                href="https://wa.me/6285935000364?text=Halo!%20Saya%20ingin%20Berkonsultasi%20dengan%Izin%Pasti."
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >

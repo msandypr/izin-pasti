@@ -4,18 +4,18 @@ import PricingSection from "@/components/homepage/pricing-section";
 import ContactSection from "@/components/homepage/contact-section";
 
 export const metadata = {
-  title: "Nusantara Legalitasku - Semua Kebutuhan Jasa Legalitas Untuk Bisnis Anda Se-Indonesia",
-  description: "Nusantara Legalitasku menawarkan berbagai layanan, mulai dari pendirian perusahaan, pengurusan izin usaha, pembuatan dan pengesahan kontrak hukum, hingga konsultasi legal. Didukung oleh tim profesional yang berkompeten, kami berkomitmen memberikan solusi yang cepat, akurat, dan transparan.",
+  title: "Izin Pasti - Semua Kebutuhan Jasa Legalitas Untuk Bisnis Anda Se-Indonesia",
+  description: "Izin Pasti menawarkan berbagai layanan, mulai dari pendirian perusahaan, pengurusan izin usaha, pembuatan dan pengesahan kontrak hukum, hingga konsultasi legal. Didukung oleh tim profesional yang berkompeten, kami berkomitmen memberikan solusi yang cepat, akurat, dan transparan.",
   openGraph: {
-    title: "Nusantara Legalitasku - Semua Kebutuhan Jasa Legalitas Untuk Bisnis Anda Se-Indonesia",
-    description: "Nusantara Legalitasku menawarkan berbagai layanan, mulai dari pendirian perusahaan, pengurusan izin usaha, pembuatan dan pengesahan kontrak hukum, hingga konsultasi legal. Didukung oleh tim profesional yang berkompeten, kami berkomitmen memberikan solusi yang cepat, akurat, dan transparan.",
-    url: "https://nusantaralegalitasku.com/",
+    title: "Izin Pasti - Semua Kebutuhan Jasa Legalitas Untuk Bisnis Anda Se-Indonesia",
+    description: "Izin Pasti menawarkan berbagai layanan, mulai dari pendirian perusahaan, pengurusan izin usaha, pembuatan dan pengesahan kontrak hukum, hingga konsultasi legal. Didukung oleh tim profesional yang berkompeten, kami berkomitmen memberikan solusi yang cepat, akurat, dan transparan.",
+    url: "https://izinpasti.com/",
     images: [
       {
-        url: "https://nusantaralegalitasku.com/images/graph.png",
+        url: "https://izinpasti.com/images/graph.png",
         width: 1280,
         height: 720,
-        alt: "Nusantara Legalitasku Website"
+        alt: "Izin Pasti Website"
       }
     ],
     type: "website"

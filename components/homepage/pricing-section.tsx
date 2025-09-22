@@ -39,34 +39,17 @@ export default function PricingSection() {
         };
     }, [emblaApi]);
 
-    useEffect(() => {
-        if (emblaApi) {
-            const autoplay = setInterval(() => {
-                emblaApi.scrollNext();
-            }, 4000);
+    // useEffect(() => {
+    //     if (emblaApi) {
+    //         const autoplay = setInterval(() => {
+    //             emblaApi.scrollNext();
+    //         }, 4000);
 
-            return () => clearInterval(autoplay);
-        }
-    }, [emblaApi]);
+    //         return () => clearInterval(autoplay);
+    //     }
+    // }, [emblaApi]);
 
     const packages = [
-        {
-            title: "Pendirian Perusahaan",
-            price: "2.500.000",
-            image: "/images/jasa-legalitas/pendirian-perusahaan.png",
-            description: "Membantu Anda mendirikan perusahaan dengan proses cepat, transparan, dan bebas repot.",
-            buttonText: "Pesan Sekarang",
-            href: "/layanan/jasa-legalitas/pendirian-perusahaan"
-        },
-        {
-            title: "Penanaman Modal Asing (PMA)",
-            price: "10.000.000",
-            image: "/images/jasa-legalitas/pendirian-perusahaan/penanaman-modal-asing.png",
-            description: "Layanan profesional untuk mendirikan perusahaan PMA yang sesuai dengan regulasi terbaru.",
-            buttonText: "Pesan Sekarang",
-            featured: true,
-            href: "/layanan/jasa-legalitas/pendirian-perusahaan/penanaman-modal-asing"
-        },
         {
             title: "Pembuatan Perjanjian",
             price: "300.000",
@@ -90,7 +73,24 @@ export default function PricingSection() {
             description: "Konsultasi dengan tim ahli hukum kami untuk berbagai masalah legal bisnis.",
             buttonText: "Pesan Sekarang",
             href: "/layanan/jasa-pengacara"
-        }
+        },
+        {
+            title: "Pendirian Perusahaan",
+            price: "2.500.000",
+            image: "/images/jasa-legalitas/pendirian-perusahaan.png",
+            description: "Membantu Anda mendirikan perusahaan dengan proses cepat, transparan, dan bebas repot.",
+            buttonText: "Pesan Sekarang",
+            href: "/layanan/jasa-legalitas/pendirian-perusahaan"
+        },
+        {
+            title: "Penanaman Modal Asing (PMA)",
+            price: "10.000.000",
+            image: "/images/jasa-legalitas/pendirian-perusahaan/penanaman-modal-asing.png",
+            description: "Layanan profesional untuk mendirikan perusahaan PMA yang sesuai dengan regulasi terbaru.",
+            buttonText: "Pesan Sekarang",
+            featured: true,
+            href: "/layanan/jasa-legalitas/pendirian-perusahaan/penanaman-modal-asing"
+        },
     ];
 
     return (

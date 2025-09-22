@@ -21,7 +21,7 @@ export default function Header() {
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center gap-2">
           <Link href="/" className="flex items-center">
-            <Image src="/images/nusantara_legalitasku_logo.png" alt="Nusantara Legalitasku Logo" width={100} height={35} className="h-auto" />
+            <Image src="/images/izinpasti_logo.png" alt="Izin Pasti Logo" width={48} height={24} className="h-auto" />
           </Link>
         </div>
 
@@ -66,7 +66,7 @@ export default function Header() {
 
         <div className="hidden md:flex items-center gap-4">
           <Link
-            href="https://wa.me/6285935000364?text=Halo!%20Saya%20ingin%20Berkonsultasi%20dengan%20Nusantara%20Legalitasku."
+            href="https://wa.me/6285935000364?text=Halo!%20Saya%20ingin%20Berkonsultasi%20dengan%Izin%Pasti."
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -88,7 +88,7 @@ export default function Header() {
               <SheetHeader>
                 <SheetTitle />
                 <div className="flex justify-center mb-4">
-                  <Image src="/images/nusantara_legalitasku_logo.png" alt="Nusantara Legalitasku Logo" width={150} height={50} className="h-auto" />
+                  <Image src="/images/izinpasti_logo.png" alt="Izin Pasti Logo" width={64} height={32} className="h-auto" />
                 </div>
               </SheetHeader>
               <div className="border-t border-[#2CBCC4]/20"></div>
@@ -145,7 +145,7 @@ export default function Header() {
               <div className="border-t border-[#2CBCC4]/20"></div>
               <div className="flex flex-col gap-2">
                 <Link
-                  href="https://wa.me/6285935000364?text=Halo!%20Saya%20ingin%20berkonsultasi%20terkait%20Layanan%20yang%20ada%20di%20Nusantara%20Legalitasku"
+                  href="https://wa.me/6285935000364?text=Halo!%20Saya%20ingin%20berkonsultasi%20terkait%20Layanan%20yang%20ada%20di%Izin%Pasti"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

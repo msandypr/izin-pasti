@@ -7,7 +7,7 @@ const testimonials = [
   {
     name: "Budi Santoso",
     role: "Direktur PT Maju Jaya",
-    testimonial: "Pelayanan hukum dari Nusantara Maju Luhur sangat profesional dan responsif. Saya merasa aman dan terbantu dalam setiap proses bisnis kami.",
+    testimonial: "Pelayanan hukum dari Izin Pasti sangat profesional dan responsif. Saya merasa aman dan terbantu dalam setiap proses bisnis kami.",
     image: "/images/tentang-kami/testimoni-1.jpg"
   },
   {
@@ -50,7 +50,7 @@ export default function TentangKamiPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.3 }}
             >
-              Nusantara <span className="gradient-text">Legalitasku</span>
+              Izin <span className="gradient-text">Pasti</span>
             </motion.h1>
             <motion.p
               className="text-md text-black text-center max-w-4xl mb-4"
@@ -195,7 +195,7 @@ export default function TentangKamiPage() {
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
           >
-              Apa kata mereka tentang Nusantara Legalitasku?
+              Apa kata mereka tentang Izin Pasti?
           </motion.p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {testimonials.map((item, idx) => (

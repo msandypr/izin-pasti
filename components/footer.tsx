@@ -11,19 +11,19 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <Image src="/images/nusantara_legalitasku_logo.png" alt="Nusantara Legalitasku Logo" width={150} height={50} className="h-auto" />
+              <Image src="/images/izinpasti_logo.png" alt="Izin Pasti Logo" width={64} height={32} className="h-auto" />
             </div>
             <p className="text-[#2CBCC4]">
-              Nusantara Legalitasku, solusi lengkap untuk legalitas dan perlindungan bisnis Anda. Profesional, cepat, dan terpercaya.
+              Izin Pasti, solusi lengkap untuk legalitas dan perlindungan bisnis Anda. Profesional, cepat, dan terpercaya.
             </p>
             <div className="flex gap-4">
               <Button asChild variant="ghost" size="icon" className="rounded-full">
-                <a href="https://facebook.com/NusantaraLegalitasku" target="_blank" rel="noopener noreferrer">
+                <a href="https://facebook.com/izinpasti" target="_blank" rel="noopener noreferrer">
                   <Facebook className="h-5 w-5 text-[#2CBCC4]" />
                 </a>
               </Button>
               <Button asChild variant="ghost" size="icon" className="rounded-full">
-                <a href="https://instagram.com/nusantaralegalitasku" target="_blank" rel="noopener noreferrer">
+                <a href="https://instagram.com/izinpasti" target="_blank" rel="noopener noreferrer">
                   <Instagram className="h-5 w-5 text-[#2CBCC4]" />
                 </a>
               </Button>
@@ -33,7 +33,7 @@ export default function Footer() {
                 </a>
               </Button>
               <Button asChild variant="ghost" size="icon" className="rounded-full">
-                <a href="mailto:info@nusantaralegalitasku.com">
+                <a href="mailto:izinpasti@gmail.com">
                   <Mail className="h-5 w-5 text-[#2CBCC4]" />
                 </a>
               </Button>
@@ -97,7 +97,7 @@ export default function Footer() {
               No.5, RT 005, RW 009, Jawa Tengah
             </p>
             <p className="text-[#2CBCC4]">
-              Email: nusantaralegalitasku@gmail.com
+              Email: izinpasti@gmail.com
               <br />
               Telp: +62 859 3500 0364
             </p>
@@ -105,7 +105,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 pt-6 border-t border-[#2CBCC4]/20 text-center text-[#2CBCC4]/70">
-          <p>© {new Date().getFullYear()} Nusantara Legalitasku. Hak Cipta Dilindungi.</p>
+          <p>© {new Date().getFullYear()} Izin Pasti. Hak Cipta Dilindungi.</p>
         </div>
       </div>
     </footer>
