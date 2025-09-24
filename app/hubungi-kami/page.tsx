@@ -99,7 +99,7 @@ export default function HubungiKamiPage() {
                 </div>
                 <div className="flex items-center gap-2 mb-6">
                   <WhatsappLogo className="w-5 h-5" />
-                  <a href="https://api.whatsapp.com/send?phone=6285935000364&text=Halo!%20Saya%20ingin%20Berkonsultasi%20dengan%Izin%Pasti." target="_blank"><span className="text-base">+62 859-3500-0364</span></a>
+                  <a href="https://api.whatsapp.com/send?phone=6285935000364&text=Halo!%20Saya%20ingin%20Berkonsultasi%20dengan%20Izin%20Pasti." target="_blank"><span className="text-base">+62 859-3500-0364</span></a>
                 </div>
                 <iframe
                   title="Lokasi Kantor"

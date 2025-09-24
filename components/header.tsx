@@ -66,7 +66,7 @@ export default function Header() {
 
         <div className="hidden md:flex items-center gap-4">
           <Link
-            href="https://wa.me/6285935000364?text=Halo!%20Saya%20ingin%20Berkonsultasi%20dengan%Izin%Pasti."
+            href="https://wa.me/6285935000364?text=Halo!%20Saya%20ingin%20Berkonsultasi%20dengan%20Izin%20Pasti."
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -145,7 +145,7 @@ export default function Header() {
               <div className="border-t border-[#2CBCC4]/20"></div>
               <div className="flex flex-col gap-2">
                 <Link
-                  href="https://wa.me/6285935000364?text=Halo!%20Saya%20ingin%20berkonsultasi%20terkait%20Layanan%20yang%20ada%20di%Izin%Pasti"
+                  href="https://wa.me/6285935000364?text=Halo!%20Saya%20ingin%20berkonsultasi%20terkait%20Layanan%20yang%20ada%20di%20Izin%20Pasti."
                   target="_blank"
                   rel="noopener noreferrer"
                 >

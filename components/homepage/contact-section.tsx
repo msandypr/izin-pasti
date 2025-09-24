@@ -58,7 +58,7 @@ export default function ContactSection() {
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 pt-2 justify-center">
                             <Link
-                                href="https://wa.me/6285935000364?text=Halo!%20Saya%20ingin%20Berkonsultasi%20dengan%Izin%Pasti."
+                                href="https://wa.me/6285935000364?text=Halo!%20Saya%20ingin%20Berkonsultasi%20dengan%20Izin%20Pasti."
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
