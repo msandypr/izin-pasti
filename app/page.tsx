@@ -2,6 +2,7 @@ import HeroSection from "@/components/homepage/hero-section";
 import FeaturesSection from "@/components/homepage/features-section";
 import PricingSection from "@/components/homepage/pricing-section";
 import ContactSection from "@/components/homepage/contact-section";
+import PopupAd from "@/components/homepage/popup-ad";
 
 export const metadata = {
   title: "Izin Pasti - Semua Kebutuhan Jasa Legalitas Untuk Bisnis Anda Se-Indonesia",
@@ -24,19 +25,22 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <div>
+    <>
+      <PopupAd />
       <div>
-        <HeroSection />
+        <div>
+          <HeroSection />
+        </div>
+        <div>
+          <FeaturesSection />
+        </div>
+        <div>
+          <PricingSection />
+        </div>
+        <div>
+          <ContactSection />
+        </div>
       </div>
-      <div>
-        <FeaturesSection />
-      </div>
-      <div>
-        <PricingSection />
-      </div>
-      <div>
-        <ContactSection />
-      </div>
-    </div>
+    </>
   );
 }
