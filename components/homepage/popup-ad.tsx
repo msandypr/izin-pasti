@@ -10,7 +10,7 @@ export default function PopupAd() {
     setShowPopup(true);
   }, []);
 
-  const whatsappUrl = "https://wa.me/6281234567890";
+  const whatsappUrl = "https://wa.me/6285935000364?text=Halo!%20Saya%20ingin%20Berkonsultasi%20dengan%Izin%Pasti.";
 
   return (
     <AnimatePresence>
