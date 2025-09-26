@@ -10,22 +10,27 @@
     --card-foreground: 222.2 84% 4.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
-    --primary: 196 100% 50%;
-    --primary-foreground: 210 40% 98%;
-    --secondary: 196 100% 95%;
+
+    --primary: 90 23% 54%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 90 23% 90%;
     --secondary-foreground: 222.2 47.4% 11.2%;
-    --muted: 196 100% 95%;
+
+    --muted: 90 23% 90%;
     --muted-foreground: 215.4 16.3% 46.9%;
-    --accent: 196 100% 95%;
+    --accent: 90 23% 90%;
     --accent-foreground: 222.2 47.4% 11.2%;
+
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
-    --border: 196 100% 85%;
+
+    --border: 90 23% 80%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 196 100% 50%;
+    --ring: 90 23% 54%;
     --radius: 1rem;
   }
 }
+
 
 html {
   scroll-behavior: smooth;
@@ -45,9 +50,9 @@ html {
 }
 
 .gradient-text {
-  @apply bg-gradient-to-r from-[#2CBCC4] to-[#2CBCC4]/80 bg-clip-text text-transparent;
+  @apply bg-gradient-to-r from-[#83A46D] to-[#83A46D]/80 bg-clip-text text-transparent;
 }
 
 .blue-gradient {
-  @apply bg-gradient-to-r from-[#2CBCC4] to-[#2CBCC4]/80;
+  @apply bg-gradient-to-r from-[#83A46D] to-[#83A46D]/80;
 }

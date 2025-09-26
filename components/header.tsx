@@ -17,7 +17,7 @@ export default function Header() {
   const [layananOpen, setLayananOpen] = React.useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-gradient-to-b from-[#2CBCC4]/10 to-white backdrop-blur">
+    <header className="sticky top-0 z-50 w-full border-b bg-gradient-to-b from-[#83A46D]/10 to-white backdrop-blur">
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center gap-2">
           <Link href="/" className="flex items-center">
@@ -26,40 +26,40 @@ export default function Header() {
         </div>
 
         <nav className="hidden md:flex items-center gap-6">
-          <Link href="/" className="text-[#2CBCC4]/90 hover:text-[#2CBCC4] font-bold">
+          <Link href="/" className="text-[#83A46D]/90 hover:text-[#83A46D] font-bold">
             Beranda
           </Link>
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <button className="text-[#2CBCC4]/90 hover:text-[#2CBCC4] font-bold flex items-center gap-1 focus:outline-none">
+              <button className="text-[#83A46D]/90 hover:text-[#83A46D] font-bold flex items-center gap-1 focus:outline-none">
                 Layanan
                 <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
                 </svg>
               </button>
             </DropdownMenuTrigger>
-            <DropdownMenuContent align="start" className="bg-white rounded-xl shadow-lg border border-[#2CBCC4]/10 mt-2 min-w-[200px] z-50">
+            <DropdownMenuContent align="start" className="bg-white rounded-xl shadow-lg border border-[#83A46D]/10 mt-2 min-w-[200px] z-50">
               <DropdownMenuItem asChild>
-                <Link href="/layanan/jasa-legalitas" className="block px-6 py-3 text-[#2CBCC4]/90 hover:bg-[#2CBCC4]/10 hover:text-[#2CBCC4] font-semibold rounded-t-xl transition">
+                <Link href="/layanan/jasa-legalitas" className="block px-6 py-3 text-[#83A46D]/90 hover:bg-[#83A46D]/10 hover:text-[#83A46D] font-semibold rounded-t-xl transition">
                   Jasa Legalitas
                 </Link>
               </DropdownMenuItem>
               <DropdownMenuItem asChild>
-                <Link href="/layanan/jasa-pengacara" className="block px-6 py-3 text-[#2CBCC4]/90 hover:bg-[#2CBCC4]/10 hover:text-[#2CBCC4] font-semibold transition">
+                <Link href="/layanan/jasa-pengacara" className="block px-6 py-3 text-[#83A46D]/90 hover:bg-[#83A46D]/10 hover:text-[#83A46D] font-semibold transition">
                   Jasa Pengacara
                 </Link>
               </DropdownMenuItem>
               <DropdownMenuItem asChild>
-                <Link href="/layanan/virtual-office" className="block px-6 py-3 text-[#2CBCC4]/90 hover:bg-[#2CBCC4]/10 hover:text-[#2CBCC4] font-semibold rounded-b-xl transition">
+                <Link href="/layanan/virtual-office" className="block px-6 py-3 text-[#83A46D]/90 hover:bg-[#83A46D]/10 hover:text-[#83A46D] font-semibold rounded-b-xl transition">
                   Virtual Office
                 </Link>
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
-          <Link href="/tentang-kami" className="text-[#2CBCC4]/90 hover:text-[#2CBCC4] font-bold">
+          <Link href="/tentang-kami" className="text-[#83A46D]/90 hover:text-[#83A46D] font-bold">
             Tentang Kami
           </Link>
-          <Link href="/hubungi-kami" className="text-[#2CBCC4]/90 hover:text-[#2CBCC4] font-bold">
+          <Link href="/hubungi-kami" className="text-[#83A46D]/90 hover:text-[#83A46D] font-bold">
             Kontak
           </Link>
         </nav>
@@ -91,16 +91,16 @@ export default function Header() {
                   <Image src="/images/izinpasti_logo.png" alt="Izin Pasti Logo" width={64} height={32} className="h-auto" />
                 </div>
               </SheetHeader>
-              <div className="border-t border-[#2CBCC4]/20"></div>
+              <div className="border-t border-[#83A46D]/20"></div>
               <SheetClose asChild>
-                <Link href="/" className="text-[#2CBCC4]/90 hover:text-[#2CBCC4] font-semibold text-lg">
+                <Link href="/" className="text-[#83A46D]/90 hover:text-[#83A46D] font-semibold text-lg">
                   Beranda
                 </Link>
               </SheetClose>
-              <div className="border-t border-[#2CBCC4]/20"></div>
+              <div className="border-t border-[#83A46D]/20"></div>
               <div>
                 <span
-                  className="flex items-center text-[#2CBCC4]/90 hover:text-[#2CBCC4] font-semibold text-lg cursor-pointer select-none py-2"
+                  className="flex items-center text-[#83A46D]/90 hover:text-[#83A46D] font-semibold text-lg cursor-pointer select-none py-2"
                   onClick={() => setLayananOpen((prev) => !prev)}
                   tabIndex={0}
                   onKeyDown={e => { if (e.key === "Enter" || e.key === " ") setLayananOpen(prev => !prev); }}
@@ -113,36 +113,36 @@ export default function Header() {
                 {layananOpen && (
                   <div className="ml-4 flex flex-col gap-2 mt-2">
                     <SheetClose asChild>
-                      <Link href="/layanan/jasa-legalitas" className="text-[#2CBCC4]/90 hover:text-[#2CBCC4] font-semibold py-1">
+                      <Link href="/layanan/jasa-legalitas" className="text-[#83A46D]/90 hover:text-[#83A46D] font-semibold py-1">
                         Jasa Legalitas
                       </Link>
                     </SheetClose>
                     <SheetClose asChild>
-                      <Link href="/layanan/jasa-pengacara" className="text-[#2CBCC4]/90 hover:text-[#2CBCC4] font-semibold py-1">
+                      <Link href="/layanan/jasa-pengacara" className="text-[#83A46D]/90 hover:text-[#83A46D] font-semibold py-1">
                         Jasa Pengacara
                       </Link>
                     </SheetClose>
                     <SheetClose asChild>
-                      <Link href="/layanan/virtual-office" className="text-[#2CBCC4]/90 hover:text-[#2CBCC4] font-semibold py-1">
+                      <Link href="/layanan/virtual-office" className="text-[#83A46D]/90 hover:text-[#83A46D] font-semibold py-1">
                         Virtual Office
                       </Link>
                     </SheetClose>
                   </div>
                 )}
               </div>
-              <div className="border-t border-[#2CBCC4]/20"></div>
+              <div className="border-t border-[#83A46D]/20"></div>
               <SheetClose asChild>
-                <Link href="/tentang-kami" className="text-[#2CBCC4]/90 hover:text-[#2CBCC4] font-semibold text-lg">
+                <Link href="/tentang-kami" className="text-[#83A46D]/90 hover:text-[#83A46D] font-semibold text-lg">
                   Tentang Kami
                 </Link>
               </SheetClose>
-              <div className="border-t border-[#2CBCC4]/20"></div>
+              <div className="border-t border-[#83A46D]/20"></div>
               <SheetClose asChild>
-                <Link href="/hubungi-kami" className="text-[#2CBCC4]/90 hover:text-[#2CBCC4] font-semibold text-lg">
+                <Link href="/hubungi-kami" className="text-[#83A46D]/90 hover:text-[#83A46D] font-semibold text-lg">
                   Hubungi Kami
                 </Link>
               </SheetClose>
-              <div className="border-t border-[#2CBCC4]/20"></div>
+              <div className="border-t border-[#83A46D]/20"></div>
               <div className="flex flex-col gap-2">
                 <Link
                   href="https://wa.me/6285935000364?text=Halo!%20Saya%20ingin%20berkonsultasi%20terkait%20Layanan%20yang%20ada%20di%20Izin%20Pasti."

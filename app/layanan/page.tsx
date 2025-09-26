@@ -30,7 +30,7 @@ export default function LayananPage() {
   return (
     <>
       <motion.section
-        className="w-full pt-4 pb-16 md:pt-8 md:pb-4  bg-gradient-to-b from-[#2CBCC4]/10 to-white"
+        className="w-full pt-4 pb-16 md:pt-8 md:pb-4  bg-gradient-to-b from-[#83A46D]/10 to-white"
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
@@ -55,13 +55,13 @@ export default function LayananPage() {
             {layanan.map((item, idx) => (
               <motion.div
                 key={idx}
-                className="bg-white rounded-2xl shadow p-6 border border-[#2CBCC4]/10 flex flex-col items-center lg:w-[30%]"
+                className="bg-white rounded-2xl shadow p-6 border border-[#83A46D]/10 flex flex-col items-center lg:w-[30%]"
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.15 * idx }}
                 viewport={{ once: true }}
               >
-                <h2 className="text-2xl font-bold text-[#2CBCC4] mb-2 text-center">{item.title}</h2>
+                <h2 className="text-2xl font-bold text-[#83A46D] mb-2 text-center">{item.title}</h2>
                 <img
                   src={item.image}
                   alt={item.title}
@@ -71,7 +71,7 @@ export default function LayananPage() {
                 <div className="mt-auto w-full">
                   <Link
                     href={item.link}
-                    className="flex px-6 py-2 rounded-full bg-[#2CBCC4] text-white font-semibold hover:bg-[#239ba0] transition text-center items-center justify-center gap-2"
+                    className="flex px-6 py-2 rounded-full bg-[#83A46D] text-white font-semibold hover:bg-[#239ba0] transition text-center items-center justify-center gap-2"
                   >
                     <Eye className="h-5 w-5" />
                     Lihat Layanan

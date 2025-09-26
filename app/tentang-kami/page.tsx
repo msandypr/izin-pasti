@@ -27,7 +27,7 @@ const testimonials = [
 export default function TentangKamiPage() {
   return (
     <>
-      <section className="w-full bg-gradient-to-b from-[#2CBCC4]/20 to-white">
+      <section className="w-full bg-gradient-to-b from-[#83A46D]/20 to-white">
         <div className="container mx-auto px-4">
           <motion.div
             className="flex flex-col items-center justify-center py-10 md:py-16"
@@ -36,12 +36,12 @@ export default function TentangKamiPage() {
             transition={{ duration: 0.7 }}
           >
             <motion.div
-              className="inline-flex items-center gap-2 bg-[#2CBCC4]/20 px-3 py-1 rounded-full text-[#2CBCC4] font-medium text-sm"
+              className="inline-flex items-center gap-2 bg-[#83A46D]/20 px-3 py-1 rounded-full text-[#83A46D] font-medium text-sm"
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              <User className="h-4 w-4 fill-[#2CBCC4] text-[#2CBCC4]" />
+              <User className="h-4 w-4 fill-[#83A46D] text-[#83A46D]" />
               <span>Tentang Kami</span>
             </motion.div>
             <motion.h1
@@ -80,7 +80,7 @@ export default function TentangKamiPage() {
         </div>
       </section>
 
-      <section className="w-full bg-gradient-to-t from-[#2CBCC4]/10 to-white">
+      <section className="w-full bg-gradient-to-t from-[#83A46D]/10 to-white">
         <div className="container mx-auto px-4 py-12">
           <motion.h2
             className="text-3xl font-bold text-center mb-2 text-black"
@@ -103,14 +103,14 @@ export default function TentangKamiPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {/* Terunggul */}
             <motion.div
-              className="bg-white border border-[#2CBCC4] rounded-xl p-6 flex items-start gap-4 shadow"
+              className="bg-white border border-[#83A46D] rounded-xl p-6 flex items-start gap-4 shadow"
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{ once: true }}
             >
               <div className="flex-shrink-0 mt-1">
-                <Award className="w-9 h-9 text-[#2CBCC4]" strokeWidth={2} />
+                <Award className="w-9 h-9 text-[#83A46D]" strokeWidth={2} />
               </div>
               <div>
                 <div className="font-bold text-lg text-black mb-1">Terunggul</div>
@@ -121,14 +121,14 @@ export default function TentangKamiPage() {
             </motion.div>
             {/* Tepat Waktu */}
             <motion.div
-              className="bg-white border border-[#2CBCC4] rounded-xl p-6 flex items-start gap-4 shadow"
+              className="bg-white border border-[#83A46D] rounded-xl p-6 flex items-start gap-4 shadow"
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
               viewport={{ once: true }}
             >
               <div className="flex-shrink-0 mt-1">
-                <Clock className="w-9 h-9 text-[#2CBCC4]" strokeWidth={2} />
+                <Clock className="w-9 h-9 text-[#83A46D]" strokeWidth={2} />
               </div>
               <div>
                 <div className="font-bold text-lg text-black mb-1">Tepat Waktu</div>
@@ -139,14 +139,14 @@ export default function TentangKamiPage() {
             </motion.div>
             {/* Teraman */}
             <motion.div
-              className="bg-white border border-[#2CBCC4] rounded-xl p-6 flex items-start gap-4 shadow"
+              className="bg-white border border-[#83A46D] rounded-xl p-6 flex items-start gap-4 shadow"
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.6 }}
               viewport={{ once: true }}
             >
               <div className="flex-shrink-0 mt-1">
-                <CheckCircle className="w-9 h-9 text-[#2CBCC4]" strokeWidth={2} />
+                <CheckCircle className="w-9 h-9 text-[#83A46D]" strokeWidth={2} />
               </div>
               <div>
                 <div className="font-bold text-lg text-black mb-1">Teraman</div>
@@ -157,14 +157,14 @@ export default function TentangKamiPage() {
             </motion.div>
             {/* Mudah & Lengkap */}
             <motion.div
-              className="bg-white border border-[#2CBCC4] rounded-xl p-6 flex items-start gap-4 shadow"
+              className="bg-white border border-[#83A46D] rounded-xl p-6 flex items-start gap-4 shadow"
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.8 }}
               viewport={{ once: true }}
             >
               <div className="flex-shrink-0 mt-1">
-                <Star className="w-9 h-9 text-[#2CBCC4]" strokeWidth={2} />
+                <Star className="w-9 h-9 text-[#83A46D]" strokeWidth={2} />
               </div>
               <div>
                 <div className="font-bold text-lg text-black mb-1">Mudah & Lengkap</div>
@@ -177,7 +177,7 @@ export default function TentangKamiPage() {
         </div>
       </section>
 
-      <section className="w-full bg-gradient-to-b from-[#2CBCC4]/10 to-white pb-12">
+      <section className="w-full bg-gradient-to-b from-[#83A46D]/10 to-white pb-12">
         <div className="container mx-auto px-4">
           <motion.h2
             className="text-3xl font-bold text-center mb-2 text-black"
@@ -201,15 +201,15 @@ export default function TentangKamiPage() {
             {testimonials.map((item, idx) => (
               <motion.div
                 key={idx}
-                className="bg-white border border-[#2CBCC4] rounded-xl p-6 flex flex-col items-center text-center shadow"
+                className="bg-white border border-[#83A46D] rounded-xl p-6 flex flex-col items-center text-center shadow"
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 * idx }}
                 viewport={{ once: true }}
               >
-                <img src={item.image} alt={item.name} className="w-16 h-16 rounded-full mb-4 object-cover border border-[#2CBCC4]" />
+                <img src={item.image} alt={item.name} className="w-16 h-16 rounded-full mb-4 object-cover border border-[#83A46D]" />
                 <p className="text-gray-700 italic mb-4 min-h-[96px]">"{item.testimonial}"</p>
-                <div className="font-semibold text-[#2CBCC4]">{item.name}</div>
+                <div className="font-semibold text-[#83A46D]">{item.name}</div>
                 <div className="text-sm text-gray-500">{item.role}</div>
               </motion.div>
             ))}

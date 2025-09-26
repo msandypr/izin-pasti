@@ -57,7 +57,7 @@ const jasaLegalitas = [
 export default function JasaLegalitasPage() {
   return (
     <>
-      <section className="w-full pt-4 pb-8 md:pt-8 md:pb-16 lg:pb-24 bg-gradient-to-b from-[#2CBCC4]/10 to-white">
+      <section className="w-full pt-4 pb-8 md:pt-8 md:pb-16 lg:pb-24 bg-gradient-to-b from-[#83A46D]/10 to-white">
         <div className="container mx-auto px-4">
           <motion.div
             className="flex flex-col items-center justify-center py-10 md:py-16"
@@ -77,13 +77,13 @@ export default function JasaLegalitasPage() {
             {jasaLegalitas.map((item, idx) => (
               <motion.div
                 key={idx}
-                className="bg-white rounded-2xl shadow p-6 border border-[#2CBCC4]/10 flex flex-col items-center lg:w-[30%]"
+                className="bg-white rounded-2xl shadow p-6 border border-[#83A46D]/10 flex flex-col items-center lg:w-[30%]"
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.12 * idx }}
                 viewport={{ once: true }}
               >
-                <h2 className="text-2xl font-bold text-[#2CBCC4] mb-2 text-center min-h-[72px]">{item.title}</h2>
+                <h2 className="text-2xl font-bold text-[#83A46D] mb-2 text-center min-h-[72px]">{item.title}</h2>
                 <img
                   src={item.image}
                   alt={item.title}
@@ -93,7 +93,7 @@ export default function JasaLegalitasPage() {
                 <div className="mt-auto w-full">
                   <Link
                     href={item.link}
-                    className="flex px-6 py-2 rounded-full bg-[#2CBCC4] text-white font-semibold hover:bg-[#239ba0] transition text-center items-center justify-center gap-2"
+                    className="flex px-6 py-2 rounded-full bg-[#83A46D] text-white font-semibold hover:bg-[#239ba0] transition text-center items-center justify-center gap-2"
                   >
                     <Eye className="h-5 w-5" />
                     Lihat Layanan

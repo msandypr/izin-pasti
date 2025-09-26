@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 export default function PendirianCvPage() {
     return (
         <>
-            <section className="w-full pt-4 pb-8 md:pt-8 md:pb-16 lg:pb-24 bg-gradient-to-t from-[#2CBCC4]/10 to-white">
+            <section className="w-full pt-4 pb-8 md:pt-8 md:pb-16 lg:pb-24 bg-gradient-to-t from-[#83A46D]/10 to-white">
                 <div className="container mx-auto px-4">
                     <motion.div
                         initial={{ opacity: 0, y: 40 }}
@@ -17,9 +17,9 @@ export default function PendirianCvPage() {
                         transition={{ duration: 0.7 }}
                         className="flex flex-col items-center justify-center py-10 md:py-16"
                     >
-                        <div className="inline-flex items-center gap-2 bg-[#2CBCC4]/20 px-3 py-1 rounded-full text-[#2CBCC4] font-medium text-sm">
+                        <div className="inline-flex items-center gap-2 bg-[#83A46D]/20 px-3 py-1 rounded-full text-[#83A46D] font-medium text-sm">
                             <Link href="/layanan/jasa-legalitas/pendirian-perusahaan" className="flex items-center gap-2">
-                                <ArrowLeft className="h-4 w-4 fill-[#2CBCC4] text-[#2CBCC4]" />
+                                <ArrowLeft className="h-4 w-4 fill-[#83A46D] text-[#83A46D]" />
                                 <span>Kembali Ke Halaman Sebelumnya</span>
                             </Link>
                         </div>
@@ -55,7 +55,7 @@ export default function PendirianCvPage() {
                     </motion.div>
                 </div>
             </section>
-            <section className="w-full pt-4 pb-8 md:pt-8 md:pb-16 lg:pb-24 bg-gradient-to-b from-[#2CBCC4]/10 to-white">
+            <section className="w-full pt-4 pb-8 md:pt-8 md:pb-16 lg:pb-24 bg-gradient-to-b from-[#83A46D]/10 to-white">
                 <div className="container mx-auto px-4 flex justify-center">
                     <div className="w-full max-w-2xl">
                         <motion.h2
@@ -63,7 +63,7 @@ export default function PendirianCvPage() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.7 }}
-                            className="text-3xl font-bold text-center text-[#2CBCC4] mb-8"
+                            className="text-3xl font-bold text-center text-[#83A46D] mb-8"
                         >
                             Persyaratan Pendirian CV
                         </motion.h2>
@@ -77,7 +77,7 @@ export default function PendirianCvPage() {
                                     transition={{ duration: 0.5, delay: 0.12 * index }}
                                     className="flex items-center gap-4 p-4 bg-white rounded-xl shadow-md"
                                 >
-                                    <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 bg-[#2CBCC4] text-white font-bold rounded-full">
+                                    <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 bg-[#83A46D] text-white font-bold rounded-full">
                                         {index + 1}
                                     </div>
                                     <p className="text-black text-lg">{requirement}</p>

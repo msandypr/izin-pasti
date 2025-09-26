@@ -106,7 +106,7 @@ export default function JasaPengacaraPage() {
   return (
     <>
       <motion.section
-        className="w-full bg-gradient-to-b from-[#2CBCC4]/10 to-white pt-16 md:pt-24"
+        className="w-full bg-gradient-to-b from-[#83A46D]/10 to-white pt-16 md:pt-24"
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
@@ -121,13 +121,13 @@ export default function JasaPengacaraPage() {
             viewport={{ once: true }}
           >
             <motion.div
-              className="inline-flex items-center gap-2 bg-[#2CBCC4]/20 px-3 py-1 rounded-full text-[#2CBCC4] font-medium text-sm"
+              className="inline-flex items-center gap-2 bg-[#83A46D]/20 px-3 py-1 rounded-full text-[#83A46D] font-medium text-sm"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              <Users className="h-4 w-4 fill-[#2CBCC4] text-[#2CBCC4]" />
+              <Users className="h-4 w-4 fill-[#83A46D] text-[#83A46D]" />
               <span>Temui Para Pengacara Kami</span>
             </motion.div>
             <h2 className="text-3xl md:text-4xl font-bold">
@@ -139,13 +139,13 @@ export default function JasaPengacaraPage() {
           </motion.div>
         </div>
       </motion.section>
-      <section className="w-full bg-gradient-to-t from-[#2CBCC4]/10 to-white pb-16">
+      <section className="w-full bg-gradient-to-t from-[#83A46D]/10 to-white pb-16">
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {[{ name: "AGUNG HERMANSYAH, S.H.", image: "/images/jasa-pengacara/lawyer-1.jpg", whatsapp: "6285935000364" }, { name: "FAKHRI ROZI, S.H.", image: "/images/jasa-pengacara/lawyer-2.jpg", whatsapp: "6285935000364" }, { name: "MUSTAQIM ALMOND, S.H., M.H.", image: "/images/jasa-pengacara/lawyer-3.jpg", whatsapp: "6285935000364" }].map((lawyer, idx) => (
               <motion.div
                 key={lawyer.name}
-                className="relative rounded-2xl overflow-hidden shadow-lg border-2 border-[#2CBCC4] group h-[512px] flex items-end"
+                className="relative rounded-2xl overflow-hidden shadow-lg border-2 border-[#83A46D] group h-[512px] flex items-end"
                 style={{ backgroundImage: `url(${lawyer.image})`, backgroundSize: "cover", backgroundPosition: "center" }}
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -159,7 +159,7 @@ export default function JasaPengacaraPage() {
                     href={`https://wa.me/${lawyer.whatsapp}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block px-5 py-2 rounded-full bg-[#2CBCC4] text-white text-sm font-semibold shadow-md hover:bg-[#229ca1] transition"
+                    className="inline-block px-5 py-2 rounded-full bg-[#83A46D] text-white text-sm font-semibold shadow-md hover:bg-[#229ca1] transition"
                   >
                     Konsultasi Sekarang
                   </a>
@@ -170,7 +170,7 @@ export default function JasaPengacaraPage() {
         </div>
       </section>
       <motion.section
-        className="w-full bg-gradient-to-b from-[#2CBCC4]/10 to-white pt-16"
+        className="w-full bg-gradient-to-b from-[#83A46D]/10 to-white pt-16"
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
@@ -198,7 +198,7 @@ export default function JasaPengacaraPage() {
                 {litigasi.map((faq, idx) => (
                   <motion.div
                     key={faq.id}
-                    className="border border-[#2CBCC4] rounded-lg overflow-hidden shadow"
+                    className="border border-[#83A46D] rounded-lg overflow-hidden shadow"
                     initial={{ opacity: 0, y: 40 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.1 * idx }}
@@ -233,7 +233,7 @@ export default function JasaPengacaraPage() {
                 {nonLitigasi.map((faq, idx) => (
                   <motion.div
                     key={faq.id}
-                    className="border border-[#2CBCC4] rounded-lg overflow-hidden shadow"
+                    className="border border-[#83A46D] rounded-lg overflow-hidden shadow"
                     initial={{ opacity: 0, y: 40 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.1 * idx }}

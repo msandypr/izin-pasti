@@ -42,7 +42,7 @@ export default function PendirianPerkumpulanPage() {
     ];
     return (
         <>
-            <section className="w-full pt-4 pb-8 md:pt-8 md:pb-16 lg:pb-24 bg-gradient-to-t from-[#2CBCC4]/10 to-white">
+            <section className="w-full pt-4 pb-8 md:pt-8 md:pb-16 lg:pb-24 bg-gradient-to-t from-[#83A46D]/10 to-white">
                 <div className="container mx-auto px-4">
                     <motion.div
                         className="flex flex-col items-center justify-center py-10 md:py-16"
@@ -51,9 +51,9 @@ export default function PendirianPerkumpulanPage() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.7 }}
                     >
-                        <div className="inline-flex items-center gap-2 bg-[#2CBCC4]/20 px-3 py-1 rounded-full text-[#2CBCC4] font-medium text-sm">
+                        <div className="inline-flex items-center gap-2 bg-[#83A46D]/20 px-3 py-1 rounded-full text-[#83A46D] font-medium text-sm">
                             <Link href="/layanan/jasa-legalitas/pendirian-perusahaan" className="flex items-center gap-2">
-                                <ArrowLeft className="h-4 w-4 fill-[#2CBCC4] text-[#2CBCC4]" />
+                                <ArrowLeft className="h-4 w-4 fill-[#83A46D] text-[#83A46D]" />
                                 <span>Kembali Ke Halaman Sebelumnya</span>
                             </Link>
                         </div>
@@ -86,10 +86,10 @@ export default function PendirianPerkumpulanPage() {
                     </motion.div>
                 </div>
             </section>
-            <section className="w-full pt-4 pb-8 md:pt-8 md:pb-16 lg:pb-24 bg-gradient-to-b from-[#2CBCC4]/10 to-white">
+            <section className="w-full pt-4 pb-8 md:pt-8 md:pb-16 lg:pb-24 bg-gradient-to-b from-[#83A46D]/10 to-white">
                 <div className="container mx-auto px-4">
                     <motion.h2
-                        className="text-3xl font-bold text-center text-[#2CBCC4] mb-10"
+                        className="text-3xl font-bold text-center text-[#83A46D] mb-10"
                         initial={{ opacity: 0, y: 40 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
@@ -108,12 +108,12 @@ export default function PendirianPerkumpulanPage() {
                                 transition={{ duration: 0.6, delay: 0.12 * index }}
                             >
                                 <div className="flex-shrink-0">
-                                    <div className="w-10 h-10 bg-[#2CBCC4] rounded-full flex items-center justify-center text-white font-bold text-lg">
+                                    <div className="w-10 h-10 bg-[#83A46D] rounded-full flex items-center justify-center text-white font-bold text-lg">
                                         {index + 1}
                                     </div>
                                 </div>
                                 <div>
-                                    <h3 className="text-[#2CBCC4] font-semibold mb-1">{item.title}</h3>
+                                    <h3 className="text-[#83A46D] font-semibold mb-1">{item.title}</h3>
                                     <p className="text-sm text-black">{item.desc}</p>
                                 </div>
                             </motion.div>

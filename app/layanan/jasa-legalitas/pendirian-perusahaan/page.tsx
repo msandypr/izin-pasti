@@ -65,7 +65,7 @@ const subLayananPendirian = [
 export default function PendirianPerusahaanPage() {
     return (
         <>
-            <section className="w-full pt-4 pb-8 md:pt-8 md:pb-16 lg:pb-24 bg-gradient-to-b from-[#2CBCC4]/10 to-white">
+            <section className="w-full pt-4 pb-8 md:pt-8 md:pb-16 lg:pb-24 bg-gradient-to-b from-[#83A46D]/10 to-white">
                 <div className="container mx-auto px-4">
                     <motion.div
                         initial={{ opacity: 0, y: 40 }}
@@ -74,9 +74,9 @@ export default function PendirianPerusahaanPage() {
                         transition={{ duration: 0.7 }}
                         className="flex flex-col items-center justify-center py-10 md:py-16"
                     >
-                        <div className="inline-flex items-center gap-2 bg-[#2CBCC4]/20 px-3 py-1 rounded-full text-[#2CBCC4] font-medium text-sm">
+                        <div className="inline-flex items-center gap-2 bg-[#83A46D]/20 px-3 py-1 rounded-full text-[#83A46D] font-medium text-sm">
                             <Link href="/layanan/jasa-legalitas" className="flex items-center gap-2">
-                                <ArrowLeft className="h-4 w-4 fill-[#2CBCC4] text-[#2CBCC4]" />
+                                <ArrowLeft className="h-4 w-4 fill-[#83A46D] text-[#83A46D]" />
                                 <span>Kembali Ke Halaman Sebelumnya</span>
                             </Link>
                         </div>
@@ -95,9 +95,9 @@ export default function PendirianPerusahaanPage() {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.6, delay: 0.12 * idx }}
-                                className="bg-white rounded-2xl shadow p-6 border border-[#2CBCC4]/10 flex flex-col items-center lg:w-[30%]"
+                                className="bg-white rounded-2xl shadow p-6 border border-[#83A46D]/10 flex flex-col items-center lg:w-[30%]"
                             >
-                                <h2 className="text-2xl font-bold text-[#2CBCC4] mb-2 text-center">{item.title}</h2>
+                                <h2 className="text-2xl font-bold text-[#83A46D] mb-2 text-center">{item.title}</h2>
                                 <img
                                     src={item.image}
                                     alt={item.title}
@@ -105,11 +105,11 @@ export default function PendirianPerusahaanPage() {
                                 />
                                 <p className="text-black text-sm text-center mb-4">{item.subtitle}</p>
                                 <p className="text-md font-semibold text-black">Mulai dari</p>
-                                <p className="text-2xl font-bold text-[#2CBCC4] mb-4">{item.price}</p>
+                                <p className="text-2xl font-bold text-[#83A46D] mb-4">{item.price}</p>
                                 <div className="flex flex-col gap-2 w-full mt-auto">
                                     <Link
                                         href={item.link}
-                                        className="flex px-6 py-2 rounded-full bg-[#2CBCC4] text-white font-semibold hover:bg-[#239ba0] transition text-center items-center justify-center gap-2"
+                                        className="flex px-6 py-2 rounded-full bg-[#83A46D] text-white font-semibold hover:bg-[#239ba0] transition text-center items-center justify-center gap-2"
                                     >
                                         Pesan Sekarang
                                         <ArrowRight className="h-5 w-5" />

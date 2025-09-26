@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 export default function ContactSection() {
     return (
         <motion.div
-            className="w-full bg-gradient-to-t from-[#2CBCC4]/10 to-white md:py-24 flex justify-center pb-8"
+            className="w-full bg-gradient-to-t from-[#83A46D]/10 to-white md:py-24 flex justify-center pb-8"
             id="contact"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -51,7 +51,7 @@ export default function ContactSection() {
                         viewport={{ once: true }}
                     >
                         <h2 className="text-2xl md:text-3xl font-bold leading-snug">
-                            Konsultasikan kebutuhan <span className="text-[#2CBCC4]">Legalitas</span> anda dengan <span className="text-[#2CBCC4]">Kami</span>
+                            Konsultasikan kebutuhan <span className="text-[#83A46D]">Legalitas</span> anda dengan <span className="text-[#83A46D]">Kami</span>
                         </h2>
                         <p className="text-base md:text-md text-black">
                             Tim kami siap membantu segala kebutuhan legalitas bisnis Anda. Jadwalkan konsultasi online dengan mudah dan cepat.

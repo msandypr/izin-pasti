@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 
 export default function HeroSection() {
   return (
-    <div className="w-full bg-gradient-to-b from-[#2CBCC4]/20 to-white py-16 md:py-24" id="home">
+    <div className="w-full bg-gradient-to-b from-[#83A46D]/20 to-white py-16 md:py-24" id="home">
       <div className="container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <motion.div
@@ -17,8 +17,8 @@ export default function HeroSection() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <div className="inline-flex items-center gap-2 bg-[#2CBCC4]/20 px-3 py-1 rounded-full text-[#2CBCC4] font-medium text-sm">
-              <Scale className="h-4 w-4 fill-white text-[#2CBCC4]" />
+            <div className="inline-flex items-center gap-2 bg-[#83A46D]/20 px-3 py-1 rounded-full text-[#83A46D] font-medium text-sm">
+              <Scale className="h-4 w-4 fill-white text-[#83A46D]" />
               <span>Layanan Legalitas Terkemuka di Indonesia</span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight">
@@ -58,13 +58,13 @@ export default function HeroSection() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
           >
-            <div className="absolute -z-10 inset-0 bg-[#2CBCC4]/20 rounded-full blur-3xl opacity-30"></div>
+            <div className="absolute -z-10 inset-0 bg-[#83A46D]/20 rounded-full blur-3xl opacity-30"></div>
             <Image
               src="/images/hero-section-guy.png"
               alt="Hero Lawyer"
               width={512}
               height={512}
-              className="w-full max-w-sm rounded-full border-[#2CBCC4]/20 relative object-cover"
+              className="w-full max-w-sm rounded-full border-[#83A46D]/20 relative object-cover"
               priority
             />
           </motion.div>

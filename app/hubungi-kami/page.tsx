@@ -52,31 +52,31 @@ export default function HubungiKamiPage() {
                 <div className="flex flex-col md:flex-row gap-4">
                   <div className="flex-1">
                     <label className="block text-sm font-medium mb-1">Nama Lengkap <span className="text-red-600">*</span></label>
-                    <input name="nama" type="text" placeholder="Contoh: Ahmad" className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#2CBCC4] transition" required />
+                    <input name="nama" type="text" placeholder="Contoh: Ahmad" className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#83A46D] transition" required />
                   </div>
                   <div className="flex-1">
                     <label className="block text-sm font-medium mb-1">Email <span className="text-red-600">*</span></label>
-                    <input name="email" type="email" placeholder="Contoh: example@gmail.com" className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#2CBCC4] transition" required />
+                    <input name="email" type="email" placeholder="Contoh: example@gmail.com" className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#83A46D] transition" required />
                   </div>
                 </div>
                 <div>
                   <label className="block text-sm font-medium mb-1">Nomor Whatsapp <span className="text-red-600">*</span></label>
-                  <input name="whatsapp" type="text" placeholder="Contoh: 0812xxxxxxx" className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#2CBCC4] transition" required />
+                  <input name="whatsapp" type="text" placeholder="Contoh: 0812xxxxxxx" className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#83A46D] transition" required />
                 </div>
                 <div>
                   <label className="block text-sm font-medium mb-1">Perihal <span className="text-red-600">*</span></label>
-                  <input name="perihal" type="text" placeholder="Tulis Perihal Pesan..." className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#2CBCC4] transition" required />
+                  <input name="perihal" type="text" placeholder="Tulis Perihal Pesan..." className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#83A46D] transition" required />
                 </div>
                 <div>
                   <label className="block text-sm font-medium mb-1">Pesan Anda <span className="text-red-600">*</span></label>
-                  <textarea name="pesan" placeholder="Tulis Pesan Anda..." className="w-full border border-gray-300 rounded-lg px-3 py-2 h-48 resize-none focus:outline-none focus:ring-2 focus:ring-[#2CBCC4] transition" required />
+                  <textarea name="pesan" placeholder="Tulis Pesan Anda..." className="w-full border border-gray-300 rounded-lg px-3 py-2 h-48 resize-none focus:outline-none focus:ring-2 focus:ring-[#83A46D] transition" required />
                 </div>
-                <button type="submit" className="mt-2 bg-[#2CBCC4] text-white rounded-lg px-6 py-2 font-semibold hover:bg-[#229ca1] transition">Kirim Pesan</button>
+                <button type="submit" className="mt-2 bg-[#83A46D] text-white rounded-lg px-6 py-2 font-semibold hover:bg-[#229ca1] transition">Kirim Pesan</button>
               </form>
             </motion.div>
             {/* Info Card */}
             <motion.div
-              className="w-full md:w-1/2 flex-1 bg-[#2CBCC4] rounded-2xl shadow-lg p-8 text-white flex flex-col justify-between min-h-[420px]"
+              className="w-full md:w-1/2 flex-1 bg-[#83A46D] rounded-2xl shadow-lg p-8 text-white flex flex-col justify-between min-h-[420px]"
               initial={{ opacity: 0, x: 60 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}

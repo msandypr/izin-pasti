@@ -94,7 +94,7 @@ export default function PricingSection() {
     ];
 
     return (
-        <section className="w-full bg-gradient-to-t from-white to-[#2CBCC4]/10 py-16 md:py-24" id="pricing">
+        <section className="w-full bg-gradient-to-t from-white to-[#83A46D]/10 py-16 md:py-24" id="pricing">
             <div className="container">
                 <motion.div
                     className="text-center max-w-3xl mx-auto mb-16 space-y-4"
@@ -103,8 +103,8 @@ export default function PricingSection() {
                     transition={{ duration: 0.7 }}
                     viewport={{ once: true }}
                 >
-                    <div className="inline-flex items-center gap-2 bg-[#2CBCC4]/20 px-3 py-1 rounded-full text-[#2CBCC4] font-medium text-sm">
-                        <WalletMinimal className="h-4 w-4 fill-[#2CBCC4] text-[#2CBCC4]" />
+                    <div className="inline-flex items-center gap-2 bg-[#83A46D]/20 px-3 py-1 rounded-full text-[#83A46D] font-medium text-sm">
+                        <WalletMinimal className="h-4 w-4 fill-[#83A46D] text-[#83A46D]" />
                         <span>Layanan Legalitas Kami</span>
                     </div>
                     <h2 className="text-3xl md:text-4xl font-bold">
@@ -127,11 +127,11 @@ export default function PricingSection() {
                                         className={
                                             `rounded-2xl p-6 flex flex-col items-center h-full transition-all duration-300
                 ${selectedIndex === index
-                                                ? "scale-100 z-10 bg-[#2CBCC4] border-4 border-[#2CBCC4] shadow-2xl"
-                                                : "scale-75 bg-white border-2 border-[#2CBCC4]/50 shadow-lg"
+                                                ? "scale-100 z-10 bg-[#83A46D] border-4 border-[#83A46D] shadow-2xl"
+                                                : "scale-75 bg-white border-2 border-[#83A46D]/50 shadow-lg"
                                             }`
                                         }>
-                                        <h2 className={`text-2xl font-bold mb-2 text-center ${selectedIndex === index ? "text-white" : "text-[#2CBCC4]"}`}>{pkg.title}</h2>
+                                        <h2 className={`text-2xl font-bold mb-2 text-center ${selectedIndex === index ? "text-white" : "text-[#83A46D]"}`}>{pkg.title}</h2>
                                         {pkg.image && (
                                             <img
                                                 src={pkg.image}
@@ -140,14 +140,14 @@ export default function PricingSection() {
                                             />
                                         )}
                                         <p className={`text-md font-bold text-center mt-4 ${selectedIndex === index ? "text-white/90" : "text-black"}`}>Mulai Dari</p>
-                                        <span className={`text-center text-3xl md:text-4xl font-bold mb-2 ${selectedIndex === index ? "text-white" : "text-[#2CBCC4]"}`}>Rp. {pkg.price}</span>
+                                        <span className={`text-center text-3xl md:text-4xl font-bold mb-2 ${selectedIndex === index ? "text-white" : "text-[#83A46D]"}`}>Rp. {pkg.price}</span>
                                         <p className={`text-sm text-center mb-4 ${selectedIndex === index ? "text-white/90" : "text-black"}`}>{pkg.description}</p>
                                         <Button
                                             asChild
                                             className={`mt-2 w-full rounded-full font-semibold transition flex items-center justify-center gap-2
                     ${selectedIndex === index
-                                                    ? "bg-white text-[#2CBCC4] hover:bg-white/90"
-                                                    : "bg-[#2CBCC4] text-white hover:bg-[#239ba0]"
+                                                    ? "bg-white text-[#83a46d] hover:bg-white/90"
+                                                    : "bg-[#83a46d] text-white hover:bg-[#239ba0]"
                                                 }`}>
                                             <a href={pkg.href}>
                                                 {pkg.buttonText}

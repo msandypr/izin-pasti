@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 
 export default function NotFound() {
   return (
-    <div className="min-h-screen w-full bg-gradient-to-b from-[#2CBCC4]/10 to-white flex items-center justify-center py-8 md:py-16">
+    <div className="min-h-screen w-full bg-gradient-to-b from-[#83A46D]/10 to-white flex items-center justify-center py-8 md:py-16">
       <div className="container">
         <div className="text-center space-y-8 max-w-3xl mx-auto">
           <motion.div 
@@ -14,9 +14,9 @@ export default function NotFound() {
             transition={{ duration: 0.5 }}
             className="flex justify-center gap-4"
           >
-            <Construction className="h-16 w-16 text-[#2CBCC4]" />
-            <HardHat className="h-16 w-16 text-[#2CBCC4]" />
-            <Hammer className="h-16 w-16 text-[#2CBCC4]" />
+            <Construction className="h-16 w-16 text-[#83A46D]" />
+            <HardHat className="h-16 w-16 text-[#83A46D]" />
+            <Hammer className="h-16 w-16 text-[#83A46D]" />
           </motion.div>
 
           <motion.div
@@ -27,7 +27,7 @@ export default function NotFound() {
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
               404 - Halaman <span className="gradient-text">Tidak Ditemukan</span>
             </h1>
-            <p className="text-lg text-[#2CBCC4]/70 mb-8">
+            <p className="text-lg text-[#83A46D]/70 mb-8">
               Maaf, halaman yang Anda cari tidak tersedia.
             </p>
           </motion.div>
@@ -52,7 +52,7 @@ export default function NotFound() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.7 }}
-            className="mt-12 text-[#2CBCC4]/50 text-sm"
+            className="mt-12 text-[#83A46D]/50 text-sm"
           >
             Estimasi Waktu Pengembangan: Segera
           </motion.div>

@@ -90,7 +90,7 @@ export default function PenutupanPerusahaanPage() {
 
     return (
         <>
-            <section className="w-full pt-4 pb-8 md:pt-8 md:pb-16 lg:pb-24 bg-gradient-to-t from-[#2CBCC4]/10 to-white">
+            <section className="w-full pt-4 pb-8 md:pt-8 md:pb-16 lg:pb-24 bg-gradient-to-t from-[#83A46D]/10 to-white">
                 <div className="container mx-auto px-4">
                     <motion.div
                         initial={{ opacity: 0, y: 40 }}
@@ -99,9 +99,9 @@ export default function PenutupanPerusahaanPage() {
                         transition={{ duration: 0.7 }}
                         className="flex flex-col items-center justify-center py-10 md:py-16"
                     >
-                        <div className="inline-flex items-center gap-2 bg-[#2CBCC4]/20 px-3 py-1 rounded-full text-[#2CBCC4] font-medium text-sm">
+                        <div className="inline-flex items-center gap-2 bg-[#83A46D]/20 px-3 py-1 rounded-full text-[#83A46D] font-medium text-sm">
                             <Link href="/layanan/jasa-legalitas" className="flex items-center gap-2">
-                                <ArrowLeft className="h-4 w-4 fill-[#2CBCC4] text-[#2CBCC4]" />
+                                <ArrowLeft className="h-4 w-4 fill-[#83A46D] text-[#83A46D]" />
                                 <span>Kembali Ke Halaman Sebelumnya</span>
                             </Link>
                         </div>
@@ -120,22 +120,22 @@ export default function PenutupanPerusahaanPage() {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.6, delay: idx * 0.15 }}
-                                className="bg-gradient-to-br from-[#e0f7fa] to-[#c8e6f8] p-6 rounded-2xl shadow border border-[#2CBCC4]/10 flex flex-col items-center lg:w-[30%]"
+                                className="bg-gradient-to-br from-[#e0f7fa] to-[#c8e6f8] p-6 rounded-2xl shadow border border-[#83A46D]/10 flex flex-col items-center lg:w-[30%]"
                             >
-                                <h2 className="text-2xl font-bold text-[#2CBCC4] mb-2 text-center">{item.title}</h2>
+                                <h2 className="text-2xl font-bold text-[#83A46D] mb-2 text-center">{item.title}</h2>
                                 <img
                                     src={item.image}
                                     alt={item.title}
                                     className="w-full aspect-square object-cover rounded-xl mb-4"
                                 />
                                 <p className="font-semibold text-md text-black text-center">Mulai dari</p>
-                                <p className="font-bold text-2xl text-[#2CBCC4] text-center mb-2">{item.price}</p>
+                                <p className="font-bold text-2xl text-[#83A46D] text-center mb-2">{item.price}</p>
                                 <div className="flex flex-col gap-2 w-full mt-auto">
                                     <a
                                         href={`https://wa.me/6285935000364?text=Halo!%2C%20Saya%20ingin%20konsultasi%20terkait%20Penutupan%20Perusahaan%20-%20${encodeURIComponent(item.title)}`}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="flex px-6 py-2 rounded-full bg-[#2CBCC4] text-white font-semibold hover:bg-[#239ba0] transition text-center items-center justify-center gap-2"
+                                        className="flex px-6 py-2 rounded-full bg-[#83A46D] text-white font-semibold hover:bg-[#239ba0] transition text-center items-center justify-center gap-2"
                                     >
                                         <WhatsappLogo className="h-5 w-5" style={{ fill: "white" }} />
                                         Konsultasikan Sekarang
@@ -146,9 +146,9 @@ export default function PenutupanPerusahaanPage() {
                     </div>
                 </div>
             </section>
-            <section className="w-full bg-gradient-to-b from-[#2CBCC4]/10 to-white py-10 px-4">
+            <section className="w-full bg-gradient-to-b from-[#83A46D]/10 to-white py-10 px-4">
                 <div className="max-w-4xl mx-auto">
-                    <h2 className="text-3xl font-bold text-center text-[#2CBCC4] mb-8">
+                    <h2 className="text-3xl font-bold text-center text-[#83A46D] mb-8">
                         Syarat Penutupan Perusahaan
                     </h2>
                     <div className="space-y-4">
@@ -165,7 +165,7 @@ export default function PenutupanPerusahaanPage() {
                                     onClick={() => setActiveId(activeId === faq.id ? null : faq.id)}
                                     className="w-full flex justify-between items-center p-4 text-left bg-white hover:bg-gray-50 transition"
                                 >
-                                    <span className="font-semibold text-[#2CBCC4]">{faq.title}</span>
+                                    <span className="font-semibold text-[#83A46D]">{faq.title}</span>
                                     <svg
                                         className={`w-5 h-5 transition-transform ${activeId === faq.id ? 'rotate-180' : ''}`}
                                         fill="none"
